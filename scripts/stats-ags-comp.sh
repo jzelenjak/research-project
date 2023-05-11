@@ -20,28 +20,43 @@ umask 077
 
 usage="usage: $0 path/to/original/AGs path/to/modified/AGs/"
 
-[[ $# -ne 2 ]] && { echo $usage >&2 ; exit 1; }
+SCRIPT="./stats-ags.sh"
 
-ORIGINAL=$(echo $1/ | tr -s '/')
-MODIFIED=$(echo $2/ | tr -s '/')
+[[ $# -lt 2 ]] && { echo $usage >&2 ; exit 1; }
+
+ORIGINAL=$(echo "$1/" | tr -s '/')
+MODIFIED=$(echo "$2/" | tr -s '/')
 
 ! [[ -d "$ORIGINAL" ]] && { echo "$0: directory $ORIGINAL does not exits" >&2 ; exit 1 ; }
 ! [[ -d "$MODIFIED" ]] && { echo "$0: directory $MODIFIED does not exits" >&2 ; exit 1 ; }
 
-SCRIPT="./stats-ags.sh"
+# Infer the sorting parameter (default: simplicity)
+SORT_BY=12
+if [[ "$#" -eq 3 ]]; then
+    case "$3" in
+        "nodes" | "n") SORT_BY=10n ;;
+        "edges" | "e") SORT_BY=11n ;;
+        "simplicity" | "s") SORT_BY=12 ;;
+        "objectives" | "o") SORT_BY=13n ;;
+        *) { echo -e "$0: invalid option for sort\nAvailable options: n(odes), e(dges), s(implicity), o(bjectives)" >&2 ; exit 1; } ;;
+    esac
+fi
 
-echo "                      name                    n1       e1    simp1  sub1 n2        e2     simp2  sub2"
+echo "                      name                    n1       e1      s1    o1  n2        e2      s2    o2 d_n d_e    d_s    d_o"
 
 # Because this is an inner join, averages have to be preserved, since the number of AGs before the join might be different
 join -t $'\t' -j 1 \
     <("$SCRIPT" "$ORIGINAL" | grep -v -- '-----' | sed 's/Average /Average@/' | sed 's/ count/@count/' | awk '{ print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 }' | tr '@' ' ' | sort -t $'\t' -k 1,1) \
     <("$SCRIPT" "$MODIFIED" | grep -v -- '-----' | sed 's/Average /Average@/' | sed 's/ count/@count/' | awk '{ print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 }' | tr '@' ' ' | sort -t $'\t' -k 1,1) |
-    awk -F '\t' '{ print $0 "\t" ($4 < $8 ? $8 - $4 : $4 - $8) }' |
-    sort -t $'\t' -g -k10,10r |  # field_start[type][,field_end[type]]
-    sed 's/^\(Average .*\)0$/\1/' |
+    awk -F '\t' '
+        function abs(x) { return x < 0 ? -x : x; }
+        /Average/ { print $0 };
+        !/Average/ { print $0 "\t" abs($2 - $6) "\t" abs($3 - $7) "\t" abs($4 - $8) "\t" abs($5 - $9) }' |
+    sort -t $'\t' -g -k${SORT_BY},${SORT_BY}r |  # field_start[type][,field_end[type]]
     column -t -s $'\t'
 
-#                       1                      2        3       4     5   6         7        8     9   diff_n
-#                      name                    n1       e1    simp1  sub1 n2        e2     simp2  sub2
-#10.0.99.143|DATA_EXFILTRATION|vrml-multi-use  14       27   0.518519  1  13        27   0.481481  1  0.037038
-#10.0.0.100|DATA_EXFILTRATION|microsoft-ds     47       97   0.484536  4  32        94   0.340426  1  0.14411
+#                       1                      2        3        4     5   6         7       8     9  10  11    12     13
+#                      name                    n1       e1      s1    o1  n2        e2      s2    o2 d_n d_e    d_s    d_o
+#10.0.0.100|NETWORK_DoS|ssdp                   13       15   0.866667  1  22        42   0.52381   1  9   27  0.342857  0
+#10.0.0.101|DATA_EXFILTRATION|http             42       69   0.608696  3  33        68   0.485294  2  9   1   0.123402  1
+
