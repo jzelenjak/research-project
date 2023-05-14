@@ -33,7 +33,7 @@ echo "Total number of sink nodes: $sinks_total ($(echo "scale=3; 100 * $sinks_to
 echo "Number of unique sink nodes: $sinks_unique ($(echo "scale=3; 100 * $sinks_unique / $nodes_unique" | bc)%)"
 
 # Comment out to print all the shapes that sinks nodes have
-# echo -e "\nShapes of sink-nodes: " ; find "$DIR" -type f -name '*.dot' | xargs grep -F -l "dotted" | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print($.shape); }' | sort -u
+# echo -ne "Shapes of sink-nodes: " ; find "$DIR" -type f -name '*.dot' | xargs grep -F -l "dotted" | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print($.shape); }' | sort -u | paste -sd ','
 
 # Comment out to print all unique nodes
 # find "$DIR" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort -u | wc -l
