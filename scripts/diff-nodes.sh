@@ -9,8 +9,6 @@
 #
 # NB! The comparison is based on .dot files, which are by default deleted during the execution of SAGE
 #      To prevent deletion, comment out lines 2850-2851 in sage.py
-#     In addition, the filenames of the generated AGs have to be the same, so I would recommend running SAGE both times with the same experiment name,
-#      and then move the generated AGs from the directory ExpNameAGs/ into e.g. directories ExpName-origAGs/ and ExpName-modifiedAGs/ respectively
 
 set -euo pipefail
 IFS=$'\n\t'

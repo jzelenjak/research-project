@@ -23,7 +23,6 @@ usage="usage: $0 path/to/AGs"
 [[ $# -ne 1 ]] && { echo $usage >&2 ; exit 1; }
 
 DIR=$(echo "$1/" | tr -s '/')
-
 ! [[ -d "$DIR" ]] && { echo "$0: directory $DIR does not exits" >&2 ; exit 1 ; }
 
 SCRIPT="./stats-ag.sh"
