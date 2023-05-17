@@ -49,3 +49,12 @@ gvpr '
     END_G {
         print(graph_name, "\t", num_nodes, "\t", num_edges, "\t", 1.0 * num_nodes / num_edges, "\t", num_obj_variants);
     }' $*
+#
+#    awk -F '\t' 'function is_complex(n,s) {
+#            if (n < 12 || s > 0.0215 * n + 0.0165) return "No";
+#            if (n > 25 || s < 0.0215 * n + 0.0165) return "Yes";
+#        }
+#        { print $1 "\t" $2 "\t" $3 "\t" $4 "\t" is_complex($2,$4) "\t" $5 }
+#    '
+# graph_name, num_nodes, num_edges, simplicity, is_complex, num_obj_variants
+# 10.0.0.202|DATA_EXFILTRATION|http	25	40	0.625	2

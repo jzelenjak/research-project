@@ -5,6 +5,8 @@
 #   - Nodes found only by the original algorithm
 #   - Nodes found only by the modified algorithm
 #
+# Note: for non-root nodes, mServ 'unknown' and 'Unknown' are treated the same
+#
 # NB! The comparison is based on .dot files, which are by default deleted during the execution of SAGE
 #      To prevent deletion, comment out lines 2850-2851 in sage.py
 #     In addition, the filenames of the generated AGs have to be the same, so I would recommend running SAGE both times with the same experiment name,
@@ -28,22 +30,22 @@ MODIFIED=$2
 ! [[ "${MODIFIED##*.}" == "dot" ]] && { echo "$0: file $MODIFIED is not a .dot file" >&2 ; exit 1 ; }
 
 echo "Vertices found by both algorithm: "
-comm -12 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)\
-         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)
-comm -12 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)\
-         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort) | wc -l
+comm -12 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)\
+         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)
+comm -12 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)\
+         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort) | wc -l
 echo -ne '\n'
 
 echo "Vertices found only by the original algorithm: "
-comm -23 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)\
-         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)
-comm -23 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)\
-         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort) | wc -l
+comm -23 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)\
+         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)
+comm -23 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)\
+         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort) | wc -l
 echo -ne '\n'
 
 echo "Vertices found only by the modified algorithm: "
-comm -13 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)\
-         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)
-comm -13 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort)\
-         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | sed 's/Unknown/unknown/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sort) | wc -l
+comm -13 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)\
+         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)
+comm -13 <(gvpr 'N { print($.name) }' $ORIGINAL | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort)\
+         <(gvpr 'N { print($.name) }' $MODIFIED | tr -d '\r' | sed 's/ | ID: [0-9]*//g' | sed 's/^Victim: //' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/,\1@/' | tr -d '\n' | tr '@' '\n' | sed '/^[A-Z]/ s/Unknown/unknown/' | sort) | wc -l
 
