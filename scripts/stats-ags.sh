@@ -58,7 +58,6 @@ find "$1" -type f -name '*.dot' |
             print($1 "\t" $2 "\t" $3 "\t" $4 "\t" complex "\t" $5);
         }
         END {
-            print("-----");
             print("Average node count:\t" v / count);
             print("Average edge count:\t" e / count);
             print("Average simplicity:\t" s / count);
