@@ -16,8 +16,8 @@ usage="usage: $0 directory1/ directory2/"
 ORIGINAL=$(echo $1/ | tr -s '/')
 MODIFIED=$(echo $2/ | tr -s '/')
 
-! [[ -d "$ORIGINAL" ]] && { echo "$0: directory $ORIGINAL does not exits" >&2 ; exit 1 ; }
-! [[ -d "$MODIFIED" ]] && { echo "$0: directory $MODIFIED does not exits" >&2 ; exit 1 ; }
+! [[ -d "$ORIGINAL" ]] && { echo "$0: directory $ORIGINAL does not exist" >&2 ; exit 1 ; }
+! [[ -d "$MODIFIED" ]] && { echo "$0: directory $MODIFIED does not exist" >&2 ; exit 1 ; }
 
 echo -n "Total number of AGs generated the original algorithm: "
 find "$ORIGINAL" -type f -name '*.dot' -printf '%f\n' | wc -l

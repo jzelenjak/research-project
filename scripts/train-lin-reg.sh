@@ -17,7 +17,7 @@ usage="usage: $0 path/to/original/AGs..."
 [[ $# -lt 1 ]] && { echo $usage >&2 ; exit 1; }
 
 for dir in $*; do
-    ! [[ -d "$dir" ]] && { echo "$0: directory $dir does not exits" >&2 ; exit 1 ; }
+    ! [[ -d "$dir" ]] && { echo "$0: directory $dir does not exist" >&2 ; exit 1 ; }
 done
 
 vmin=15

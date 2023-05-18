@@ -19,7 +19,7 @@ usage="usage: $0 AGs/"
 [[ $# -ne 1 ]] && { echo $usage >&2 ; exit 1; }
 
 DIR=$(echo "$1/" | tr -s '/')
-! [[ -d "$DIR" ]] && { echo "$0: directory $DIR does not exits" >&2 ; exit 1 ; }
+! [[ -d "$DIR" ]] && { echo "$0: directory $DIR does not exist" >&2 ; exit 1 ; }
 
 nodes_total=$(find "$DIR" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | wc -l)
 nodes_unique=$(find "$DIR" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort | uniq -i | wc -l)  # root counts as a unique node even if it appears somewhere in another graph

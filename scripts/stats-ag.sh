@@ -20,7 +20,7 @@ usage="usage: $0 path/to/AG.dot..."
 
 for file in $*; do
     [[ -d "$file" ]] && { echo "$0: $file is a directory" >&2 ; exit 1 ; }
-    ! [[ -f "$file" ]] && { echo "$0: file $file does not exits" >&2 ; exit 1 ; }
+    ! [[ -f "$file" ]] && { echo "$0: file $file does not exist" >&2 ; exit 1 ; }
     ! [[ "${file##*.}" == "dot" ]] && { echo "$0: file $file is not a .dot file" >&2 ; exit 1 ; }
 done
 

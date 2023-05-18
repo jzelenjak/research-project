@@ -22,8 +22,8 @@ usage="usage: $0 originalAG.dot modifiedAG.dot"
 ORIGINAL=$1
 MODIFIED=$2
 
-! [[ -f "$ORIGINAL" ]] && { echo "$0: file $ORIGINAL does not exits" >&2 ; exit 1 ; }
-! [[ -f "$MODIFIED" ]] && { echo "$0: file $MODIFIED does not exits" >&2 ; exit 1 ; }
+! [[ -f "$ORIGINAL" ]] && { echo "$0: file $ORIGINAL does not exist" >&2 ; exit 1 ; }
+! [[ -f "$MODIFIED" ]] && { echo "$0: file $MODIFIED does not exist" >&2 ; exit 1 ; }
 ! [[ "${ORIGINAL##*.}" == "dot" ]] && { echo "$0: file $ORIGINAL is not a .dot file" >&2 ; exit 1 ; }
 ! [[ "${MODIFIED##*.}" == "dot" ]] && { echo "$0: file $MODIFIED is not a .dot file" >&2 ; exit 1 ; }
 

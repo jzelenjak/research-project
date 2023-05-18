@@ -19,16 +19,16 @@ usage="usage: $0 path/to/AGs path/to/AGs"
 DIR_ORIGINAL=$(echo "$1/" | tr -s '/')
 DIR_MODIFIED=$(echo "$2/" | tr -s '/')
 
-! [[ -d "$DIR_ORIGINAL" ]] && { echo "$0: directory $DIR_ORIGINAL does not exits" >&2 ; exit 1 ; }
-! [[ -d "$DIR_MODIFIED" ]] && { echo "$0: directory $DIR_MODIFIED does not exits" >&2 ; exit 1 ; }
+! [[ -d "$DIR_ORIGINAL" ]] && { echo "$0: directory $DIR_ORIGINAL does not exist" >&2 ; exit 1 ; }
+! [[ -d "$DIR_MODIFIED" ]] && { echo "$0: directory $DIR_MODIFIED does not exist" >&2 ; exit 1 ; }
 
 EXP_ORIGINAL=$(echo "$DIR_ORIGINAL" | sed 's@AGs/@@')
 EXP_FILE_ORIGINAL="${EXP_ORIGINAL}.txt"
-! [[ -f "$EXP_FILE_ORIGINAL" ]] && { echo "$0: file $EXP_FILE_ORIGINAL does not exits" >&2 ; exit 1 ; }
+! [[ -f "$EXP_FILE_ORIGINAL" ]] && { echo "$0: file $EXP_FILE_ORIGINAL does not exist" >&2 ; exit 1 ; }
 
 EXP_MODIFIED=$(echo "$DIR_MODIFIED" | sed 's@AGs/@@')
 EXP_FILE_MODIFIED="${EXP_MODIFIED}.txt"
-! [[ -f "$EXP_FILE_MODIFIED" ]] && { echo "$0: file $EXP_FILE_MODIFIED does not exits" >&2 ; exit 1 ; }
+! [[ -f "$EXP_FILE_MODIFIED" ]] && { echo "$0: file $EXP_FILE_MODIFIED does not exist" >&2 ; exit 1 ; }
 
 DIR_OUTPUT="combined-${EXP_ORIGINAL}-${EXP_MODIFIED}AGs/"
 [[ -d "$DIR_OUTPUT" ]] && { echo "$0: output directory $DIR_OUTPUT already exists" >&2 ; exit 1; }
