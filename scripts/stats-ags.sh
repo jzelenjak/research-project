@@ -33,7 +33,15 @@ done
 SCRIPT_LIN_REG="./train-lin-reg.sh"
 ! [[ -f "$SCRIPT_LIN_REG" ]] && { echo "$0: file $SCRIPT_LIN_REG does not exist" >&2 ; exit 1 ; }
 
-IFS=" " read A B vmin vmax <<<$($SCRIPT_LIN_REG $*)
+# Use precomputed results to avoid recomputing them on every run
+# Comment out the if statements and uncomment the next line to compute the LR line on every run
+# IFS=" " read A B vmin vmax <<<$($SCRIPT_LIN_REG $*)
+if [[ "$1" =~ "orig-2017AGs" ]] && [[ $# -eq 2 ]] && [[ "$2" =~ "merged-sinks-2017AGs" ]]; then A=1.04007 ; B=-0.0153311 ; vmin=15 ; vmax=30 ;
+elif [[ "$1" =~ "orig-2018AGs" ]] && [[ $# -eq 2 ]] && [[ "$2" =~ "merged-sinks-2018AGs" ]]; then A=1.07881 ; B=-0.0273639 ; vmin=15 ; vmax=30 ;
+elif [[ "$1" =~ "orig-2017AGs" ]] && [[ $# -eq 1 ]]; then A=1.0402 ; B=-0.0140072 ; vmin=15 ; vmax=30 ;
+elif [[ "$1" =~ "orig-2018AGs" ]] && [[ $# -eq 1 ]]; then A=0.990769 ; B=-0.0200832 vmin= ; vmin=15 ; vmax=30 ;
+else IFS=" " read A B vmin vmax <<<$($SCRIPT_LIN_REG $*);
+fi
 # echo "Estimated linear regression parameters: $A $B $vmin $vmax"
 
 SCRIPT="./stats-ag.sh"
