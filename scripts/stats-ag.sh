@@ -2,8 +2,8 @@
 # Gets the number of nodes, edges and simplicity (complexity) and the number of discovered objective variants of an AG
 # If multiple AGs are provided, then they are processed in turn.
 #
-# Output format: (graph_name, num_nodes, num_edges, simplicity, num_obj_variants)
-#
+# Output format: `graph_name, num_nodes, num_edges, simplicity, is_complex, num_obj_variants`, e.g. `10.0.0.202|DATA_EXFILTRATION|http	25	40	0.625	2`
+
 # NB! The comparison is based on .dot files, which are by default deleted during the execution of SAGE
 #      To prevent deletion, comment out lines 2850-2851 in sage.py
 #     In addition, the filenames of the generated AGs have to be the same, so I would recommend running SAGE both times with the same experiment name,
@@ -49,12 +49,4 @@ gvpr '
     END_G {
         print(graph_name, "\t", num_nodes, "\t", num_edges, "\t", 1.0 * num_nodes / num_edges, "\t", num_obj_variants);
     }' $*
-#
-#    awk -F '\t' 'function is_complex(n,s) {
-#            if (n < 12 || s > 0.0215 * n + 0.0165) return "No";
-#            if (n > 25 || s < 0.0215 * n + 0.0165) return "Yes";
-#        }
-#        { print $1 "\t" $2 "\t" $3 "\t" $4 "\t" is_complex($2,$4) "\t" $5 }
-#    '
-# graph_name, num_nodes, num_edges, simplicity, is_complex, num_obj_variants
-# 10.0.0.202|DATA_EXFILTRATION|http	25	40	0.625	2
+

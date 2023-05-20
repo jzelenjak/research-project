@@ -13,32 +13,32 @@ usage="usage: $0 directory1/ directory2/"
 
 [[ $# -ne 2 ]] && { echo $usage >&2 ; exit 1; }
 
-ORIGINAL=$(echo $1/ | tr -s '/')
-MODIFIED=$(echo $2/ | tr -s '/')
+original=$(echo $1/ | tr -s '/')
+modified=$(echo $2/ | tr -s '/')
 
-! [[ -d "$ORIGINAL" ]] && { echo "$0: directory $ORIGINAL does not exist" >&2 ; exit 1 ; }
-! [[ -d "$MODIFIED" ]] && { echo "$0: directory $MODIFIED does not exist" >&2 ; exit 1 ; }
+! [[ -d "$original" ]] && { echo "$0: directory $original does not exist" >&2 ; exit 1 ; }
+! [[ -d "$modified" ]] && { echo "$0: directory $modified does not exist" >&2 ; exit 1 ; }
 
 echo -n "Total number of AGs generated the original algorithm: "
-find "$ORIGINAL" -type f -name '*.dot' -printf '%f\n' | wc -l
+find "$original" -type f -name '*.dot' -printf '%f\n' | wc -l
 echo -ne "\n"
 
 echo -n "Total number of AGs generated the modified algorithm: "
-find "$MODIFIED" -type f -name '*.dot' -printf '%f\n' | wc -l
+find "$modified" -type f -name '*.dot' -printf '%f\n' | wc -l
 echo -ne "\n"
 
 echo -n "Number of AGs generated both by the original and the modified algorithms: "
-comm -12 <(find "$ORIGINAL" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/'| sort) <(find "$MODIFIED" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) | wc -l
+comm -12 <(find "$original" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/'| sort) <(find "$modified" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) | wc -l
 echo -ne "\n"
 
 echo -n "Number of AGs generated only by the original algorithm: "
-comm -23 <(find "$ORIGINAL" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$MODIFIED" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) | wc -l
+comm -23 <(find "$original" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$modified" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) | wc -l
 echo "AGs generated only by the original algorithm: "
-comm -23 <(find "$ORIGINAL" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$MODIFIED" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort)
+comm -23 <(find "$original" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$modified" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort)
 echo -ne "\n"
 
 echo -n "Number of AGs generated only by the modified algorithm: "
-comm -13 <(find "$ORIGINAL" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$MODIFIED" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) | wc -l
+comm -13 <(find "$original" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$modified" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) | wc -l
 echo "AGs generated only by the modified algorithm: "
-comm -13 <(find "$ORIGINAL" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$MODIFIED" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort)
+comm -13 <(find "$original" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort) <(find "$modified" -type f -name '*.dot' -printf '%f\n' | sed 's/^.*attack-graph-for-victim-\(.*\)$/\1/' | sort)
 

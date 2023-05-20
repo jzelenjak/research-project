@@ -18,24 +18,24 @@ umask 077
 
 usage="usage: $0 path/to/original/AGs path/to/modified/AGs/"
 
-SCRIPT="./stats-ags.sh"
+script="./stats-ags.sh"
 
 [[ $# -lt 2 ]] && { echo $usage >&2 ; exit 1; }
 
-ORIGINAL=$(echo "$1/" | tr -s '/')
-MODIFIED=$(echo "$2/" | tr -s '/')
+original=$(echo "$1/" | tr -s '/')
+modified=$(echo "$2/" | tr -s '/')
 
-! [[ -d "$ORIGINAL" ]] && { echo "$0: directory $ORIGINAL does not exist" >&2 ; exit 1 ; }
-! [[ -d "$MODIFIED" ]] && { echo "$0: directory $MODIFIED does not exist" >&2 ; exit 1 ; }
+! [[ -d "$original" ]] && { echo "$0: directory $original does not exist" >&2 ; exit 1 ; }
+! [[ -d "$modified" ]] && { echo "$0: directory $modified does not exist" >&2 ; exit 1 ; }
 
 # Infer the sorting parameter (default: diff_nodes)
-SORT_BY=12n
+sort_by=12n
 if [[ "$#" -eq 3 ]]; then
     case "$3" in
-        "nodes" | "n") SORT_BY=12n ;;
-        "edges" | "e") SORT_BY=13n ;;
-        "simplicity" | "s") SORT_BY=14 ;;
-        "objectives" | "o") SORT_BY=16n ;;
+        "nodes" | "n") sort_by=12n ;;
+        "edges" | "e") sort_by=13n ;;
+        "simplicity" | "s") sort_by=14 ;;
+        "objectives" | "o") sort_by=16n ;;
         *) { echo -e "$0: invalid option for sort\nAvailable options: n(odes), e(dges), s(implicity), o(bjectives)" >&2 ; exit 1; } ;;
     esac
 fi
@@ -44,14 +44,14 @@ echo "                      name                    n1        e1      s1      c1
 
 # Because this is an inner join, averages have to be preserved, since the number of AGs before the join might be different
 join -t $'\t' -j 1 \
-    <("$SCRIPT" "$ORIGINAL" "$MODIFIED" | sed 's/Average /Average@/' | sed 's/ count/@count/' | awk '{ print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 "\t" $6 }' | tr '@' ' ' | sort -t $'\t' -k 1,1) \
-    <("$SCRIPT" "$MODIFIED" "$ORIGINAL" | sed 's/Average /Average@/' | sed 's/ count/@count/' |  awk '{ print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 "\t" $6 }' | tr '@' ' ' | sort -t $'\t' -k 1,1) |
+    <("$script" "$original" "$modified" | sed 's/Average /Average@/' | sed 's/ count/@count/' | awk '{ print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 "\t" $6 }' | tr '@' ' ' | sort -t $'\t' -k 1,1) \
+    <("$script" "$modified" "$original" | sed 's/Average /Average@/' | sed 's/ count/@count/' |  awk '{ print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 "\t" $6 }' | tr '@' ' ' | sort -t $'\t' -k 1,1) |
     awk -F '\t' '
         function abs(x) { return x < 0 ? -x : x; }
         function diff_complexity(c1,c2) { return c1 != c2 ? "DIFF" : "SAME"; }
         /Average/ { print $0 };
         !/Average/ { print $0 "\t" abs($2 - $7) "\t" abs($3 - $8) "\t" abs($4 - $9) "\t" diff_complexity($5,$10) "\t" abs($6 - $11) }' |
-    sort -t $'\t' -g -k${SORT_BY},${SORT_BY}r |  # field_start[type][,field_end[type]]
+    sort -t $'\t' -g -k${sort_by},${sort_by}r |  # field_start[type][,field_end[type]]
     column -t -s $'\t'
 
 # Output format

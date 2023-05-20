@@ -30,24 +30,24 @@ for dir in $*; do
     ! [[ -d "$dir" ]] && { echo "$0: directory $dir does not exist" >&2 ; exit 1 ; }
 done
 
-SCRIPT_LIN_REG="./train-lin-reg.sh"
-! [[ -f "$SCRIPT_LIN_REG" ]] && { echo "$0: file $SCRIPT_LIN_REG does not exist" >&2 ; exit 1 ; }
+script_lin_reg="./train-lin-reg.sh"
+! [[ -f "$script_lin_reg" ]] && { echo "$0: file $script_lin_reg does not exist" >&2 ; exit 1 ; }
 
 # Use precomputed results to avoid recomputing them on every run
 # Comment out the if statements and uncomment the next line to compute the LR line on every run
-# IFS=" " read A B vmin vmax <<<$($SCRIPT_LIN_REG $*)
+# IFS=" " read A B vmin vmax <<<$($script_lin_reg $*)
 if [[ "$1" =~ "orig-2017AGs" ]] && [[ $# -eq 2 ]] && [[ "$2" =~ "merged-sinks-2017AGs" ]]; then A=1.04007 ; B=-0.0153311 ; vmin=15 ; vmax=30 ;
 elif [[ "$1" =~ "orig-2018AGs" ]] && [[ $# -eq 2 ]] && [[ "$2" =~ "merged-sinks-2018AGs" ]]; then A=1.07881 ; B=-0.0273639 ; vmin=15 ; vmax=30 ;
 elif [[ "$1" =~ "orig-2017AGs" ]] && [[ $# -eq 1 ]]; then A=1.0402 ; B=-0.0140072 ; vmin=15 ; vmax=30 ;
 elif [[ "$1" =~ "orig-2018AGs" ]] && [[ $# -eq 1 ]]; then A=0.990769 ; B=-0.0200832 vmin= ; vmin=15 ; vmax=30 ;
-else IFS=" " read A B vmin vmax <<<$($SCRIPT_LIN_REG $*);
+else IFS=" " read A B vmin vmax <<<$($script_lin_reg $*);
 fi
 # echo "Estimated linear regression parameters: $A $B $vmin $vmax"
 
-SCRIPT="./stats-ag.sh"
+script="./stats-ag.sh"
 
 find "$1" -type f -name '*.dot' |
-    sed 's@^\(.*\)$@'$SCRIPT' \1@' |
+    sed 's@^\(.*\)$@'$script' \1@' |
     sh |
     awk -F '\t' '
         function is_complex(n,s) {

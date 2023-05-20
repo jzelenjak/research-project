@@ -13,15 +13,15 @@ usage="usage: $0 ExpName"
 
 [[ $# -ne 1 ]] && { echo $usage >&2 ; exit 1; }
 
-CORE="${1}.txt.ff.final.dot"
-SINKS="${1}.txt.ff.finalsinks.dot"
+core="${1}.txt.ff.final.dot"
+sinks="${1}.txt.ff.finalsinks.dot"
 
-! [[ -f "$CORE" ]] && { echo "$0: file $CORE does not exits" >&2 ; exit 1 ; }
-! [[ -f "$SINKS" ]] && { echo "$0: file $SINKS does not exits" >&2 ; exit 1 ; }
+! [[ -f "$core" ]] && { echo "$0: file $core does not exits" >&2 ; exit 1 ; }
+! [[ -f "$sinks" ]] && { echo "$0: file $sinks does not exits" >&2 ; exit 1 ; }
 
-red=$(gvpr 'N [ fillcolor == "firebrick1" ] { print($.name) }' $CORE | wc -l)
-blue=$(gvpr 'N [ fillcolor == "dodgerblue1" ] { print($.name) }' $SINKS | wc -l)
-white=$(gvpr 'N [ fillcolor == "ghostwhite" ] { print($.name) }' $SINKS | wc -l)
+red=$(gvpr 'N [ fillcolor == "firebrick1" ] { print($.name) }' $core | wc -l)
+blue=$(gvpr 'N [ fillcolor == "dodgerblue1" ] { print($.name) }' $sinks | wc -l)
+white=$(gvpr 'N [ fillcolor == "ghostwhite" ] { print($.name) }' $sinks | wc -l)
 total=$((red + blue + white))
 
 echo "Total red states (core): $red ($(echo "scale=3; 100 * $red / $total" | bc)%)"
