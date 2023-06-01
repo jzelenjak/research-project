@@ -8,8 +8,8 @@
 #   - Prints that the graphs are different if at least one node has been found by only one of the algorithms (exit code 1)
 #   - Prints nothing if there are no nodes found by only one of the algorithms (exit code 0)
 #
-# Note: The comparison is purely based on the nodes of the graphs.
-#       If there are two nodes that are present in different places (e.g at the beginning and end of a path), they are considered the same.
+# Note: The comparison is purely based on the nodes of the graphs (their names, to be precise).
+#       If two nodes are the but are present in different places in the AGs (e.g at the beginning and end of a path), they are considered the same.
 #
 # NB! The comparison is based on .dot files, which are by default deleted during the execution of SAGE.
 #      To prevent this deletion, set DOCKER to False.
@@ -45,8 +45,8 @@ fi
 ! [[ "${original##*.}" == "dot" ]] && { echo "$0: file $original is not a .dot file" >&2 ; exit 1 ; }
 ! [[ "${modified##*.}" == "dot" ]] && { echo "$0: file $modified is not a .dot file" >&2 ; exit 1 ; }
 
-nodes_original=$(gvpr 'N { print($.name) }' "$original" | tr -d '\r' | sed 's/ | ID: .*//g' | sed 's/^Victim: \([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)/\1|/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/|\1@/' | tr -d '\n' | tr '@' '\n' | sort)
-nodes_modified=$(gvpr 'N { print($.name) }' "$modified" | tr -d '\r' | sed 's/ | ID: .*//g' | sed 's/^Victim: \([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)/\1|/' | tr ' ' '_' | sed 's/^\([A-Z]\?[a-z0-9-]*\)$/|\1@/' | tr -d '\n' | tr '@' '\n' | sort)
+nodes_original=$(gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", "|")) }' "$original" | sed 's/ | ID: .*//g' | sed 's/^Victim: //' | tr ' ' '_' | sort)
+nodes_modified=$(gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", "|")) }' "$modified" | sed 's/ | ID: .*//g' | sed 's/^Victim: //' | tr ' ' '_' | sort)
 
 only_original=$(comm -23 <(echo -e "$nodes_original") <(echo -e "$nodes_modified"))
 only_modified=$(comm -13 <(echo -e "$nodes_original") <(echo -e "$nodes_modified"))
