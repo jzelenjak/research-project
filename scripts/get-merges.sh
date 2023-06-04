@@ -12,6 +12,7 @@
 # To facilitate the analysis, the red and blue nodes that have been merged at the beginning of an iteration are coloured much darker.
 #     Furthermore, blue nodes that have changed their representatives and red nodes that have changed their counts (they do not change their representative)
 #       are coloured slightly darker.
+#     Finally, for every affected node, its incoming edges, together with their endpoints, are displayed to create some context.
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -29,6 +30,7 @@ out="merges.pdf"
 img2pdf --help > /dev/null
 convert --help > /dev/null
 
+sink_count=5
 num_tests=$(find . -type f -name '*test*.dot' | wc -l)
 
 for t in $(seq 1 $((num_tests - 1))); do
@@ -68,6 +70,11 @@ for t in $(seq 1 $((num_tests - 1))); do
                 if (n.name == "I") return "I";
                 return substr(n.label, 0, index(n.label, ":#"));
             }
+
+            int get_count(node_t n) {
+                if (n.name == "I") return "I";
+                return substr(n.label, rindex(n.label, "#") + 1);
+            }
          }
 
          N [ $NG != NULL ] {  // First iteration, when the graph "before" is the current graph
@@ -78,6 +85,7 @@ for t in $(seq 1 $((num_tests - 1))); do
                 // Clone the current and the corresponding nodes to the "before" and "after" graphs respectively
                 clone(before, $); 
                 clone(after, node2); 
+                //print(get_name($) + ": " + (string)get_count($) + " -> " + get_name(node2) + ": " + (string)get_count(node2));
 
                 // Colour the red and blue nodes that have changed their counts and representatives respectively a bit darker
                 if ($.label != node2.label) {
@@ -85,14 +93,14 @@ for t in $(seq 1 $((num_tests - 1))); do
                     if (node2.fillcolor == "dodgerblue1" && get_representative(node2) != get_representative($)) node2.fillcolor = "dodgerblue3";
                 }
 
-                // Add all incoming edges of the current node (and their endpoints) to the graph "before" to create a context (tail -> head)
+                // Add all incoming edges of the current node with their endpoints to the graph "before" to create a context (tail -> head)
                 edge_t edge1 = fstedge_sg($G, $);
                 while (edge1 != NULL) {
                     if ($.name == edge1.head.name) clone(before, edge1);
                     edge1 = nxtedge_sg($G, edge1, $);
                 }
 
-                // Add all incoming edges of the corresponding node (and their endpoints) to the graph "after" to create a context (tail -> head)
+                // Add all incoming edges of the corresponding node with their endpoints to the graph "after" to create a context (tail -> head)
                 edge_t edge2 = fstedge_sg($NG, node2);
                 while (edge2 != NULL) {
                     if (node2.name == edge2.head.name) clone(after, edge2);
@@ -115,10 +123,19 @@ for t in $(seq 1 $((num_tests - 1))); do
                             // Only consider the affected red nodes (i.e. that have changed their colours) and get the one that has been merged
                             if (red_node.fillcolor == "firebrick3" && get_representative(blue_node) == get_name(red_node)) {  
                                 print("Highlighting merged red and blue nodes...");
+
                                 blue_node.fillcolor = "dodgerblue4"; blue_node.fontcolor = "white";
                                 red_node.fillcolor = "firebrick4"; red_node.fontcolor = "white";
+
                                 node_t blue_node_orig = isNode(before, blue_node.name); blue_node_orig.fillcolor = "dodgerblue4"; blue_node_orig.fontcolor = "white";
                                 node_t red_node_orig = isNode(before, red_node.name); red_node_orig.fillcolor = "firebrick4"; red_node_orig.fontcolor = "white";
+
+                                if (get_count(red_node_orig) < '"$sink_count"') {
+                                    print("RED SINK STATE HAS BEEN MERGED (MERGE '"$t"'): #" + (string)get_count(red_node_orig) + " -> #" + (string)get_count(red_node));
+                                    red_node.fillcolor = "magenta";
+                                    red_node_orig.fillcolor = "magenta";
+                                }
+
                                 found = 1;
                                 break;
                             }
