@@ -49,11 +49,18 @@ fi
 
 # Put the name of the edge (i.e. "src->dst") next to the label of the edge (time metadata), separated by a "#"
 parse_edges(){
-    gvpr 'E { print(gsub(gsub($.name, "\r"), "\n", "|")); }' "$1" | sed 's/ | ID: -\?[0-9]\+//g' | sed 's/Victim: //' | tr ' ' '_' |
-            sed 's/->/ -> /g' | sed 's/#/ \# /g' | sort
-    #paste -d '#' <(gvpr 'E { print(gsub(gsub($.name, "\r"), "\n", "|")); }' "$1" | sed 's/ | ID: -\?[0-9]\+//g' | sed 's/Victim: //' | tr ' ' '_')\
-                 #<(gvpr 'E { print(gsub(gsub($.label, "\r"), "\n", ", ")) }' "$1" | sed '/^$/d' | sed 's@<br/>@, @g' | sed 's/<[^>]*>//g' | sed 's/^ \+//') |
-            #sed 's/->/ -> /g' | sed 's/#/ \# /g' | sort
+    # Format of an edge with an attacker label after the `gvpr` script
+    # ARBITRARY CODE EXECUTION|ftp | ID: -1->ROOT PRIVILEGE ESCALATION|ms-wbt-server | ID: -1	<font color="magenta"> start_next: 04/11/17, 17:47:40<br/>gap: 4373sec<br/>end_prev: 04/11/17, 16:34:47</font><br/><font color="magenta"><b>Attacker: 10.0.254.31</b></font>
+    gvpr '
+        E [$.label == ""] {
+            print(gsub(gsub($.name, "\r"), "\n", " | ")); 
+        }
+        E [$.label != "" ] {
+            string edge_name = gsub(gsub($.name, "\r"), "\n", " | "); 
+            string edge_label = gsub(gsub($.label, "\r"), "\n", ", "); 
+            print(edge_name + " # " + edge_label);
+    }' "$1" |
+    sed 's/ | ID: -\?[0-9]\+//g' | sed 's@<br/>@, @g' | sed 's/<[^>]*>//g' | sed 's/->/ -> /g' | tr -s ' ' | sort
 }
 
 edges_original=$(parse_edges $original)
