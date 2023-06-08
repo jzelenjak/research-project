@@ -20,9 +20,9 @@ sinks="${1}.txt.ff.finalsinks.dot"
 ! [[ -f "$core" ]] && { echo "$0: file $core does not exits" >&2 ; exit 1 ; }
 ! [[ -f "$sinks" ]] && { echo "$0: file $sinks does not exits" >&2 ; exit 1 ; }
 
-red=$(gvpr 'N [ fillcolor == "firebrick1" ] { print($.name) }' $core | wc -l)
-blue=$(gvpr 'N [ fillcolor == "dodgerblue1" ] { print($.name) }' $sinks | wc -l)
-white=$(gvpr 'N [ fillcolor == "ghostwhite" ] { print($.name) }' $sinks | wc -l)
+red=$(gvpr -q 'N [ $.fillcolor == "firebrick1" ] { print($.name) }' $core | wc -l)
+blue=$(gvpr -q 'N [ $.fillcolor == "dodgerblue1" ] { print($.name) }' $sinks | wc -l)
+white=$(gvpr -q 'N [ $.fillcolor == "ghostwhite" ] { print($.name) }' $sinks | wc -l)
 total=$((red + blue + white))
 
 echo "Total red states (core): $red ($(echo "scale=3; 100 * $red / $total" | bc)%)"
