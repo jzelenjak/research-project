@@ -1,7 +1,7 @@
 #!/bin/bash
-# Parses the edges from (an) AG(s) to create attack paths for (attacker,victim,objective) triple
+# Parses the edges from (an) AG(s) to create attack paths for (attacker,victim,objective) triple.
 #
-# NB! The comparison is based on .dot files, which are by default deleted during the execution of SAGE.
+# NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
 #      To prevent this deletion, set DOCKER to False.
 
 set -euo pipefail
@@ -37,26 +37,31 @@ if [[ -f "$1" ]] && [[ "${1##*.}" == "dot" ]]; then
         sed 's/^\(.*start_next: \?\([0-9/,: -]\+\).*gap: -\?[0-9]\+sec.*end_prev: \?\([0-9/,: -]\+\).*\)$/\3\t\2\t\1/' |  # Put the timestamps at the beginning of the line (end_prev, start_next)
         sed 's/^\(.*Attacker: \([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\).*\)$/\2\t\1/' |                                      # Put the attacker IP at the beginning of the line, if it is present
         sed 's/\[.*\]//g' |      # Remove all the unnecessary metadata (attributes of the edges, they are no longer needed)
-        sed 's/ | ID: -\?[0-9]\+//g' |  # Remove node IDs: they are not really needed (though, feel free to comment out this line if you need them)
+        sed 's/ | ID: -\?[0-9]\+ \?//g' |  # Remove node IDs: they are not really needed (though, feel free to comment out this line if you need them)
         tr -d '"' |              # Remove quotation marks for the edge endpoints
         awk -F '\t' 'NF == 3 { print "\t" $0 } NF == 4 { print $0 }' |  # Make every line have four tab-separated fields (if the attacker is not present, the first field will be empty)
-        awk -F '\t' 'BEGIN {
+        awk -F '\t' 'BEGIN {     # Paste the attacker IP for each attack path (use the current attacker until it changes (i.e. is present again)). In addition, add the victim IP
             current_attacker = "";
         }
         $1 != "" {
             current_attacker = $1;
+            #print "\n" $1 " ; " "'"$victim"'" " ; " $2 " ; " $3 " ; " $4
             print "\n" $1 "\t" "'"$victim"'" "\t" $2 "\t" $3 "\t" $4
         }
         $1 == "" {
+            #print current_attacker " ; " "'"$victim"'" " ; " $2 " ; " $3 "; " $4
             print current_attacker "\t" "'"$victim"'" "\t" $2 "\t" $3 "\t" $4
-        }'                       # Paste the attacker IP for each attack path (use the current attacker until it changes (i.e. is present again)). In addition, add the victim IP
+        }' |
+        tr -d ','                # Delete unnecessary commas
     echo "----------------------------------"  # This is just a separator, feel free to comment it out
 # If the input is a directory with AGs
 elif [[ -d "$1" ]]; then
     find "$1" -type f -name '*.dot' |               # Find all the .dot files
-    sed 's@^\(.*\)$@'"$0"' \1 ; echo -ne "\\n"@' |   # Write a command to (recursively) run this script for each AG in the input directory
+    sort |                                          # Sort the file, so that all objectives for a victim appear next to each other
+    sed 's@^\(.*\)$@'"$0"' \1 ; echo -ne "\\n"@' |  # Write a command to (recursively) run this script for each AG in the input directory
     sh                                              # Pipe the command to shell to be executed
 else
     usage >&2
     exit 1
 fi
+
