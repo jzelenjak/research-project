@@ -41,7 +41,7 @@ mkdir "$dir_output" || { echo "$0: failed creating output directory $dir_output"
 prefix="-attack-graph-for-victim-"
 
 # Actually combine the png images with the corresponding AGs
-# First, find the AGs that are present in both directories
+# First, find the AGs that are present in both directories (compare the file names without the experiment name and the prefix)
 comm -12 <(find "$dir_original" -type f -name '*.png' -printf '%f\n' | sed 's@'"${exp_original}\.txt${prefix}"'@@' | sort)\
          <(find "$dir_modified" -type f -name '*.png' -printf '%f\n' | sed 's@'"${exp_modified}\.txt${prefix}"'@@' | sort) |
          sed 's@^\(.*\)$@convert +append '"${dir_original}${exp_original}\.txt${prefix}"'\1 '"${dir_modified}${exp_modified}\.txt${prefix}"'\1 '"$dir_output"'\1@' |    # Create the commands for the shell
