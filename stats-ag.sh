@@ -1,52 +1,51 @@
 #!/bin/bash
-# Gets the number of nodes, edges and simplicity (complexity) and the number of discovered objective variants of an AG
-# If multiple AGs are provided, then they are processed in turn.
+# Computes statistics for a single attack graph.
+# The computed statistics are:
+#   - Number of nodes
+#   - Number of edges
+#   - Simplicity = #nodes / #edges (used to measure complexity)
+#   - The number of discovered objective variants (i.e. nodes with hexagon shape and salmon)
+# If multiple AGs are provided, then they are processed one after the other.
 #
-# Output format: `graph_name, num_nodes, num_edges, simplicity, is_complex, num_obj_variants`, e.g. `10.0.0.202|DATA_EXFILTRATION|http	25	40	0.625	2`
-
-# NB! The comparison is based on .dot files, which are by default deleted during the execution of SAGE
-#      To prevent deletion, comment out lines 2850-2851 in sage.py
-#     In addition, the filenames of the generated AGs have to be the same, so I would recommend running SAGE both times with the same experiment name,
-#      and then move the generated AGs from the directory ExpNameAGs/ into e.g. directories ExpName-origAGs/ and ExpName-modifiedAGs/ respectively
+# Output format:    `ag_name \t num_nodes \t num_edges \t simplicity \t num_obj_variants`
+# Example:          `10.0.0.100|DATA_EXFILTRATION|microsoft-ds	48	97	0.494845	4`
+#
+# NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
+#      To prevent the deletion, set the DOCKER variable to False (in SAGE).
 
 set -euo pipefail
 IFS=$'\n\t'
 
 umask 077
 
-usage="usage: $0 path/to/AG.dot..."
+function usage(){
+    echo "Usage: $0 path/to/AG.dot..."
+}
 
-[[ $# -lt 1 ]] && { echo $usage >&2 ; exit 1; }
+# Check if at least one argument is provided
+[[ $# -lt 1 ]] && { usage >&2 ; exit 1; }
 
+# Check if all input files exist and if they all have .dot extension
 for file in $*; do
     [[ -d "$file" ]] && { echo "$0: $file is a directory" >&2 ; exit 1 ; }
     ! [[ -f "$file" ]] && { echo "$0: file $file does not exist" >&2 ; exit 1 ; }
     ! [[ "${file##*.}" == "dot" ]] && { echo "$0: file $file is not a .dot file" >&2 ; exit 1 ; }
 done
 
+# Compute the statistics for each input AG
 gvpr '
-    BEG_G {
-        graph_t obj_variants = graph("Objective_variants", "D");
-        string graph_name = "";
-        int num_nodes = 0;
-        int num_edges = 0;
-        int num_obj_variants = 0;
+    BEG_G { int num_obj_variants = 0; }                                             // Initialise the variable for the number of objective variants
+
+    N [ $.shape == "doubleoctagon" ] {                                              // This is the root node, which contains the AG name
+        string oneline = gsub(gsub($.name, "\r"), "\n", "|");                       // Put graph name on one line
+        string graph_name = gsub(gsub(oneline, "Victim: "), " ", "_");              // Remove the "Victim: " prefix and replace spaces with underscores
     }
 
-    N [ $.shape == "doubleoctagon" ] {
-        string proper_name = gsub($.name, "\r");
-        string oneline = gsub(proper_name, "\n", "|");
-        string stripped = gsub(oneline, "Victim: ");
-        graph_name = gsub(stripped, " ", "_");
-        num_nodes = nNodes($G);
-        num_edges = nEdges($G);
-    }
+    N [ $.shape == "hexagon" && fillcolor == "salmon" ] { num_obj_variants += 1; }  // This is an objective variant 
 
-    N [ $.shape == "hexagon" && fillcolor == "salmon" ] {
-        num_obj_variants += 1;
-    }
-
-    END_G {
+    END_G {                                                                         // Print the statistics for this AG
+        int num_nodes = nNodes($G);
+        int num_edges = nEdges($G);
         print(graph_name, "\t", num_nodes, "\t", num_edges, "\t", 1.0 * num_nodes / num_edges, "\t", num_obj_variants);
     }' $*
 
