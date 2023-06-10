@@ -8,7 +8,7 @@
 #     where `A + Bx` is the computed regression line, vmin and vmax are the min and max node counts, as defined in the paper.
 #
 # NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
-#      To prevent the deletion, set the DOCKER variable to False.
+#      To prevent the deletion, set the DOCKER variable to False (in SAGE).
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -20,7 +20,7 @@ function usage(){
 }
 
 # Check if at least one argument is provided
-[[ $# -lt 1 ]] && { echo $usage >&2 ; exit 1; }
+[[ $# -lt 1 ]] && { usage >&2 ; exit 1; }
 
 # Check if all input directories exist
 for dir in $*; do
