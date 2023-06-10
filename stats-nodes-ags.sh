@@ -7,26 +7,32 @@
 #   - Total number of sink nodes across all the AGs in the provided directory (and their percentage)
 #   - Number of unique sink nodes across all the AGs in the provided directory (and their percentage)
 #
-# NB! The statistics are computed on .dot files, which are by default deleted during the execution of SAGE.
-#      To prevent the deletion, set the variable DOCKER to False.
+# NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
+#      To prevent the deletion, set the DOCKER variable to False (in SAGE).
 
 set -euo pipefail
 IFS=$'\n\t'
 
 umask 077
 
-usage="usage: $0 AGs/"
+function usage(){
+    echo "Usage: $0 AGs/"
+}
 
-[[ $# -ne 1 ]] && { echo $usage >&2 ; exit 1; }
+# Check if exactly one argument is provided
+[[ $# -ne 1 ]] && { usage >&2 ; exit 1; }
 
+# Check if the input directory exists
 dir=$(echo "$1/" | tr -s '/')
 ! [[ -d "$dir" ]] && { echo "$0: directory $dir does not exist" >&2 ; exit 1 ; }
 
+# Compute the node counts from the AGs. Sink nodes have "dotted" in their style attribute
 nodes_total=$(find "$dir" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | wc -l)
-nodes_unique=$(find "$dir" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort | uniq -i | wc -l)  # root counts as a unique node even if it appears somewhere in another graph
+nodes_unique=$(find "$dir" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort -u | wc -l)
 sinks_total=$(find "$dir" -type f -name '*.dot' | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | wc -l)
-sinks_unique=$(find "$dir" -type f -name '*.dot' | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort | uniq -i | wc -l)
+sinks_unique=$(find "$dir" -type f -name '*.dot' | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort -u | wc -l)
 
+# Print the computed node counts, as well as the persentage for the sink nodes
 echo "Total number of nodes: $nodes_total"
 echo "Number of unique nodes: $nodes_unique"
 echo "Total number of sink nodes: $sinks_total ($(echo "scale=3; 100 * $sinks_total / $nodes_total" | bc)%)"
@@ -36,7 +42,8 @@ echo "Number of unique sink nodes: $sinks_unique ($(echo "scale=3; 100 * $sinks_
 # echo -ne "Shapes of sink-nodes: " ; find "$dir" -type f -name '*.dot' | xargs grep -F -l "dotted" | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print($.shape); }' | sort -u | paste -sd ','
 
 # Comment out to print all unique nodes
-# find "$dir" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort | uniq -i
+# find "$dir" -type f -name '*.dot' | xargs gvpr 'N { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort -u
 
 # Comment out to print all unique sink nodes
-# find "$dir" -type f -name '*.dot' | xargs grep -F -l "dotted" | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort | uniq -i
+# find "$dir" -type f -name '*.dot' | xargs grep -F -l "dotted" | xargs gvpr 'N [ $.style == "dotted" || $.style == "filled,dotted" || $.style == "dotted,filled" ] { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort -u
+
