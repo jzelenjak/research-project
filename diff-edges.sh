@@ -94,7 +94,7 @@ fi
 
 # When running in normal mode, show the common edges and edges that are present in only one of the graphs (and their counts)
 # Common edges (i.e. present in both graphs)
-echo "Edges found by both algorithm: $(echo -e "$common" | wc -l)"
+echo "Edges found by both algorithms: $(echo -e "$common" | wc -l)"
 echo -e "$common"
 echo -ne "\n"
 
