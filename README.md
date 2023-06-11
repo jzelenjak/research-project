@@ -2,15 +2,15 @@
 
 ## Description
 
-This is the repository with the scripts that I have used for the research project course (CSE3000). My research was about [SAGE](https://github.com/tudelft-cda-lab/SAGE) (IntruSion alert-driven Attack Graph Extractor) - a tool that generates alert-driven attack graphs based on the intrusion alerts (for more information about SAGE, see [SAGE: Intrusion Alert-driven Attack Graph Extractor](https://ieeexplore.ieee.org/abstract/document/9629418), [Alert-driven Attack Graph Generation using S-PDFA](https://ieeexplore.ieee.org/abstract/document/9557854) and [Enabling Visual Analytics via Alert-driven Attack Graphs](https://dl.acm.org/doi/abs/10.1145/3460120.3485361)).
+This repository contains the scripts that I have used for the research project course at TU Delft (CSE3000). My research was about [SAGE](https://github.com/tudelft-cda-lab/SAGE) (IntruSion alert-driven Attack Graph Extractor) - a tool that generates alert-driven attack graphs based on intrusion alerts (for more information about SAGE, see [SAGE: Intrusion Alert-driven Attack Graph Extractor](https://ieeexplore.ieee.org/abstract/document/9629418), [Alert-driven Attack Graph Generation using S-PDFA](https://ieeexplore.ieee.org/abstract/document/9557854) and [Enabling Visual Analytics via Alert-driven Attack Graphs](https://dl.acm.org/doi/abs/10.1145/3460120.3485361)).
 
-**Research question**: *Investigating the modelling assumptions of alert-driven attack graphs*
+**Topic**: *Investigating the modelling assumptions of alert-driven attack graphs*
 
-**Subquestion**: *What kind of attack graphs are generated as a result of merging the sink states with the main S-PDFA?*
+**Research question**: *What kind of attack graphs are generated as a result of merging the sink states with the main S-PDFA?*
 
-Below, in the section Scripts, you can find the description of each script, usage (which is also explained in the script) and an example use case. This should help you find out which script you might want to check if you want to do a particular task. More extensive documentation can be found in the scripts themselves.
+In the section [Scripts](#scripts) below, you can find the description of each script, its usage (which is also explained in the script) and an example use case. This should help you find out which script you might want to use if you want to do a particular task. More extensive documentation can be found in the scripts themselves.
 
-Note: all scripts are written in Bash. While explaining every single Unix command is outside the scope of this research, I have added extensive comments into each script. This way, even those who have not experience with Unix tools can follow the steps of the scripts.
+Note: all scripts are written in Bash. While explaining every single Unix command is outside the scope of this research, I have added extensive comments into each script. This way, even those who have no experience with Unix tools can follow the steps of the scripts.
 
 ## Dependencies
 
@@ -30,15 +30,15 @@ Below you can find the description, usage and an example use case for each scrip
 
 **Usage**: `agf 'victim|mcat|mServ'`, `agfc 'victim|mcat|mServ' 'filter_str'`, `ag 'victim|mcat|mServ'`, `ag-comb 'victim|mcat|mServ'`, `ag-diff 'victim|mcat|mServ'` 
 
-**Example use case**: after running `stats-ags-comp.sh` script, you want to quickly see how exactly the attack graphs are different. You copy the name of the attack graph and the script will resolve it to .dot file(s) (which you can later use) or open a png images of the attack graphs.
+**Example use case**: after running `stats-ags-comp.sh` script, you want to quickly see how exactly the attack graphs are different. You copy the name of the attack graph and the script will resolve it to .dot file(s) (which you can later use) or open a png image(s) of the attack graphs.
 
 ### combine-ags.sh
 
-**Description**: this script is used to generate PNG images with the corresponding attack graphs placed side by side to facilitate comparison.
+**Description**: this script is used to generate .png images with the corresponding attack graphs placed side by side to facilitate comparison.
 
 **Usage**: `./combine-ags.sh path/to/AGs path/to/AGs`
 
-**Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you can run this script on the directories with the generated attack graphs to generate "side-by-side" png images.
+**Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you can run this script on the directories with the generated attack graphs to generate "side-by-side" .png images.
 
 ### compare-ag-dirs.sh
 
@@ -82,15 +82,15 @@ Below you can find the description, usage and an example use case for each scrip
 
 ### get-merges.sh
 
-**Description**: This script 
+**Description**: this script is used to analyse the merges performed by FlexFringe during the S-PDFA learning process. It takes a "smart" diff between two consecutive states of the S-PDFA to show the affected states before and after a merge (placed vertically next to each other). The result is a (large) PDF file with all non-trivial merges.
 
-**Usage**: `./get-merges.sh`
+**Usage**: `./get-merges.sh [output.pdf]`
 
-**Example use case**: 
+**Example use case**: you want to analyse how states are merged in the S-PDFA to get insights into what is happening in the S-PDFA learning process (mostly used when running SAGE with merging sinks).
 
 ### get-paths.sh (not finished yet)
 
-**Description**: this script gets the attack paths from the attack graphs generated by SAGE. You can use them on one attack graph (less common use case) or on a directory with the attack graphs (more common use case).
+**Description**: this script gets the attack paths from the attack graphs generated by SAGE. You can use this script on one attack graph (less common use case) or on a directory with the attack graphs (more common use case).
 
 **Usage**: `./get-paths.sh (ag.dot | AGs/)`
 
@@ -98,7 +98,12 @@ Below you can find the description, usage and an example use case for each scrip
 
 ### stats-ag.sh
 
-**Description**: this script computes the statistics on a single attack graph generated by SAGE (although, multiple AGs can be provided, in which case they will be processed on after each other). The computed statistics are: *number of nodes*, *number of edges*, *simplicity* (number of nodes / number of edges, used to measure complexity), *the number of discovered objective variants* (i.e. nodes with hexagon shape and salmon). This script is primarily used as part of `stats-ags.sh` script, but can also be used on its own.
+**Description**: this script computes statistics on a single attack graph generated by SAGE (although, multiple AGs can be provided, in which case they will be processed on after each other). This script is primarily used as part of `stats-ags.sh` script, but can also be used on its own. The computed statistics are:
+
+- *Number of nodes*
+- *Number of edges*
+- *Simplicity* (number of nodes / number of edges, used to measure complexity)
+- *Number of discovered objective variants* (i.e. nodes with hexagon shape and salmon).
 
 **Usage**: `./stats-ag.sh path/to/AG.dot...`
 
@@ -106,7 +111,29 @@ Below you can find the description, usage and an example use case for each scrip
 
 ### stats-ags-comp.sh
 
-**Description**: this script computes the statistics on two directories with attack graphs which can be used to compare them side by side and decide which attack graphs are more interesting for further analysis. The computed statistics are: *number of nodes in the first attack graph*, *number of edges in the first attack graph*, *simplicity of the first attack graph*, *whether the first attack graph is complex*, *number of objective variants in the first attack graph*, *number of nodes in the second attack graph*, *number of edges in the second attack graph*, *simplicity of the second attack graph*, *whether the second attack graph is complex*, *the number of objective variants in the second attack graph*, *(absolute) difference in number of nodes*, *(absolute) difference in number of edges*, *(absolute) difference in simplicity*, *difference in complexity*, *(absolute) difference in number of objective variants*. This is one of the most important scripts in this repository.
+**Description**: this script computes statistics on two directories with attack graphs which can be used to compare them side by side and decide which attack graphs are more interesting for further analysis. This is one of the most important scripts in this repository. The computed statistics are:
+
+- *Number of nodes in the first attack graph*
+- *Number of edges in the first attack graph*
+- *Simplicity of the first attack graph*
+- *Whether the first attack graph is complex*
+- *Number of objective variants in the first attack graph*
+- *Number of nodes in the second attack graph*
+- *Number of edges in the second attack graph*
+- *Simplicity of the second attack graph*
+- *Whether the second attack graph is complex*
+- *Number of objective variants in the second attack graph*
+- *Absolute difference in number of nodes*
+- *Absolute difference in number of edges*
+- *Absolute difference in simplicity*
+- *Difference in complexity*
+- *Absolute difference in number of objective variants*.
+
+Average computed statistics are:
+
+- *Average node count*
+- *Average edge count*
+- *Average simplicity*.
 
 **Usage**: `./stats-ags-comp.sh path/to/original/AGs path/to/modified/AGs/ [ n | nodes | e | edges | s | simplicity | o | objectives ]` (`[ n | nodes | e | edges | s | simplicity | o | objectives ]` - sort by the difference in nodes, edges, simplicity and objective variants, respectively)
 
@@ -114,7 +141,19 @@ Below you can find the description, usage and an example use case for each scrip
 
 ### stats-ags.sh
 
-**Description**: this script computes statistics on a directory with attack graphs. Statistics that are computed for each attack graph are: *number of nodes*, *number of edges*, *simplicity* (number of nodes / number of edges, used to measure complexity), *whether the attack graph is complex*, *the number of discovered objective variants* (i.e. nodes with hexagon shape and salmon). Average computed statistics are: *average node count*, *average edge count*, *average simplicity*. This script is primarily used as part of `stats-ags-comp.sh` script, but can also be used on its own.
+**Description**: this script computes statistics on a directory with attack graphs. This script is primarily used as part of `stats-ags-comp.sh` script, but can also be used on its own. Statistics that are computed for each attack graph are:
+
+- *Number of nodes*
+- *Number of edges*
+- *Simplicity* (number of nodes / number of edges, used to measure complexity)
+- *Whether the attack graph is complex*
+- *Number of discovered objective variants* (i.e. nodes with hexagon shape and salmon)
+
+Average computed statistics are:
+
+- *Average node count*
+- *Average edge count*
+- *Average simplicity*.
 
 **Usage**: `./stats-ags.sh path/to/main/AGs [path/to/other/AGs...]`
 
