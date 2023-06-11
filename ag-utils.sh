@@ -48,7 +48,7 @@ agfc() {
 # Resolve an AG name to .png file(s) and show the images
 ag() {
     # Check if exactly one argument is provided
-    [[ $# -ne 1 ]] && { echo "Usage: ag victim|mcat|mServ" >&2 ; return ; }
+    [[ $# -ne 1 ]] && { echo "Usage: ag 'victim|mcat|mServ'" >&2 ; return ; }
 
     # Get the AG name (in the consistent format)
     graph=$(_convert_ag_name "$1")
@@ -64,7 +64,7 @@ ag() {
 # Resolve an AG name to .png file(s) from the combined directory (AGs side-by-side) and show the images
 ag-comb() {
     # Check if exactly one argument is provided
-    [[ $# -ne 1 ]] && { echo "Usage: ag-comb victim|mcat|mServ" >&2 ; return ; }
+    [[ $# -ne 1 ]] && { echo "Usage: ag-comb 'victim|mcat|mServ'" >&2 ; return ; }
 
     # Get the AG name (in the consistent format)
     graph=$(_convert_ag_name "$1")
@@ -81,7 +81,7 @@ ag-comb() {
 # NB! This is a pure shortcut, use it when you know that the AG name can only be resolved in exactly two .dot files
 ag-diff() {
     # Check if exactly one argument is provided
-    [[ $# -ne 1 ]] && { echo "Usage: ag-diff victim|mcat|mServ" >&2 ; return ; }
+    [[ $# -ne 1 ]] && { echo "Usage: ag-diff 'victim|mcat|mServ'" >&2 ; return ; }
 
     # If the ./diff-nodes.sh script exists, resolve the AG name to .dot files and run the script with these .dot files 
     [[ -f ./diff-nodes.sh ]] && agf "$1" | xargs ./diff-nodes.sh
