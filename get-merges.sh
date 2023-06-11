@@ -15,6 +15,14 @@
 #     Furthermore, blue nodes that have changed their representatives and red nodes that have changed their counts (they do not change their representative)
 #       are coloured slightly darker.
 #     Finally, for every affected node, its incoming edges, together with their endpoints, are displayed to create some context.
+#
+# To facilitate the analysis even further, this script prints some useful logs about the performed merges:
+#       - The red node that has been merged and its count (before the merge)
+#       - The blue node that has been merged and its count (before the merge)
+#       - The (incoming) edge with `mcat|mserv` on which these nodes have been merged
+#       - The merge iteration (e.g. might be useful when analysing the log file using `grep` or `awk`)
+# You can process the log file with other commands like `grep` to pinpoint interesting merges and further analyse them in the PDF file.
+# The logs can be found in the file "merges.log". Feel free to give a different name to the `log_file` variable below.
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -28,6 +36,9 @@ usage() {
 # Store the output file name if specified
 out="merges.pdf"
 [[ $# -eq 1 ]] && out="$1"
+
+# File with the logs
+log_file="merges.log"
 
 # Check if the dependencies are present
 img2pdf --help > /dev/null
@@ -57,7 +68,7 @@ for t in $(seq 1 $((num_tests - 1))); do
     merge_png="merge${t1}.png"
 
     # Get a "smart" diff for the current merge iteration
-    echo -e "Merge $t\n---------"
+    echo "Merge $t" | tee -a "$log_file"
     gvpr 'BEGIN {
             // Create "before" and "after" graphs
             graph_t before = graph("'"$merge_before"'", "D");
@@ -66,6 +77,11 @@ for t in $(seq 1 $((num_tests - 1))); do
             // Make the rendering more consistent
             before.ordering = "out";
             after.ordering = "out";
+
+            // Format of a node in the PDFA
+            // "0x56409e3fc870:#
+            //  rep#0x56409e2917d0
+            //  892 #10"
 
             // Get the representative of a node given its label
             string get_representative(node_t n) {
@@ -86,6 +102,13 @@ for t in $(seq 1 $((num_tests - 1))); do
             int get_count(node_t n) {
                 if (n.name == "I") return "I";                          // Skip the artificial "I" node as it has no label
                 return substr(n.label, rindex(n.label, "#") + 1);       // Return the count
+            }
+
+            // Get the number of a node (the decimal integer) and its count given its label
+            string get_num_and_count(node_t n) {
+                if (n.name == "I") return "I";                          // Skip the artificial "I" node as it has no label
+                string label = gsub(gsub(n.label, "\r"), "\n", "|");    // Put the label on one line
+                return substr(label, rindex(label, "|") + 1);           // Return the (decimal) number and the count of the node
             }
          }
 
@@ -134,13 +157,23 @@ for t in $(seq 1 $((num_tests - 1))); do
                         while (red_node != NULL) {
                             // Only consider the affected red nodes (i.e. that have changed their colours) and get the one that has been merged
                             if (red_node.fillcolor == "firebrick3" && get_representative(blue_node) == get_name(red_node)) {  
-                                print("Highlighting merged red and blue nodes...");
 
+                                // Colour these states much darker and make font white
                                 blue_node.fillcolor = "dodgerblue4"; blue_node.fontcolor = "white";
                                 red_node.fillcolor = "firebrick4"; red_node.fontcolor = "white";
 
+                                // Apply the same colouring to the original nodes (before the merge)
                                 node_t blue_node_orig = isNode(before, blue_node.name); blue_node_orig.fillcolor = "dodgerblue4"; blue_node_orig.fontcolor = "white";
                                 node_t red_node_orig = isNode(before, red_node.name); red_node_orig.fillcolor = "firebrick4"; red_node_orig.fontcolor = "white";
+
+                                // Print the merged red and blue states and the incoming edge they have been merged on
+                                // Luckily, due to Markovian property, all incoming edges are the same, so we can just take the first incoming edge
+                                edge_t mcat_mserv_edge = fstedge_sg(before, red_node_orig);
+                                while (red_node_orig.name != mcat_mserv_edge.head.name) {
+                                    mcat_mserv_edge = nxtedge_sg(before, mcat_mserv_edge, red_node_orig);
+                                }
+                                string mcat_mserv = gsub(gsub(mcat_mserv_edge.label, "\r"), "\n");  // Remove \r and \n from the edge label
+                                print("State " + get_num_and_count(red_node_orig) + " (red) and state " + get_num_and_count(blue_node_orig) + " (blue) have been merged on " + mcat_mserv + " (merge '"$t"')");
 
                                 // If a red sink has been merged, report it and colour this sink node to magenta
                                 if (get_count(red_node_orig) < '"$sink_count"') {
@@ -167,7 +200,7 @@ for t in $(seq 1 $((num_tests - 1))); do
                 // Report that no merges have occurred in this iteration
                 print("No merges have occurred -- skipping");
             }
-        }' "$test1" "$test2"
+        }' "$test1" "$test2" | tee -a "$log_file"
 
     # If a merge has occurred, render the generated graphs
     if [[ -f "$merge_before_dot" ]]; then
@@ -181,12 +214,12 @@ for t in $(seq 1 $((num_tests - 1))); do
         # Remove the separate PNG and DOT files of the graphs (they are not needed anymore)
         rm "$merge_before_dot" "$merge_after_dot" "$merge_before_png" "$merge_after_png" 
     fi
+
+    echo "---------" | tee -a "$log_file"
 done
 
-echo "--------------------"
-
 # Combine all merges into one PDF file (A1 format)
-echo "Combining all merges into one PDF file..."
+echo "Combining all merges into one PDF file..." | tee -a "$log_file"
 
 find . -maxdepth 1 -type f -name '*merge*.png' | sort | xargs -r img2pdf --pagesize A1^T -o "$out" 2> /dev/null
 
