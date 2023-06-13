@@ -78,6 +78,9 @@ for t in $(seq 1 $((num_tests - 1))); do
             before.ordering = "out";
             after.ordering = "out";
 
+            graph_t determinization = graph("Determinization", "D");
+            string merged_during_determinization = "";
+
             // Format of a node in the PDFA
             // "0x56409e3fc870:#
             //  rep#0x56409e2917d0
@@ -104,6 +107,15 @@ for t in $(seq 1 $((num_tests - 1))); do
                 return substr(n.label, rindex(n.label, "#") + 1);       // Return the count
             }
 
+            // Get the number of a node (the decimal integer) given its label
+            string get_num(node_t n) {
+                if (n.name == "I") return "I";                          // Skip the artificial "I" node as it has no label
+                string label = gsub(gsub(n.label, "\r"), "\n", "|");    // Put the label on one line
+                int start_cut = rindex(label, "|") + 1;                 // Find the starting index of the cut
+                int end_cut = rindex(label, " #");                      // Find the ending index of the cut
+                return substr(label, start_cut, end_cut - start_cut);   // Return the (decimal) number of the node
+            }
+
             // Get the number of a node (the decimal integer) and its count given its label
             string get_num_and_count(node_t n) {
                 if (n.name == "I") return "I";                          // Skip the artificial "I" node as it has no label
@@ -120,12 +132,15 @@ for t in $(seq 1 $((num_tests - 1))); do
                 // Clone the current and the corresponding nodes to the "before" and "after" graphs respectively
                 clone(before, $); 
                 clone(after, node2); 
-                //print(get_name($) + ": " + (string)get_count($) + " -> " + get_name(node2) + ": " + (string)get_count(node2));
 
                 // Colour the red and blue nodes that have changed their counts and representatives respectively a bit darker
                 if ($.label != node2.label) {
                     if (node2.fillcolor == "firebrick1") node2.fillcolor = "firebrick3";
-                    if (node2.fillcolor == "dodgerblue1" && get_representative(node2) != get_representative($)) node2.fillcolor = "dodgerblue3";
+                    if (node2.fillcolor == "dodgerblue1" && get_representative(node2) != get_representative($)) {
+                        node2.fillcolor = "dodgerblue3";
+                        edge_t inc_edge = fstin_sg($NG, node2);
+                        if (inc_edge.tail.fillcolor != "firebrick1") clone(determinization, node2);
+                    }
                 }
 
                 // Add all incoming edges of the current node with their endpoints to the graph "before" to create a context (tail -> head)
@@ -168,18 +183,45 @@ for t in $(seq 1 $((num_tests - 1))); do
 
                                 // Print the merged red and blue states and the incoming edge they have been merged on
                                 // Luckily, due to Markovian property, all incoming edges are the same, so we can just take the first incoming edge
-                                edge_t mcat_mserv_edge = fstedge_sg(before, red_node_orig);
-                                while (red_node_orig.name != mcat_mserv_edge.head.name) {
-                                    mcat_mserv_edge = nxtedge_sg(before, mcat_mserv_edge, red_node_orig);
-                                }
+                                edge_t mcat_mserv_edge = fstin_sg(before, red_node_orig);
                                 string mcat_mserv = gsub(gsub(mcat_mserv_edge.label, "\r"), "\n");  // Remove \r and \n from the edge label
-                                print("State " + get_num_and_count(red_node_orig) + " (red) and state " + get_num_and_count(blue_node_orig) + " (blue) have been merged on " + mcat_mserv + " (merge '"$t"')");
+
+                                // Find the nodes that have been merged during the determinization process
+                                node_t node_determinization = fstnode(determinization);
+                                while (node_determinization != NULL) {
+                                    node_t representative_determinization = fstnode(after);
+                                    while (representative_determinization != NULL) {
+                                        if (get_representative(node_determinization) == get_name(representative_determinization)) {
+
+                                            edge_t inc_edge_determinization = fstin_sg(after, representative_determinization);
+                                            string inc_edge_determinization_label = gsub(gsub(inc_edge_determinization.label, "\r"), "\n");
+
+                                            merged_during_determinization += get_num_and_count(node_determinization) + " and " +
+                                                    get_num(representative_determinization) + " #" + (string)(get_count(representative_determinization) - get_count(node_determinization)) +
+                                                    " on " + inc_edge_determinization_label + ", ";
+                                            break;
+                                        }
+                                        representative_determinization = nxtnode_sg(after, representative_determinization);
+                                    }
+                                    node_determinization = nxtnode_sg(determinization, node_determinization);
+                                }
+
+                                if (merged_during_determinization != "") {
+                                    merged_during_determinization = substr(merged_during_determinization, 0, rindex(merged_during_determinization, ", "));
+                                } else {
+                                    merged_during_determinization = "-";
 
                                 // If a red sink has been merged, report it and colour this sink node to magenta
                                 if (get_count(red_node_orig) < '"$sink_count"') {
-                                    print("RED SINK STATE HAS BEEN MERGED (MERGE '"$t"'): #" + (string)get_count(red_node_orig) + " -> #" + (string)get_count(red_node));
+                                    print("Merged " + get_num_and_count(red_node_orig) + " (RED SINK) and " +
+                                            get_num_and_count(blue_node_orig) + " (blue) on " + mcat_mserv +
+                                            ". Merged during determinization: " + merged_during_determinization + " (merge '"$t"')");
                                     red_node.fillcolor = "magenta";
                                     red_node_orig.fillcolor = "magenta";
+                                } else {
+                                    print("Merged " + get_num_and_count(red_node_orig) + " (red) and " +
+                                            get_num_and_count(blue_node_orig) + " (blue) on " + mcat_mserv +
+                                            ". Merged during determinization: " + merged_during_determinization + " (merge '"$t"')");
                                 }
 
                                 found = 1;
