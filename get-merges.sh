@@ -38,7 +38,7 @@ out="merges.pdf"
 [[ $# -eq 1 ]] && out="$1"
 
 # File with the logs
-log_file="merges.log"
+log_file="merges-fix.log"
 
 # Check if the dependencies are present
 img2pdf --help > /dev/null
@@ -47,6 +47,7 @@ convert --help > /dev/null
 # Iterate over each consecutive pair of testXXXX.dot files to get a "smart" diff
 sink_count=5
 num_tests=$(find . -type f -name '*test*.dot' | wc -l)
+curr_page=1
 for t in $(seq 1 $((num_tests - 1))); do
     # Create variables tor test files and test numbers
     t1=$(printf "%04d" $t)
@@ -127,21 +128,10 @@ for t in $(seq 1 $((num_tests - 1))); do
          N [ $NG != NULL ] {                                            // First iteration, when the graph "before" is the current graph and the graph "after" is the next graph
             node_t node2 = isNode($NG, $.name);                         // Corresponding node in the graph "after"
 
-            //if (node2 != NULL && ($.fillcolor != node2.fillcolor || $.label != node2.label || $.degree != node2.degree)) {  // Print also if no merges have occurred (NB! I have not tested it with the final script version)
             if (node2 != NULL && ($.label != node2.label || $.degree != node2.degree)) {  // Consider a node only if an actual merge has occurred
                 // Clone the current and the corresponding nodes to the "before" and "after" graphs respectively
                 clone(before, $); 
                 clone(after, node2); 
-
-                // Colour the red and blue nodes that have changed their counts and representatives respectively a bit darker
-                if ($.label != node2.label) {
-                    if (node2.fillcolor == "firebrick1") node2.fillcolor = "firebrick3";
-                    if (node2.fillcolor == "dodgerblue1" && get_representative(node2) != get_representative($)) {
-                        node2.fillcolor = "dodgerblue3";
-                        edge_t inc_edge = fstin_sg($NG, node2);
-                        if (inc_edge.tail.fillcolor != "firebrick1") clone(determinization, node2);
-                    }
-                }
 
                 // Add all incoming edges of the current node with their endpoints to the graph "before" to create a context (tail -> head)
                 edge_t edge1 = fstedge_sg($G, $);
@@ -155,6 +145,20 @@ for t in $(seq 1 $((num_tests - 1))); do
                 while (edge2 != NULL) {
                     if (node2.name == edge2.head.name) clone(after, edge2);
                     edge2 = nxtedge_sg($NG, edge2, node2);
+                }
+
+                // Colour the red and blue nodes that have changed their counts and representatives respectively a bit darker
+                if ($.label != node2.label) {
+                    if (node2.fillcolor == "firebrick1") node2.fillcolor = "firebrick3";
+                    if (node2.fillcolor == "dodgerblue1" && get_representative(node2) != get_representative($)) {
+                        node2.fillcolor = "dodgerblue3";
+                        edge_t inc_edge = fstin_sg(after, isNode(after, node2.name));
+                        // Check if the node has been merged during the determinization process
+                        if (inc_edge.tail.fillcolor != "firebrick1") {
+                            clone(determinization, node2);
+                            node2.penwidth = 4; node2.color = "goldenrod1";
+                        }
+                    }
                 }
             }
         }
@@ -172,30 +176,73 @@ for t in $(seq 1 $((num_tests - 1))); do
                         while (red_node != NULL) {
                             // Only consider the affected red nodes (i.e. that have changed their colours) and get the one that has been merged
                             if (red_node.fillcolor == "firebrick3" && get_representative(blue_node) == get_name(red_node)) {  
+                                
+                                node_t blue_node_orig = isNode(before, blue_node.name);
+                                node_t red_node_orig = isNode(before, red_node.name);
 
-                                // Colour these states much darker and make font white
-                                blue_node.fillcolor = "dodgerblue4"; blue_node.fontcolor = "white";
-                                red_node.fillcolor = "firebrick4"; red_node.fontcolor = "white";
 
-                                // Apply the same colouring to the original nodes (before the merge)
-                                node_t blue_node_orig = isNode(before, blue_node.name); blue_node_orig.fillcolor = "dodgerblue4"; blue_node_orig.fontcolor = "white";
-                                node_t red_node_orig = isNode(before, red_node.name); red_node_orig.fillcolor = "firebrick4"; red_node_orig.fontcolor = "white";
+                                int has_red_parent = 0;
+                                edge_t parent_edge_blue_orig = fstedge_sg(before, blue_node_orig);
+                                while (parent_edge_blue_orig != NULL) {
+                                    print(parent_edge_blue_orig.name);
+                                    if (index(parent_edge_blue_orig.tail.fillcolor, "firebrick") != -1) {     // "firebrick" is in the fillcolour of the parent
+                                        has_red_parent = 1;
+                                        break;
+                                    }
+                                    parent_edge_blue_orig = nxtedge_sg(before, parent_edge_blue_orig, blue_node_orig);
+                                }
+                                if (has_red_parent == 0) break;
 
-                                // Print the merged red and blue states and the incoming edge they have been merged on
-                                // Luckily, due to Markovian property, all incoming edges are the same, so we can just take the first incoming edge
-                                edge_t mcat_mserv_edge = fstin_sg(before, red_node_orig);
-                                string mcat_mserv = gsub(gsub(mcat_mserv_edge.label, "\r"), "\n");  // Remove \r and \n from the edge label
+                                // Luckily, due to Markovian property, all incoming edges are the same
+                                edge_t parent_edge_blue = fstedge_sg(after, blue_node);
+                                while (parent_edge_blue.tail.name == blue_node.name || index(parent_edge_blue.tail.fillcolor, "firebrick") == -1) {     // "firebrick" is not in the fillcolour of the parent
+                                    parent_edge_blue = nxtedge_sg(after, parent_edge_blue, blue_node);
+                                }
+
+                                edge_t parent_edge_red = fstedge_sg(after, red_node);
+                                while (parent_edge_red.tail.name == red_node.name || index(parent_edge_red.tail.fillcolor, "firebrick") == -1) {      // While "firebrick" is not in the fillcolour of the parent
+                                    parent_edge_red = nxtedge_sg(after, parent_edge_red, red_node);
+                                }
+
+                                print("Merging " + (string)red_node.name + " and " + (string)blue_node.name);
 
                                 // Find the nodes that have been merged during the determinization process
                                 node_t node_determinization = fstnode(determinization);
+                                print("Determinization graph size: " + nNodes(determinization));
                                 while (node_determinization != NULL) {
                                     node_t representative_determinization = fstnode(after);
+                                    if (node_determinization.name == blue_node.name) {
+                                        print("AAAAAAAAAAAAAAAAAAAAAAAAAA");
+                                        node_determinization = nxtnode_sg(determinization, node_determinization);
+                                        continue;
+                                    }
                                     while (representative_determinization != NULL) {
                                         if (get_representative(node_determinization) == get_name(representative_determinization)) {
 
-                                            edge_t inc_edge_determinization = fstin_sg(after, representative_determinization);
-                                            string inc_edge_determinization_label = gsub(gsub(inc_edge_determinization.label, "\r"), "\n");
+                                            // Colour the nodes merged during the determinization process into golden
+                                            representative_determinization.penwidth = 4; representative_determinization.color = "goldenrod1";
+                                            node_determinization.penwidth = 4; node_determinization.color = "goldenrod1";
 
+                                            // Colour the incoming edge on which the nodes have been merged into golden
+                                            node_t node_determinization_orig = isNode(after, node_determinization.name);
+                                            edge_t edge_determinization_blue = fstedge_sg(after, node_determinization_orig);
+                                            string parent_representative_name = get_representative(edge_determinization_blue.tail);
+
+                                            while (edge_determinization_blue.tail == node_determinization_orig || (isNode(determinization, edge_determinization_blue.tail.name) == NULL && edge_determinization_blue.tail.name != blue_node.name)) {
+                                                edge_determinization_blue = nxtedge_sg(after, edge_determinization_blue, node_determinization_orig);
+                                                parent_representative_name = get_representative(edge_determinization_blue.tail);
+                                            }
+                                            edge_determinization_blue.color = "goldenrod1"; 
+
+                                            edge_t edge_determinization_red = fstedge_sg(after, representative_determinization);
+                                            while (edge_determinization_red.tail == representative_determinization || (get_name(edge_determinization_red.tail) != parent_representative_name  && get_representative(edge_determinization_red.tail) != "0")) {
+                                                edge_determinization_red = nxtedge_sg(after, edge_determinization_red, representative_determinization);
+                                            }
+                                            edge_determinization_red.color = "goldenrod1"; 
+
+                                            string inc_edge_determinization_label = gsub(gsub(edge_determinization_blue.label, "\r"), "\n");
+
+                                            // Add the information about this merge for the logging
                                             merged_during_determinization += get_num_and_count(node_determinization) + " and " +
                                                     get_num(representative_determinization) + " #" + (string)(get_count(representative_determinization) - get_count(node_determinization)) +
                                                     " on " + inc_edge_determinization_label + ", ";
@@ -210,18 +257,33 @@ for t in $(seq 1 $((num_tests - 1))); do
                                     merged_during_determinization = substr(merged_during_determinization, 0, rindex(merged_during_determinization, ", "));
                                 } else {
                                     merged_during_determinization = "-";
+                                }
+
+                                // Colour these states much darker and make font white
+                                blue_node.fillcolor = "dodgerblue4"; blue_node.fontcolor = "white"; blue_node.color = "green4"; blue_node.penwidth = 5;
+                                red_node.fillcolor = "firebrick4"; red_node.fontcolor = "white"; red_node.color = "green4"; red_node.penwidth = 5;
+
+                                // Apply the same colouring to the original nodes (before the merge)
+                                blue_node_orig.fillcolor = "dodgerblue4"; blue_node_orig.fontcolor = "white";
+                                red_node_orig.fillcolor = "firebrick4"; red_node_orig.fontcolor = "white";
+
+                                parent_edge_red.color = "green4";
+                                parent_edge_blue.color = "green4";
+
+                                string mcat_mserv = gsub(gsub(parent_edge_blue.label, "\r"), "\n");  // Remove \r and \n from the edge label
+
 
                                 // If a red sink has been merged, report it and colour this sink node to magenta
                                 if (get_count(red_node_orig) < '"$sink_count"') {
                                     print("Merged " + get_num_and_count(red_node_orig) + " (RED SINK) and " +
                                             get_num_and_count(blue_node_orig) + " (blue) on " + mcat_mserv +
-                                            ". Merged during determinization: " + merged_during_determinization + " (merge '"$t"')");
-                                    red_node.fillcolor = "magenta";
-                                    red_node_orig.fillcolor = "magenta";
+                                            ". Merged during determinization: " + merged_during_determinization + " (merge '"$t"', page '"$curr_page"')");
+                                    red_node.fillcolor = "magenta1";
+                                    red_node_orig.fillcolor = "magenta1";
                                 } else {
                                     print("Merged " + get_num_and_count(red_node_orig) + " (red) and " +
                                             get_num_and_count(blue_node_orig) + " (blue) on " + mcat_mserv +
-                                            ". Merged during determinization: " + merged_during_determinization + " (merge '"$t"')");
+                                            ". Merged during determinization: " + merged_during_determinization + " (merge '"$t"', page '"$curr_page"')");
                                 }
 
                                 found = 1;
@@ -255,6 +317,8 @@ for t in $(seq 1 $((num_tests - 1))); do
 
         # Remove the separate PNG and DOT files of the graphs (they are not needed anymore)
         rm "$merge_before_dot" "$merge_after_dot" "$merge_before_png" "$merge_after_png" 
+
+        curr_page=$((curr_page + 1))
     fi
 
     echo "---------" | tee -a "$log_file"
