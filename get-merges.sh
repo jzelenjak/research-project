@@ -38,7 +38,7 @@ out="merges.pdf"
 [[ $# -eq 1 ]] && out="$1"
 
 # File with the logs
-log_file="merges-fix-2.log"
+log_file="merges.log"
 
 # Check if the dependencies are present
 img2pdf --help > /dev/null
@@ -124,11 +124,7 @@ for t in $(seq 1 $((num_tests - 1))); do
                 return substr(label, rindex(label, "|") + 1);           // Return the (decimal) number and the count of the node
             }
 
-            int is_red(node_t n) {
-                if (index(n.fillcolor, "firebrick") != -1) return 1;
-                return 0;
-            }
-
+            // Get the red parent of a node in a given graph. If the node has no red parent, NULL is returned
             edge_t get_red_parent(graph_t g, node_t n) {
                 edge_t inc_edge = fstedge_sg(g, n);
                 // While it is not an incoming edge with a "firebrick" endpoint, continue (unless the edge is NULL)
@@ -161,8 +157,8 @@ for t in $(seq 1 $((num_tests - 1))); do
                     edge2 = nxtedge_sg($NG, edge2, node2);
                 }
 
-                // Collect the blue nodes that have been merged during determinization (excluding the initial blue node with red parent)
-                if (node2.fillcolor == "dodgerblue1" && get_representative(node2) != get_representative($) && get_red_parent(after, isNode(after, node2.name)) == NULL) {
+                // Collect the nodes that have been merged during determinization (excluding the initial blue node with red parent)
+                if (get_representative(node2) != get_representative($) && get_red_parent(after, isNode(after, node2.name)) == NULL) {
                     clone(graph_det, node2);
                 }
             }
@@ -174,16 +170,17 @@ for t in $(seq 1 $((num_tests - 1))); do
                 // Find red and blue nodes that have actually been merged (initially) to colour them darker
                 node_t blue_after = fstnode(after);
                 node_t blue_before = isNode(before, blue_after.name);
+
                 while (blue_after != NULL) {
                     // Find the main merged blue node: a blue node that has changed its representative and has a red parent
-                    if (get_representative(blue_after) != get_representative(blue_before) && get_red_parent(after, blue_after) != NULL) {
+                    if (blue_after.fillcolor == "dodgerblue1" && get_representative(blue_after) != get_representative(blue_before) && get_red_parent(after, blue_after) != NULL) {
                         node_t red_after = fstnode(after);
                         node_t red_before = isNode(before, red_after.name);
+
                         int found = 0;
                         while (red_after != NULL) {
                             // Find the main merged red node: the representative of the found blue node
-                            if (get_representative(blue_after) == get_name(red_after)) {
-                                
+                            if (red_after.fillcolor == "firebrick1" && get_representative(blue_after) == get_name(red_after)) {
                                 edge_t parent_edge_blue = get_red_parent(after, blue_after);   // Cannot be NULL - has been checked above
                                 edge_t parent_edge_red = get_red_parent(after, red_after);     // Cannot be NULL by the properties of the algorithm
 
@@ -192,17 +189,9 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 while (node_det_copy != NULL) {
                                     node_t node_det = isNode(after, node_det_copy.name);
                                     node_t repr_det = fstnode(after);
-                                    if (node_det.name == blue_after.name) {
-                                        print("AAAAAAAAAAAAAAAAAAAAAAAAAA THIS SHOULD NOT HAPPEN: " + (string)node_det.name);
-                                        node_det_copy = nxtnode_sg(graph_det, node_det_copy);
-                                        continue;
-                                    }
+
                                     while (repr_det != NULL) {
                                         if (get_representative(node_det) == get_name(repr_det)) {
-
-                                            // Colour the nodes merged during the determinization process into golden
-                                            repr_det.penwidth = 4; repr_det.color = "goldenrod3";
-                                            node_det.penwidth = 4; node_det.color = "goldenrod3";
 
                                             // Find the incoming edges on which the nodes have been merged and colour them into golden
                                             edge_t edge_det_blue = fstedge_sg(after, node_det);
@@ -221,8 +210,17 @@ for t in $(seq 1 $((num_tests - 1))); do
                                                 edge_det_red = nxtedge_sg(after, edge_det_red, repr_det);
                                             }
 
-                                            edge_det_blue.color = "goldenrod3"; 
-                                            edge_det_red.color = "goldenrod3"; 
+                                            // Colour the nodes merged during the determinization process into golden
+                                            repr_det.penwidth = 5; repr_det.color = "chocolate4"; 
+                                            node_det.penwidth = 5; node_det.color = "chocolate4";
+
+                                            edge_det_blue.penwidth = 5; edge_det_blue.color = "chocolate4";
+                                            edge_det_red.penwidth = 5; edge_det_red.color = "chocolate4";
+
+                                            if (repr_det.name != red_after.name) {
+                                                repr_det.style = "filled,dashed";
+                                                edge_det_red.style = "dashed";
+                                            }
 
                                             string inc_edge_det_label = gsub(gsub(edge_det_blue.label, "\r"), "\n");
 
@@ -242,16 +240,20 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 else merged_during_det = "-";
 
                                 // Colour the initial merged states much darker and make font white
-                                blue_after.fillcolor = "dodgerblue4"; blue_after.fontcolor = "white"; blue_after.color = "orangered1"; blue_after.penwidth = 5;
-                                red_after.fillcolor = "firebrick4"; red_after.fontcolor = "white"; red_after.color = "orangered1"; red_after.penwidth = 5;
+                                blue_after.fillcolor = "dodgerblue4"; blue_after.fontcolor = "white"; blue_after.color = "darkgoldenrod1"; blue_after.penwidth = 10;
+                                red_after.fillcolor = "firebrick4"; red_after.fontcolor = "white"; red_after.color = "darkgoldenrod1"; red_after.penwidth = 10;
 
                                 // Apply the same colouring to the original nodes (before the merge)
-                                blue_before.fillcolor = "dodgerblue4"; blue_before.fontcolor = "white";
-                                red_before.fillcolor = "firebrick4"; red_before.fontcolor = "white";
+                                blue_before.fillcolor = "dodgerblue4"; blue_before.fontcolor = "white"; blue_before.color = "darkgoldenrod1"; blue_before.penwidth = 10;
+                                red_before.fillcolor = "firebrick4"; red_before.fontcolor = "white"; red_before.color = "darkgoldenrod1"; red_before.penwidth = 10;
 
                                 // Colour the incoming edges on which the red and blue nodes have been merged into orange
-                                parent_edge_red.color = "orangered1";
-                                parent_edge_blue.color = "orangered1";
+                                parent_edge_blue.color = "darkgoldenrod1"; parent_edge_blue.penwidth = 10;
+                                parent_edge_red.color = "darkgoldenrod1"; parent_edge_red.penwidth = 10;
+
+                                // Colour also the edge on which the red and blue nodes have been merged in the graph "before"
+                                edge_t parent_edge_blue_before = get_red_parent(before, blue_before); parent_edge_blue_before.color = "darkgoldenrod1"; parent_edge_blue_before.penwidth = 10;
+                                edge_t parent_edge_red_before = get_red_parent(before, red_before); parent_edge_red_before.color = "darkgoldenrod1"; parent_edge_red_before.penwidth = 10;
 
                                 // Get the label of this incoming edge
                                 string mcat_mserv = gsub(gsub(parent_edge_blue.label, "\r"), "\n");  // Remove \r and \n from the edge label
@@ -271,11 +273,13 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 break;
                             }
                             red_after = nxtnode_sg(after, red_after);
+                            red_before = isNode(before, red_after.name);
                         }
                         // Break the loop if the merged red and blue states have already been found
                         if (found == 1) break;
                     }
                     blue_after = nxtnode_sg(after, blue_after);
+                    blue_before = isNode(before, blue_after.name);
                 }
 
                 // Write the graphs to the temporary DOT files
