@@ -82,11 +82,11 @@ Below you can find the description, usage and an example use case for each scrip
 
 ### get-merges.sh
 
-**Description**: this script is used to analyse the merges performed by FlexFringe during the S-PDFA learning process. It takes a "smart" diff between two consecutive states of the S-PDFA to show the affected states before and after a merge (placed vertically next to each other). The result is a (large) PDF file with all non-trivial merges. In addition, this script creates a log file with the main information about the merges to facilitate the analysis (e.g. which red and blue states have been merged and on which edge, which merges have been skipped, and when has a red sink been merged).
+**Description**: this script is used to analyse the merges performed by FlexFringe during the S-PDFA learning process. It takes a "smart" diff between two consecutive states of the S-PDFA to show the affected states before and after a merge (placed vertically next to each other). The result is a (large) PDF file with all non-trivial merges. In addition, this script creates a log file with the main information about the merges to facilitate the analysis (e.g. which red and blue states have been merged and on which edge, which nodes have been merged during the determinization process and on which edge, and which merges have been skipped). Finally, some visual enhancements are added to further facilitate the analysis (see the script for further documentation). 
 
 **Usage**: `./get-merges.sh [output.pdf]`
 
-**Example use case**: you want to analyse how states are merged in the S-PDFA to get insights into what is happening in the S-PDFA learning process (mostly used when running SAGE with merging sinks). You can process the log file to find interesting merges and analyse them further in the PDF file.
+**Example use case**: you want to analyse how states are merged in the S-PDFA to get insights into what is happening in the S-PDFA learning process (mostly used when running SAGE with merging sinks). You can process the log file to find interesting merges and analyse them further in the PDF file (e.g. you do `grep 'acctManip|snmp' merges.log` and then open the page(s) mentioned in the log).
 
 ### get-paths.sh (not finished yet)
 
