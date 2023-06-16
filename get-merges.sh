@@ -22,10 +22,10 @@
 #   - `The red and blue nodes that have been merged at the beginning of an iteration` are coloured **much darker** and have **white font colour**.
 #     Furthermore, they are have **a very thick yellow border**. `The incoming edge on which they have been merged` is also **yellow** and **thick**.
 #     This enhancement is applied to both "before" and "after" fragments.
-#   - `Children of the blue node that have been merged during the determinization process` are **slightly thick**, **solid** and ** brown**.
-#     Furthermore, `the incoming edges on which they have been merged` are also **slightly thick**, **solid** and **brown**.
+#   - `Children of the blue node that have been merged during the determinization process` are **slightly thick**, **dashed** and ** brown**.
+#     Furthermore, `the incoming edges on which they have been merged` are also **slightly thick**, **dashed** and **brown**.
 #     This enhancement is applied only to the "after" fragment.
-#   - `Children of the red node that have been merged during the determinization process` are **slightly thick**, **dashed** and ** brown**.
+#   - `Children of the red node that have been merged during the determinization process` are **slightly thick**, **solid** and ** brown**.
 #     Furthermore, `the incoming edges on which they have been merged` are also **slightly thick**, **solid** and **brown**.
 #     This enhancement is applied only to the "after" fragment.
 #   - Finally, for every affected node, its incoming edges, together with their endpoints, are displayed to create some context.
@@ -253,10 +253,10 @@ for t in $(seq 1 $((num_tests - 1))); do
                                             edge_det_blue.penwidth = '"$thickness_det_merge"'; edge_det_blue.color = "'"$colour_det_merge"'";
                                             edge_det_red.penwidth = '"$thickness_det_merge"'; edge_det_red.color = "'"$colour_det_merge"'";
 
-                                            // Make the merged children of the red node (and their incoming edges) dashed, unless it is the merged red node itself
-                                            if (repr_det.name != red_after.name) {
-                                                repr_det.style = "filled,dashed";
-                                                edge_det_red.style = "dashed";
+                                            // Make the merged children of the blue node (and their incoming edges) dashed, unless it is the merged blue node itself
+                                            if (node_det.name != blue_after.name) {
+                                                node_det.style = "filled,dashed";
+                                                edge_det_blue.style = "dashed";
                                             }
 
                                             // Get the label of the incoming edge to log it
@@ -278,8 +278,8 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 else merged_during_det = "-";
 
                                 // Colour the initial merged states much darker and make font `ghostwhite`
-                                // Additionally, make the border of these nodes much thicker (`thickness_init_merge`) and colour them into `colour_init_merge`
-                                blue_after.fillcolor = "'"$dark_blue"'"; blue_after.fontcolor = "'"$white"'"; blue_after.color = "'"$colour_init_merge"'"; blue_after.penwidth = '"$thickness_init_merge"';
+                                // Additionally, make the border of these nodes much thicker (`thickness_init_merge`), colour them into `colour_init_merge`, and make the merged blue node dashed
+                                blue_after.fillcolor = "'"$dark_blue"'"; blue_after.fontcolor = "'"$white"'"; blue_after.color = "'"$colour_init_merge"'"; blue_after.penwidth = '"$thickness_init_merge"'; blue_after.style = "filled,dashed";
                                 red_after.fillcolor = "'"$dark_red"'"; red_after.fontcolor = "'"$white"'"; red_after.color = "'"$colour_init_merge"'"; red_after.penwidth = '"$thickness_init_merge"';
 
                                 // Apply the same colouring and thickness to the original nodes (before the merge)
@@ -287,7 +287,8 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 red_before.fillcolor = "'"$dark_red"'"; red_before.fontcolor = "'"$white"'"; red_before.color = "'"$colour_init_merge"'"; red_before.penwidth = '"$thickness_init_merge"';
 
                                 // Colour the incoming edges on which the red and blue nodes have been merged into `colour_init_merge` and make them much thicker (`thickness_init_merge`)
-                                parent_edge_blue.color = "'"$colour_init_merge"'"; parent_edge_blue.penwidth = '"$thickness_init_merge"';
+                                // Also, make the incoming edge of the blue node dashed
+                                parent_edge_blue.color = "'"$colour_init_merge"'"; parent_edge_blue.penwidth = '"$thickness_init_merge"'; parent_edge_blue.style = "dashed";
                                 parent_edge_red.color = "'"$colour_init_merge"'"; parent_edge_red.penwidth = '"$thickness_init_merge"';
 
                                 // Apply the same colouring and thickness to the edge on which the red and blue nodes have been merged in the graph "before"
