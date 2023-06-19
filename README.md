@@ -204,6 +204,14 @@ The computed statistics (among all graphs) are:
 
 **Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see how the node count of the attack graphs has been affected.
 
+### stats-sinks-ags.sh 
+
+**Description**: this script compares two directories with attack graphs in terms of sink and non-sink nodes. It performs a left outer join on nodes from two directories. If a node is absent in the second directory, "-" will be written, which indicates that this node has been merged. If a node is present in both directories, its status ("sink" or "non-sink") will be printed for both directories.
+
+**Usage**: `./stats-sinks-ags.sh path/to/AGs path/to/AGs`
+
+**Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see which sink nodes have been merged, which sinks became non-sinks and which nodes were non-sinks and remained non-sinks.
+
 ### train-lin-reg.sh
 
 **Description**: this script is primarily used inside the `./stats-ags.sh` script to compute the regression line for classification of the attack graphs into complex and non-complex. It is not very useful as a stand-alone script.
