@@ -12,9 +12,7 @@
 #     since they are not interesting and are large.
 # For each merge, it combines the affected "before" and "after" fragments of the PDFA into one image
 #     and finally combines all of them into one PDF file.
-# If you also want to see the outgoing edges for each node, you can comment out the if checks from the lines:
-#   - `if ($.name == edge1.head.name) clone(before, edge1);
-#   - `if ($.name == edge2.head.name) clone(after, edge2);
+# If you also want to see the outgoing edges for each node, you can set `mode` to "large" and `log_file` "merges-large.log".
 #   Note that `img2pdf` will most likely fail to create the final PDF due to the large size of some images. You will still have the png images with the merges, though.
 #   I cannot also guarantee the full correctness of the images. Nevertheless, I hope that this will be useful to get more insights into the merges.
 #
@@ -58,6 +56,11 @@ out="merges.pdf"
 
 # File with the logs
 log_file="merges.log"
+#log_file="merges-large.log"
+
+# Mode: "normal" means to add only incoming edges, "large" means to add both incoming and outgoing edges (without duplicates)
+mode="normal"
+#mode="large"
 
 # Check if the dependencies are present
 img2pdf --help > /dev/null
@@ -101,7 +104,7 @@ for t in $(seq 1 $((num_tests - 1))); do
 
     # Get a "smart" diff for the current merge iteration
     echo "Merge $t" | tee -a "$log_file"
-    gvpr 'BEGIN {
+    gvpr -q 'BEGIN {
             // Function definitions
 
             // Format of a node in the PDFA
@@ -155,7 +158,29 @@ for t in $(seq 1 $((num_tests - 1))); do
                 }
                 return inc_edge;
             }
+
+            // If the edge with tail `t` and head `h` and the name `name` exists in graph `g`, return this edge. Else return NULL.
+            // This is reimplementation of `isEdge_sg` method of `gvpr`, since it does not work for some reason
+            edge_t edge_exists(graph_t g, node_t t, node_t h, string target_name) {
+                // Iterate over the edges of tail `t`
+                edge_t target_edge = fstedge_sg(g, t);
+                while (target_edge != NULL) {
+                    if (target_edge.name == target_name && ((target_edge.tail.name == t.name && target_edge.head.name == h.name) || (target_edge.tail.name == h.name && target_edge.head.name == t.name))) {
+                        return target_edge;
+                    }
+                    target_edge = nxtedge_sg(g, target_edge, t);
+                }
             
+                // Iterate over the edges of head `h`
+                target_edge = fstedge_sg(g, h);
+                while (target_edge != NULL) {
+                    if (target_edge.name == target_name && ((target_edge.tail.name == t.name && target_edge.head.name == h.name) || (target_edge.tail.name == h.name && target_edge.head.name == t.name))) {
+                        return target_edge;
+                    }
+                    target_edge = nxtedge_sg(g, target_edge, h);
+                }
+                return target_edge;
+            }
 
             // Create "before" and "after" graphs
             graph_t before = graph("'"$merge_before"'", "D");
@@ -169,6 +194,8 @@ for t in $(seq 1 $((num_tests - 1))); do
             graph_t graph_det = graph("Determinization", "D");
             string merged_during_det = "";
 
+            // "normal" mode means compact format (only incoming edges), "large" mode means both incoming and outgoing edges
+            string mode = "'"$mode"'";
          }
 
          // First iteration, when the graph "before" is the current graph and the graph "after" is the next graph
@@ -183,14 +210,36 @@ for t in $(seq 1 $((num_tests - 1))); do
                 // Add all incoming edges of the current node with their endpoints to the graph "before" to create a context (tail -> head)
                 edge_t edge1 = fstedge_sg($G, $);
                 while (edge1 != NULL) {
-                    if ($.name == edge1.head.name) clone(before, edge1);
+                    if (mode == "normal") {
+                        if ($.name == edge1.head.name) clone(before, edge1);  // Add incoming edge
+                    } else {
+                        // Add all outgoing edges and incoming edges (without duplicate edges)
+                        if ($.name == edge1.tail.name) {
+                            clone(before, edge1);       // Add outgoing edge
+                        } else {
+                            if (edge_exists(before, isNode(before, edge1.tail.name), isNode(before, $.name), edge1.name) == NULL) {
+                                clone(before, edge1);   // Add incoming edge
+                            }
+                        }
+                    }
                     edge1 = nxtedge_sg($G, edge1, $);
                 }
 
                 // Add all incoming edges of the corresponding node with their endpoints to the graph "after" to create a context (tail -> head)
                 edge_t edge2 = fstedge_sg($NG, node2);
                 while (edge2 != NULL) {
-                    if (node2.name == edge2.head.name) clone(after, edge2);
+                    if (mode == "normal") {
+                        if (node2.name == edge2.head.name) clone(after, edge2);   // Add incoming edge
+                    } else {
+                        // Add all outgoing edges and incoming edges (without duplicate edges)
+                        if (node2.name == edge2.tail.name) {
+                            clone(after, edge2);        // Add outgoing edge
+                        } else {
+                            if (edge_exists(after, isNode(after, edge2.tail.name), isNode(after, node2.name), edge2.name) == NULL) {
+                                clone(after, edge2);    // Add incoming edge
+                            }
+                        }
+                    }
                     edge2 = nxtedge_sg($NG, edge2, node2);
                 }
 
@@ -229,6 +278,7 @@ for t in $(seq 1 $((num_tests - 1))); do
 
                                     while (repr_det != NULL) {
                                         if (get_representative(node_det) == get_name(repr_det)) {
+                                            //print("Looking for edge for " + node_det.name + " and " + repr_det.name);
 
                                             // Find the incoming edges on which the nodes have been merged
                                             // An incoming edge whose other endpoint has been affected by determinization or is the initially merged blue node
@@ -238,10 +288,12 @@ for t in $(seq 1 $((num_tests - 1))); do
                                                 edge_det_blue = nxtedge_sg(after, edge_det_blue, node_det);
                                                 parent_repr_name = get_representative(edge_det_blue.tail);
                                             }
+                                            //print("Parent representative: " + parent_repr_name);
 
                                             // An incoming edge whose other endpoint is the representative of `edge_det_blue.tail` (parent of `node_det`) or is already a red node
                                             edge_t edge_det_red = fstedge_sg(after, repr_det);
                                             while (edge_det_red.head != repr_det || (get_name(edge_det_red.tail) != parent_repr_name && edge_det_red.tail.fillcolor != "'"$red"'")) {
+                                                //print(edge_det_red.name);
                                                 edge_det_red = nxtedge_sg(after, edge_det_red, repr_det);
                                             }
 
