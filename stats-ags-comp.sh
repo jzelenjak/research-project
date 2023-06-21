@@ -97,6 +97,7 @@ join -t $'\t' -j 1 \
     # awk -F '\t' '$5 == $10 { print }' |                                            # Only graphs that have not changed their complexity
     # Other filters and pipelines
     # awk '$2 != $7 || $3 != $8 || $4 != $9 || $5 != $10 || $6 != $11 { print }' |   # Only graphs with at least one different statistic
+    # awk -F '\t' '$13 != $16 { print }' |                                           # Only graphs for which the difference in edge count is not the same as the difference in the number objective variants (this should not occur)
     sort -t $'\t' -g -k${sort_by},${sort_by}r |                                    # field_start[type][,field_end[type]] NB! By default it sorts by difference in node count (for other options, see above)
     # tr $'\t' ','                                                                   # Separate fields with commas instead of tabs (e.g. when writing the resulting statistics to a csv file)
     column -t -s $'\t'                                                             # Make the output aligned (see https://unix.stackexchange.com/questions/7698/command-to-layout-tab-separated-list-nicely)
