@@ -72,14 +72,6 @@ Below you can find the description, usage and an example use case for each scrip
 
 **Example use case**: after running `stats-ags-comp.sh` script, you want to see what are the differences in nodes for a pair of attack graphs (what are the common nodes and which nodes are present in only one of the graphs). Here you can use `agf` function from `ag-utils` file to quickly get the .dot files for this script.
 
-### get-episodes.sh (not finished yet)
-
-**Description**: this script gets the episodes created by SAGE and creates transitions between them. Note: you have to print the episodes when running SAGE, in the way specified in the script.
-
-**Usage**: `./get-episodes.sh expName-episodes.txt`
-
-**Example use case**: you want to measure completeness of SAGE before and after merging sinks. This script can give you the episodes (which are considered as ground truth).
-
 ### get-ids.sh
 
 **Description**: this script gets all node IDs for a specific node (e.g. `mcat|mserv`) from a directory with attack graphs. This script is especially useful in combination with the script `get-merges.sh` to find the interesting merges. Nevertheless, it can still be used on its own to see which (sink) nodes were present before merging sinks and which are present after merging sinks.
