@@ -1,0 +1,208 @@
+Using heuristic alergia
+Creating apta using evaluation class alergia
+batch mode selected
+ x109 Merge 0001
+Extending blue node 35 #109, sink -1; (representative of) parent 0 #1039, sink -1
+ x95 Merge 0002
+Extending blue node 5 #95, sink -1; (representative of) parent 0 #1039, sink -1
+ x76 Merge 0003
+Extending blue node 1 #76, sink -1; (representative of) parent 0 #1039, sink -1
+ x67 Merge 0004
+Extending blue node 308 #67, sink -1; (representative of) parent 35 #109, sink -1
+ x60 Merge 0005
+Extending blue node 890 #60, sink -1; (representative of) parent 308 #67, sink -1
+ x51 Merge 0006
+Extending blue node 44 #51, sink -1; (representative of) parent 0 #1039, sink -1
+ x45 Merge 0007
+Extending blue node 10 #45, sink -1; (representative of) parent 0 #1039, sink -1
+ x41 Merge 0008
+Extending blue node 42 #41, sink -1; (representative of) parent 0 #1039, sink -1
+ x34 Merge 0009
+Extending blue node 63 #34, sink -1; (representative of) parent 0 #1039, sink -1
+ x32 Merge 0010
+Extending blue node 9 #32, sink -1; (representative of) parent 0 #1039, sink -1
+ x31 Merge 0011
+Extending blue node 2 #31, sink -1; (representative of) parent 0 #1039, sink -1
+ x29 Merge 0012
+Extending blue node 8 #29, sink -1; (representative of) parent 0 #1039, sink -1
+ x27 Merge 0013
+Extending blue node 16 #27, sink -1; (representative of) parent 0 #1039, sink -1
+ x26 Merge 0014
+Extending blue node 3 #26, sink -1; (representative of) parent 0 #1039, sink -1
+ x26 Merge 0015
+Extending blue node 32 #26, sink -1; (representative of) parent 0 #1039, sink -1
+ x26 Merge 0016
+Extending blue node 396 #26, sink -1; (representative of) parent 63 #34, sink -1
+ x23 Merge 0017
+Extending blue node 50 #23, sink -1; (representative of) parent 0 #1039, sink -1
+ x22 Merge 0018
+Extending blue node 65 #22, sink -1; (representative of) parent 0 #1039, sink -1
+ m17.7769 Merge 0019
+ m9.02734 Merge 0020
+ x22 Merge 0021
+Extending blue node 349 #22, sink -1; (representative of) parent 44 #51, sink -1
+ x20 Merge 0022
+Extending blue node 53 #20, sink -1; (representative of) parent 0 #1039, sink -1
+ m5.36673 Merge 0023
+ x19 Merge 0024
+Extending blue node 309 #19, sink -1; (representative of) parent 35 #109, sink -1
+ x19 Merge 0025
+Extending blue node 330 #19, sink -1; (representative of) parent 42 #41, sink -1
+ x18 Merge 0026
+Extending blue node 71 #18, sink -1; (representative of) parent 0 #1039, sink -1
+ m16.3618 Merge 0027
+ x19 Merge 0028
+Extending blue node 140 #19, sink -1; (representative of) parent 5 #144, sink -1
+ m5.62097 Merge 0029
+ x17 Merge 0030
+Extending blue node 30 #17, sink -1; (representative of) parent 0 #1039, sink -1
+ x17 Merge 0031
+Extending blue node 43 #17, sink -1; (representative of) parent 0 #1039, sink -1
+ m11.2547 Merge 0032
+ x16 Merge 0033
+Extending blue node 25 #16, sink -1; (representative of) parent 0 #1039, sink -1
+ x16 Merge 0034
+Extending blue node 304 #16, sink -1; (representative of) parent 35 #109, sink -1
+ x15 Merge 0035
+Extending blue node 17 #15, sink -1; (representative of) parent 0 #1039, sink -1
+ x15 Merge 0036
+Extending blue node 46 #15, sink -1; (representative of) parent 0 #1039, sink -1
+ x15 Merge 0037
+Extending blue node 49 #15, sink -1; (representative of) parent 0 #1039, sink -1
+ m13.8609 Merge 0038
+ m8.10254 Merge 0039
+ x15 Merge 0040
+Extending blue node 370 #15, sink -1; (representative of) parent 50 #23, sink -1
+ x15 Merge 0041
+Extending blue node 375 #15, sink -1; (representative of) parent 53 #20, sink -1
+ x15 Merge 0042
+Extending blue node 1003 #15, sink -1; (representative of) parent 370 #15, sink -1
+ x14 Merge 0043
+Extending blue node 12 #14, sink -1; (representative of) parent 0 #1039, sink -1
+ x14 Merge 0044
+Extending blue node 34 #14, sink -1; (representative of) parent 0 #1039, sink -1
+ m2.11584 Merge 0045
+ m19.9966 Merge 0046
+ m18.6084 Merge 0047
+ x13 Merge 0048
+Extending blue node 925 #13, sink -1; (representative of) parent 330 #19, sink -1
+ m6.51055 Merge 0049
+ m1.55855 Merge 0050
+ x12 Merge 0051
+Extending blue node 358 #12, sink -1; (representative of) parent 46 #15, sink -1
+ m10.3847 Merge 0052
+ m8.0229 Merge 0053
+ m6.49983 Merge 0054
+ m22.551 Merge 0055
+ x10 Merge 0056
+Extending blue node 288 #10, sink -1; (representative of) parent 32 #43, sink -1
+ x10 Merge 0057
+Extending blue node 430 #10, sink -1; (representative of) parent 71 #18, sink -1
+ m10.3541 Merge 0058
+ m5.18721 Merge 0059
+ x10 Merge 0060
+Extending blue node 980 #10, sink -1; (representative of) parent 358 #12, sink -1
+ x9 Merge 0061
+Extending blue node 45 #9, sink -1; (representative of) parent 0 #1039, sink -1
+ m7.19661 Merge 0062
+ m10.5034 Merge 0063
+ m6.99432 Merge 0064
+ x9 Merge 0065
+Extending blue node 223 #9, sink -1; (representative of) parent 16 #73, sink -1
+ m7.54534 Merge 0066
+ x9 Merge 0067
+Extending blue node 883 #9, sink -1; (representative of) parent 304 #38, sink -1
+ m2.90631 Merge 0068
+ m12.2333 Merge 0069
+ m9.37016 Merge 0070
+ m11.2994 Merge 0071
+ x8 Merge 0072
+Extending blue node 332 #8, sink -1; (representative of) parent 42 #41, sink -1
+ x8 Merge 0073
+Extending blue node 365 #8, sink -1; (representative of) parent 49 #15, sink -1
+ m22.4541 Merge 0074
+ m6.82149 Merge 0075
+ m11.9173 Merge 0076
+ m14.0843 Merge 0077
+ m10.5248 Merge 0078
+ m10.1995 Merge 0079
+ m8.58982 Merge 0080
+ m7.68567 Merge 0081
+ x7 Merge 0082
+Extending blue node 129 #7, sink -1; (representative of) parent 3 #93, sink -1
+ m15.913 Merge 0083
+ m8.47285 Merge 0084
+ m4.03354 Merge 0085
+ m3.26178 Merge 0086
+ x6 Merge 0087
+Extending blue node 18 #6, sink -1; (representative of) parent 0 #1039, sink -1
+ x6 Merge 0088
+Extending blue node 28 #6, sink -1; (representative of) parent 0 #1039, sink -1
+ m6.0573 Merge 0089
+ x6 Merge 0090
+Extending blue node 33 #6, sink -1; (representative of) parent 0 #1039, sink -1
+ x6 Merge 0091
+Extending blue node 101 #6, sink -1; (representative of) parent 1 #112, sink -1
+ m8.34109 Merge 0092
+ m9.33101 Merge 0093
+ m8.29562 Merge 0094
+ m5.14294 Merge 0095
+ x6 Merge 0096
+Extending blue node 152 #6, sink -1; (representative of) parent 5 #317, sink -1
+ m6.77902 Merge 0097
+ m9.13642 Merge 0098
+ m10.027 Merge 0099
+ m10.0294 Merge 0100
+ m10.0248 Merge 0101
+ m5.30648 Merge 0102
+ m13.2916 Merge 0103
+ x6 Merge 0104
+Extending blue node 748 #6, sink -1; (representative of) parent 223 #20, sink -1
+ m5.98178 Merge 0105
+ m12.0898 Merge 0106
+ m11.3406 Merge 0107
+ m10.1322 Merge 0108
+ m10.1506 Merge 0109
+ x5 Merge 0110
+Extending blue node 4 #5, sink -1; (representative of) parent 0 #1039, sink -1
+ x5 Merge 0111
+Extending blue node 48 #5, sink -1; (representative of) parent 0 #1039, sink -1
+ x5 Merge 0112
+Extending blue node 74 #5, sink -1; (representative of) parent 0 #1039, sink -1
+ x5 Merge 0113
+Extending blue node 82 #5, sink -1; (representative of) parent 0 #1039, sink -1
+ m9.50523 Merge 0114
+ x5 Merge 0115
+Extending blue node 100 #5, sink -1; (representative of) parent 1 #132, sink -1
+ m10.4385 Merge 0116
+ m12.9007 Merge 0117
+ m12.6052 Merge 0118
+ m10.2909 Merge 0119
+ m7.63083 Merge 0120
+ m12.5504 Merge 0121
+ m14.8297 Merge 0122
+ m10.5916 Merge 0123
+ x5 Merge 0124
+Extending blue node 356 #5, sink -1; (representative of) parent 45 #9, sink -1
+ m12.8693 Merge 0125
+ x5 Merge 0126
+Extending blue node 366 #5, sink -1; (representative of) parent 49 #15, sink -1
+ m3.87562 Merge 0127
+ m11.182 Merge 0128
+ m14.0327 Merge 0129
+ x5 Merge 0130
+Extending blue node 445 #5, sink -1; (representative of) parent 82 #5, sink -1
+ x5 Merge 0131
+Extending blue node 481 #5, sink -1; (representative of) parent 5 #387, sink -1
+ m3.56939 Merge 0132
+ m10.7184 Merge 0133
+ x5 Merge 0134
+Extending blue node 126 #5, sink -1; (representative of) parent 3 #119, sink -1
+ m6.55656 Merge 0135
+ m5.4377 Merge 0136
+ m14.4563 Merge 0137
+ m7.36197 Merge 0138
+ m11.0701 Merge 0139
+ m13.0652 Merge 0140
+ m15.834 Merge 0141
+no more possible merges

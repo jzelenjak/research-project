@@ -1,0 +1,2773 @@
+Merge 1
+No merges have occurred -- skipping
+---------
+Merge 2
+No merges have occurred -- skipping
+---------
+Merge 3
+No merges have occurred -- skipping
+---------
+Merge 4
+No merges have occurred -- skipping
+---------
+Merge 5
+No merges have occurred -- skipping
+---------
+Merge 6
+No merges have occurred -- skipping
+---------
+Merge 7
+No merges have occurred -- skipping
+---------
+Merge 8
+No merges have occurred -- skipping
+---------
+Merge 9
+No merges have occurred -- skipping
+---------
+Merge 10
+No merges have occurred -- skipping
+---------
+Merge 11
+No merges have occurred -- skipping
+---------
+Merge 12
+No merges have occurred -- skipping
+---------
+Merge 13
+No merges have occurred -- skipping
+---------
+Merge 14
+No merges have occurred -- skipping
+---------
+Merge 15
+No merges have occurred -- skipping
+---------
+Merge 16
+No merges have occurred -- skipping
+---------
+Merge 17
+No merges have occurred -- skipping
+---------
+Merge 18
+No merges have occurred -- skipping
+---------
+Merge 19
+Merged 138 #22 (blue) and 5 #95 (red) on serD|unknown. Merged during determinization: 576 #1 and 135 #3 on hostD|http, 577 #1 and 137 #14 on vulnD|ms-sql-s, 578 #6 and 5 #119 on serD|unknown, 579 #2 and 140 #15 on vulnD|ncube-lm, 580 #2 and 141 #10 on vulnD|postgresql, 581 #1 and 143 #1 on serD|cpdlc, 582 #4 and 144 #18 on vulnD|mysql, 583 #2 and 147 #2 on vulnD|ahsp, 1235 #2 and 5 #123 on serD|unknown, 1236 #1 and 140 #16 on vulnD|ncube-lm, 1238 #1 and 152 #1 on serD|fis, 1240 #1 and 588 #1 on serD|unknown, 1241 #1 and 592 #5 on vulnD|ahsp, 1244 #1 and 609 #2 on vulnD|ms-sql-s, 1245 #2 and 620 #1 on serD|unknown, 1712 #2 and 140 #15 on vulnD|ncube-lm, 1713 #1 and 592 #5 on vulnD|ahsp, 1718 #1 and 1251 #4 on serD|unknown, 1720 #1 and 1261 #1 on serD|unknown, 1722 #1 and 1271 #1 on serD|unknown, 2014 #2 and 592 #4 on vulnD|ahsp, 2015 #1 and 1251 #4 on serD|unknown, 2201 #2 and 1251 #3 on serD|unknown, 2202 #1 and 1729 #2 on serD|cm, 2337 #1 and 1729 #2 on serD|cm, 2338 #1 and 2027 #1 on serD|unknown (merge 19, page 1)
+---------
+Merge 20
+Merged 144 #22 (blue) and 16 #27 (red) on vulnD|mysql. Merged during determinization: 608 #2 and 223 #6 on hostD|http, 610 #7 and 225 #6 on serD|unknown, 613 #2 and 229 #4 on vulnD|mysql, 615 #1 and 232 #1 on surf|http, 1260 #2 and 748 #2 on serD|unknown, 1263 #1 and 754 #1 on vulnD|postgresql, 1264 #4 and 755 #2 on vulnD|mysql, 1736 #2 and 1361 #2 on vulnD|mysql (merge 20, page 2)
+---------
+Merge 21
+No merges have occurred -- skipping
+---------
+Merge 22
+No merges have occurred -- skipping
+---------
+Merge 23
+Merged 64 #20 (blue) and 396 #26 (red) on ACE|ssdp. Merged during determinization: 399 #2 and 1041 #3 on vulnD|ms-sql-s, 400 #6 and 1042 #2 on serD|unknown, 402 #3 and 1043 #3 on vulnD|ncube-lm, 403 #2 and 1045 #4 on vulnD|postgresql, 404 #1 and 1047 #2 on vulnD|ahsp, 405 #1 and 1048 #2 on bfCred|pop3, 1054 #1 and 1591 #2 on serD|ssh, 1062 #1 and 1595 #1 on serD|unknown, 1067 #1 and 1602 #1 on vulnD|ms-sql-s (merge 23, page 3)
+---------
+Merge 24
+No merges have occurred -- skipping
+---------
+Merge 25
+No merges have occurred -- skipping
+---------
+Merge 26
+No merges have occurred -- skipping
+---------
+Merge 27
+Merged 96 #18 (blue) and 5 #125 (red) on serD|unknown. Merged during determinization: 474 #1 and 135 #4 on hostD|http, 475 #1 and 136 #3 on serD|ssh, 476 #2 and 137 #15 on vulnD|ms-sql-s, 477 #1 and 5 #143 on serD|unknown, 478 #1 and 140 #18 on vulnD|ncube-lm, 479 #2 and 141 #12 on vulnD|postgresql, 480 #9 and 16 #49 on vulnD|mysql, 1162 #1 and 140 #18 on vulnD|ncube-lm, 1164 #1 and 598 #1 on vulnD|ms-sql-s, 1166 #1 and 223 #8 on hostD|http, 1167 #1 and 226 #1 on hostD|ms-wbt-server, 1168 #2 and 229 #6 on vulnD|mysql, 1169 #1 and 232 #2 on surf|http, 1672 #1 and 748 #4 on serD|unknown, 1986 #1 and 1361 #4 on vulnD|mysql (merge 27, page 4)
+---------
+Merge 28
+No merges have occurred -- skipping
+---------
+Merge 29
+Merged 7 #17 (blue) and 140 #19 (red) on vulnD|ncube-lm. Merged during determinization: 157 #5 and 588 #2 on serD|unknown, 159 #3 and 591 #1 on vulnD|postgresql, 164 #1 and 592 #6 on vulnD|ahsp, 632 #1 and 1717 #1 on vulnD|postgresql, 642 #1 and 1251 #5 on serD|unknown, 1288 #1 and 2336 #1 on serD|unknown (merge 29, page 5)
+---------
+Merge 30
+No merges have occurred -- skipping
+---------
+Merge 31
+No merges have occurred -- skipping
+---------
+Merge 32
+Merged 137 #17 (blue) and 3 #26 (red) on vulnD|ms-sql-s. Merged during determinization: 1160 #1 and 122 #3 on serD|ssh, 568 #5 and 123 #8 on serD|unknown, 571 #2 and 125 #2 on vulnD|postgresql, 574 #2 and 129 #4 on serD|rfb, 1227 #1 and 540 #2 on vulnD|ncube-lm, 1229 #1 and 542 #1 on vulnD|mysql, 1231 #1 and 548 #1 on vulnD|ahsp (merge 32, page 6)
+---------
+Merge 33
+No merges have occurred -- skipping
+---------
+Merge 34
+No merges have occurred -- skipping
+---------
+Merge 35
+No merges have occurred -- skipping
+---------
+Merge 36
+No merges have occurred -- skipping
+---------
+Merge 37
+No merges have occurred -- skipping
+---------
+Merge 38
+Merged 94 #15 (blue) and 3 #43 (red) on vulnD|ms-sql-s. Merged during determinization: 465 #4 and 122 #4 on serD|ssh, 467 #5 and 123 #13 on serD|unknown, 468 #2 and 1161 #1 on vulnD|ncube-lm, 469 #1 and 125 #4 on vulnD|postgresql, 470 #1 and 126 #1 on serD|ag-swim, 471 #1 and 127 #1 on serD|cpdlc, 1146 #1 and 1668 #1 on serD|ssh, 1150 #1 and 540 #3 on vulnD|ncube-lm (merge 38, page 7)
+---------
+Merge 39
+Merged 123 #18 (blue) and 5 #144 (red) on serD|unknown. Merged during determinization: 538 #1 and 3 #59 on vulnD|ms-sql-s, 1226 #2 and 5 #164 on serD|unknown, 539 #1 and 139 #1 on hostD|ms-wbt-server, 540 #4 and 140 #37 on vulnD|ncube-lm, 1228 #1 and 1237 #1 on serD|ag-swim, 542 #2 and 16 #58 on vulnD|mysql, 1151 #1 and 145 #1 on serD|ff-ice, 543 #2 and 149 #1 on serD|netbios-ssn, 1708 #1 and 587 #2 on serD|rpas-c2, 1663 #1 and 617 #1 on serD|unknown, 1706 #1 and 3 #59 on vulnD|ms-sql-s, 1707 #1 and 5 #165 on serD|unknown, 2010 #1 and 5 #165 on serD|unknown, 2198 #1 and 140 #40 on vulnD|ncube-lm, 2333 #1 and 587 #2 on serD|rpas-c2 (merge 39, page 8)
+---------
+Merge 40
+No merges have occurred -- skipping
+---------
+Merge 41
+No merges have occurred -- skipping
+---------
+Merge 42
+No merges have occurred -- skipping
+---------
+Merge 43
+No merges have occurred -- skipping
+---------
+Merge 44
+No merges have occurred -- skipping
+---------
+Merge 45
+Merged 141 #14 (blue) and 12 #14 (red) on vulnD|postgresql. Merged during determinization: 1165 #1 and 210 #9 on serD|unknown, 1671 #1 and 730 #2 on vulnD|ms-sql-s (merge 45, page 9)
+---------
+Merge 46
+Merged 196 #13 (blue) and 5 #166 (red) on serD|unknown. Merged during determinization: 698 #5 and 3 #61 on vulnD|ms-sql-s, 699 #1 and 5 #180 on serD|unknown, 700 #2 and 140 #42 on vulnD|ncube-lm, 701 #1 and 12 #28 on vulnD|postgresql, 702 #3 and 16 #60 on vulnD|mysql, 703 #1 and 145 #2 on serD|ff-ice, 1323 #1 and 5 #180 on serD|unknown, 1324 #1 and 127 #2 on serD|cpdlc, 1325 #1 and 3 #65 on vulnD|ms-sql-s, 1326 #1 and 588 #7 on serD|unknown, 1327 #1 and 591 #4 on vulnD|postgresql, 1329 #1 and 232 #3 on surf|http, 1775 #1 and 140 #43 on vulnD|ncube-lm, 1777 #1 and 126 #2 on serD|ag-swim, 1779 #1 and 765 #1 on hostD|http, 2054 #1 and 587 #3 on serD|rpas-c2 (merge 46, page 10)
+---------
+Merge 47
+Merged 225 #13 (blue) and 5 #181 (red) on serD|unknown. Merged during determinization: 753 #2 and 140 #44 on vulnD|ncube-lm, 754 #2 and 12 #29 on vulnD|postgresql, 755 #6 and 16 #63 on vulnD|mysql, 1364 #1 and 210 #10 on serD|unknown, 1737 #1 and 599 #1 on vulnD|ncube-lm, 1738 #1 and 232 #4 on surf|http (merge 47, page 11)
+---------
+Merge 48
+No merges have occurred -- skipping
+---------
+Merge 49
+Merged 963 #13 (blue) and 1 #76 (red) on hostD|http. Merged during determinization: 1521 #1 and 93 #8 on serD|ssh, 1522 #3 and 5 #194 on serD|unknown, 1523 #3 and 97 #4 on vulnD|ncube-lm, 1524 #2 and 98 #5 on vulnD|postgresql, 1897 #1 and 464 #1 on vulnD|mysql, 1898 #1 and 3 #66 on vulnD|ms-sql-s, 1899 #1 and 12 #31 on vulnD|postgresql, 1900 #1 and 16 #69 on vulnD|mysql, 1902 #1 and 483 #2 on vulnD|postgresql, 1903 #1 and 489 #1 on serD|cm, 2127 #1 and 122 #8 on serD|ssh, 2128 #1 and 1242 #1 on serD|rfb, 2130 #1 and 1173 #1 on serD|unknown, 2131 #1 and 1177 #1 on vulnD|ms-sql-s (merge 49, page 12)
+---------
+Merge 50
+Merged 24 #12 (blue) and 304 #16 (red) on surf|http. Merged during determinization: 252 #2 and 881 #5 on hostD|http, 796 #1 and 1454 #1 on serD|unknown (merge 50, page 13)
+---------
+Merge 51
+No merges have occurred -- skipping
+---------
+Merge 52
+Merged 210 #11 (blue) and 5 #197 (red) on serD|unknown. Merged during determinization: 729 #1 and 136 #4 on serD|ssh, 730 #3 and 3 #67 on vulnD|ms-sql-s, 731 #1 and 5 #208 on serD|unknown, 1806 #1 and 140 #46 on vulnD|ncube-lm, 732 #4 and 12 #32 on vulnD|postgresql, 733 #1 and 151 #1 on bfCred|pop3s, 1347 #1 and 567 #1 on vulnD|ms-sql-s, 1985 #1 and 1161 #3 on vulnD|ncube-lm, 1348 #1 and 147 #4 on vulnD|ahsp, 1793 #1 and 620 #3 on serD|unknown, 2070 #1 and 1271 #2 on serD|unknown, 2079 #1 and 588 #8 on serD|unknown, 2257 #1 and 630 #1 on serD|unknown (merge 52, page 14)
+---------
+Merge 53
+Merged 290 #11 (blue) and 32 #26 (red) on exfil|microsoft-ds. Merged during determinization: 858 #4 and 287 #5 on CnC|unknown, 860 #6 and 32 #37 on exfil|microsoft-ds, 1435 #1 and 852 #3 on serD|unknown, 1440 #1 and 286 #1 on netDOS|ms-wbt-server, 1441 #2 and 287 #7 on CnC|unknown, 1442 #1 and 288 #9 on ACE|microsoft-ds (merge 53, page 15)
+---------
+Merge 54
+Merged 342 #11 (blue) and 1 #89 (red) on hostD|http. Merged during determinization: 949 #1 and 95 #2 on serD|rpas-c2, 950 #2 and 5 #209 on serD|unknown, 951 #2 and 97 #7 on vulnD|ncube-lm, 952 #1 and 100 #3 on serD|dsd, 955 #2 and 106 #4 on vulnD|http, 1509 #1 and 3 #70 on vulnD|ms-sql-s, 1510 #1 and 16 #70 on vulnD|mysql, 1511 #1 and 482 #1 on serD|unknown, 1891 #1 and 227 #1 on vulnD|postgresql (merge 54, page 16)
+---------
+Merge 55
+Merged 260 #10 (blue) and 5 #211 (red) on serD|unknown. Merged during determinization: 809 #1 and 3 #73 on vulnD|ms-sql-s, 810 #5 and 5 #223 on serD|unknown, 811 #1 and 140 #48 on vulnD|ncube-lm, 812 #2 and 12 #36 on vulnD|postgresql, 813 #1 and 152 #3 on serD|fis, 1401 #1 and 126 #3 on serD|ag-swim, 1402 #1 and 3 #73 on vulnD|ms-sql-s, 1403 #1 and 5 #227 on serD|unknown, 1404 #1 and 146 #1 on serD|sunrpc, 1405 #1 and 152 #3 on serD|fis, 1406 #1 and 5 #227 on serD|unknown, 1408 #1 and 1835 #1 on serD|unknown, 1833 #1 and 3 #73 on vulnD|ms-sql-s, 1836 #1 and 140 #48 on vulnD|ncube-lm, 2089 #1 and 588 #9 on serD|unknown, 2264 #1 and 630 #2 on serD|unknown (merge 55, page 17)
+---------
+Merge 56
+No merges have occurred -- skipping
+---------
+Merge 57
+No merges have occurred -- skipping
+---------
+Merge 58
+Merged 588 #10 (blue) and 5 #228 (red) on serD|unknown. Merged during determinization: 630 #3 and 5 #239 on serD|unknown, 631 #1 and 541 #1 on bfCred|unknown, 634 #1 and 152 #5 on serD|fis, 1717 #2 and 12 #38 on vulnD|postgresql, 2385 #1 and 147 #5 on vulnD|ahsp, 1277 #1 and 152 #5 on serD|fis, 1278 #1 and 5 #241 on serD|unknown, 1279 #1 and 1835 #3 on serD|unknown, 1748 #1 and 1835 #3 on serD|unknown, 2019 #1 and 213 #1 on serD|asmgcs (merge 58, page 18)
+---------
+Merge 59
+Merged 892 #10 (blue) and 304 #28 (red) on surf|http. Merged during determinization: 1473 #1 and 882 #3 on vulnD|http, 1474 #1 and 883 #8 on infoD|http (merge 59, page 19)
+---------
+Merge 60
+No merges have occurred -- skipping
+---------
+Merge 61
+No merges have occurred -- skipping
+---------
+Merge 62
+Merged 93 #9 (blue) and 2 #31 (red) on serD|ssh. Merged during determinization: 460 #1 and 107 #2 on hostD|http, 461 #3 and 109 #3 on vulnD|ms-sql-s, 462 #1 and 110 #7 on serD|unknown, 463 #2 and 111 #1 on vulnD|ncube-lm, 464 #2 and 114 #3 on vulnD|mysql, 1141 #1 and 515 #1 on vulnD|ms-sql-s (merge 62, page 20)
+---------
+Merge 63
+Merged 97 #9 (blue) and 140 #49 (red) on vulnD|ncube-lm. Merged during determinization: 482 #2 and 5 #243 on serD|unknown, 1901 #1 and 158 #1 on hostD|ms-wbt-server, 483 #3 and 591 #5 on vulnD|postgresql, 484 #1 and 593 #1 on serD|rfb, 1892 #1 and 5 #244 on serD|unknown, 1171 #1 and 16 #72 on vulnD|mysql, 1173 #2 and 636 #3 on serD|unknown, 2291 #1 and 1281 #1 on vulnD|ms-sql-s, 2124 #1 and 16 #72 on vulnD|mysql (merge 63, page 21)
+---------
+Merge 64
+Merged 122 #9 (blue) and 2 #40 (red) on serD|ssh. Merged during determinization: 1145 #1 and 107 #3 on hostD|http, 1668 #2 and 108 #4 on serD|ssh, 1147 #1 and 109 #6 on vulnD|ms-sql-s, 536 #2 and 111 #3 on vulnD|ncube-lm, 1148 #1 and 112 #3 on vulnD|postgresql, 1659 #1 and 508 #1 on serD|unknown, 1660 #1 and 509 #1 on hostD|http (merge 64, page 22)
+---------
+Merge 65
+No merges have occurred -- skipping
+---------
+Merge 66
+Merged 287 #9 (blue) and 10 #45 (red) on CnC|unknown. Merged during determinization: 852 #4 and 5 #245 on serD|unknown, 1859 #1 and 197 #1 on hostD|ms-wbt-server, 1860 #1 and 202 #2 on serD|ff-ice, 1430 #1 and 12 #40 on vulnD|postgresql (merge 66, page 23)
+---------
+Merge 67
+No merges have occurred -- skipping
+---------
+Merge 68
+Merged 1466 #9 (blue) and 223 #9 (red) on hostD|http. Merged during determinization: - (merge 68, page 24)
+---------
+Merge 69
+Merged 110 #8 (blue) and 5 #249 (red) on serD|unknown. Merged during determinization: 514 #1 and 136 #5 on serD|ssh, 515 #2 and 3 #74 on vulnD|ms-sql-s, 516 #1 and 5 #257 on serD|unknown, 517 #1 and 140 #58 on vulnD|ncube-lm, 518 #1 and 12 #41 on vulnD|postgresql, 519 #2 and 16 #74 on vulnD|mysql, 1198 #1 and 16 #75 on vulnD|mysql, 1200 #1 and 233 #3 on serD|rfb (merge 69, page 25)
+---------
+Merge 70
+Merged 229 #8 (blue) and 16 #76 (red) on vulnD|mysql. Merged during determinization: 1673 #1 and 223 #18 on hostD|http, 760 #1 and 224 #2 on serD|ssh, 1674 #1 and 5 #259 on serD|unknown, 1267 #1 and 227 #2 on vulnD|postgresql, 761 #2 and 16 #87 on vulnD|mysql, 762 #1 and 233 #4 on serD|rfb, 1368 #1 and 752 #1 on vulnD|mysql, 1369 #2 and 16 #87 on vulnD|mysql, 1811 #1 and 16 #88 on vulnD|mysql, 1987 #1 and 748 #5 on serD|unknown, 1988 #1 and 135 #5 on hostD|http, 2081 #1 and 5 #259 on serD|unknown, 2185 #1 and 1361 #5 on vulnD|mysql, 2186 #1 and 563 #1 on serD|unknown, 2259 #1 and 12 #42 on vulnD|postgresql, 2323 #1 and 1222 #1 on vulnD|mysql, 2431 #1 and 1704 #1 on serD|unknown (merge 70, page 26)
+---------
+Merge 71
+Merged 277 #8 (blue) and 5 #260 (red) on serD|unknown. Merged during determinization: 835 #1 and 136 #6 on serD|ssh, 836 #1 and 3 #76 on vulnD|ms-sql-s, 837 #1 and 5 #269 on serD|unknown, 838 #3 and 16 #89 on vulnD|mysql, 839 #2 and 148 #1 on hostD|http-alt, 1420 #1 and 140 #59 on vulnD|ncube-lm, 1422 #1 and 621 #1 on serD|unknown, 1847 #1 and 5 #269 on serD|unknown, 2098 #1 and 139 #2 on hostD|ms-wbt-server (merge 71, page 27)
+---------
+Merge 72
+No merges have occurred -- skipping
+---------
+Merge 73
+No merges have occurred -- skipping
+---------
+Merge 74
+Merged 591 #8 (blue) and 12 #43 (red) on vulnD|postgresql. Merged during determinization: 636 #5 and 5 #270 on serD|unknown, 1249 #1 and 1328 #1 on vulnD|mysql, 1281 #2 and 3 #77 on vulnD|ms-sql-s, 1282 #1 and 142 #1 on serD|dsd, 1675 #1 and 16 #92 on vulnD|mysql, 1989 #1 and 224 #3 on serD|ssh (merge 74, page 28)
+---------
+Merge 75
+Merged 1012 #8 (blue) and 304 #38 (red) on surf|http. Merged during determinization: 1564 #1 and 1475 #1 on infoD|xdmcp (merge 75, page 29)
+---------
+Merge 76
+Merged 1042 #8 (blue) and 5 #275 (red) on serD|unknown. Merged during determinization: 1056 #2 and 3 #79 on vulnD|ms-sql-s, 1057 #2 and 140 #60 on vulnD|ncube-lm, 1058 #2 and 12 #51 on vulnD|postgresql, 1593 #1 and 16 #93 on vulnD|mysql (merge 76, page 30)
+---------
+Merge 77
+Merged 41 #7 (blue) and 349 #22 (red) on vulnD|http. Merged during determinization: 319 #5 and 1 #100 on hostD|http, 321 #1 and 965 #1 on vulnD|mysql, 906 #1 and 92 #3 on hostD|http, 907 #1 and 3 #82 on vulnD|ms-sql-s, 908 #2 and 5 #284 on serD|unknown, 909 #1 and 140 #62 on vulnD|ncube-lm, 1487 #1 and 5 #285 on serD|unknown, 1488 #1 and 3 #82 on vulnD|ms-sql-s, 1489 #1 and 156 #1 on serD|ssh, 1885 #1 and 121 #1 on hostD|http (merge 77, page 31)
+---------
+Merge 78
+Merged 98 #7 (blue) and 12 #53 (red) on vulnD|postgresql. Merged during determinization: 485 #1 and 597 #1 on hostD|http, 487 #1 and 1172 #1 on serD|rpas-c2, 488 #1 and 5 #286 on serD|unknown, 489 #2 and 603 #1 on serD|cm (merge 78, page 32)
+---------
+Merge 79
+Merged 109 #7 (blue) and 3 #83 (red) on vulnD|ms-sql-s. Merged during determinization: 1139 #1 and 121 #2 on hostD|http, 1661 #1 and 2 #49 on serD|ssh, 1140 #1 and 466 #1 on serD|rpas-c2, 513 #3 and 5 #287 on serD|unknown, 1195 #2 and 16 #94 on vulnD|mysql (merge 79, page 33)
+---------
+Merge 80
+Merged 136 #7 (blue) and 2 #50 (red) on serD|ssh. Merged during determinization: 566 #2 and 108 #6 on serD|ssh, 567 #2 and 3 #90 on vulnD|ms-sql-s, 1159 #1 and 114 #5 on vulnD|mysql, 1196 #1 and 115 #2 on serD|ff-ice, 1792 #1 and 121 #3 on hostD|http, 2069 #1 and 535 #1 on serD|unknown (merge 80, page 34)
+---------
+Merge 81
+Merged 108 #8 (blue) and 2 #57 (red) on serD|ssh. Merged during determinization: 509 #2 and 107 #4 on hostD|http, 1225 #1 and 2 #65 on serD|ssh, 510 #1 and 3 #92 on vulnD|ms-sql-s, 1192 #1 and 129 #6 on serD|rfb (merge 81, page 35)
+---------
+Merge 82
+No merges have occurred -- skipping
+---------
+Merge 83
+Merged 592 #7 (blue) and 25 #16 (red) on vulnD|ahsp. Merged during determinization: 1251 #6 and 5 #292 on serD|unknown, 2336 #2 and 5 #296 on serD|unknown, 1729 #3 and 481 #1 on serD|cm (merge 83, page 36)
+---------
+Merge 84
+Merged 881 #7 (blue) and 1 #105 (red) on hostD|http. Merged during determinization: 797 #1 and 101 #5 on serD|cpdlc, 1392 #1 and 16 #96 on vulnD|mysql, 1393 #1 and 496 #1 on vulnD|mysql, 1454 #2 and 5 #298 on serD|unknown, 1455 #1 and 106 #6 on vulnD|http (merge 84, page 37)
+---------
+Merge 85
+Merged 106 #7 (blue) and 349 #29 (red) on vulnD|http. Merged during determinization: 504 #1 and 964 #2 on serD|unknown, 1187 #1 and 1525 #1 on hostD|http (merge 85, page 38)
+---------
+Merge 86
+Merged 1103 #7 (blue) and 330 #19 (red) on acctManip|snmp. Merged during determinization: - (merge 86, page 39)
+---------
+Merge 87
+No merges have occurred -- skipping
+---------
+Merge 88
+No merges have occurred -- skipping
+---------
+Merge 89
+Merged 29 #6 (blue) and 365 #8 (red) on hostD|unknown. Merged during determinization: 273 #1 and 992 #1 on serD|unknown, 275 #1 and 994 #1 on vulnD|mysql (merge 89, page 40)
+---------
+Merge 90
+No merges have occurred -- skipping
+---------
+Merge 91
+No merges have occurred -- skipping
+---------
+Merge 92
+Merged 107 #6 (blue) and 1 #112 (red) on hostD|http. Merged during determinization: 507 #1 and 92 #4 on hostD|http, 1138 #1 and 2 #66 on serD|ssh, 508 #2 and 5 #300 on serD|unknown, 1191 #1 and 102 #3 on vulnD|mysql, 1980 #1 and 953 #2 on serD|rfb, 1979 #1 and 140 #63 on vulnD|ncube-lm, 1190 #1 and 16 #97 on vulnD|mysql, 1686 #1 and 498 #2 on serD|unknown, 2180 #1 and 158 #2 on hostD|ms-wbt-server, 2321 #1 and 2129 #1 on hostD|http (merge 92, page 41)
+---------
+Merge 93
+Merged 114 #6 (blue) and 16 #98 (red) on vulnD|mysql. Merged during determinization: 2126 #1 and 223 #19 on hostD|http, 525 #1 and 224 #5 on serD|ssh, 526 #1 and 5 #303 on serD|unknown, 1144 #1 and 1365 #1 on serD|ff-ice, 527 #1 and 1739 #1 on hostD|http-alt, 1202 #1 and 5 #303 on serD|unknown, 1692 #1 and 16 #104 on vulnD|mysql, 1998 #1 and 224 #5 on serD|ssh (merge 93, page 42)
+---------
+Merge 94
+Merged 135 #6 (blue) and 1 #118 (red) on hostD|http. Merged during determinization: 1234 #1 and 2 #67 on serD|ssh, 563 #2 and 5 #306 on serD|unknown, 564 #1 and 99 #1 on serD|ag-swim, 1158 #1 and 100 #4 on serD|dsd, 565 #1 and 102 #4 on vulnD|mysql, 1222 #2 and 16 #105 on vulnD|mysql, 1223 #1 and 490 #1 on vulnD|mysql, 1224 #1 and 498 #3 on serD|unknown, 1704 #2 and 5 #306 on serD|unknown, 2514 #1 and 3 #93 on vulnD|ms-sql-s, 2008 #1 and 140 #64 on vulnD|ncube-lm, 2197 #1 and 156 #2 on serD|ssh, 2572 #1 and 575 #1 on serD|netbios-ssn (merge 94, page 43)
+---------
+Merge 95
+Merged 147 #6 (blue) and 25 #23 (red) on vulnD|ahsp. Merged during determinization: 620 #4 and 5 #313 on serD|unknown, 1721 #1 and 3 #95 on vulnD|ms-sql-s, 1271 #3 and 5 #314 on serD|unknown, 2021 #1 and 3 #95 on vulnD|ms-sql-s, 1744 #1 and 5 #316 on serD|unknown, 2039 #1 and 140 #65 on vulnD|ncube-lm, 2208 #1 and 5 #316 on serD|unknown, 2343 #1 and 16 #108 on vulnD|mysql, 2444 #1 and 16 #108 on vulnD|mysql (merge 95, page 44)
+---------
+Merge 96
+No merges have occurred -- skipping
+---------
+Merge 97
+Merged 176 #6 (blue) and 42 #41 (red) on acctManip|snmp. Merged during determinization: 659 #2 and 325 #3 on CnC|unknown, 660 #2 and 330 #26 on acctManip|snmp, 661 #2 and 331 #1 on infoD|xdmcp (merge 97, page 45)
+---------
+Merge 98
+Merged 183 #6 (blue) and 10 #54 (red) on CnC|unknown. Merged during determinization: 671 #2 and 5 #317 on serD|unknown, 674 #1 and 203 #1 on serD|cm, 1305 #1 and 140 #66 on vulnD|ncube-lm, 1306 #1 and 12 #60 on vulnD|postgresql (merge 98, page 46)
+---------
+Merge 99
+Merged 194 #6 (blue) and 3 #96 (red) on vulnD|ms-sql-s. Merged during determinization: 693 #3 and 5 #323 on serD|unknown, 694 #1 and 570 #1 on netDOS|ms-wbt-server, 696 #1 and 130 #1 on serD|microsoft-ds, 1320 #1 and 5 #325 on serD|unknown, 1321 #1 and 140 #68 on vulnD|ncube-lm, 1773 #1 and 140 #68 on vulnD|ncube-lm, 1774 #1 and 5 #325 on serD|unknown, 2052 #1 and 5 #325 on serD|unknown, 2053 #1 and 1239 #1 on serD|ipsma, 2233 #1 and 25 #29 on vulnD|ahsp, 2364 #1 and 5 #325 on serD|unknown (merge 99, page 47)
+---------
+Merge 100
+Merged 199 #6 (blue) and 10 #60 (red) on CnC|unknown. Merged during determinization: 708 #1 and 5 #328 on serD|unknown, 709 #1 and 198 #4 on vulnD|ncube-lm, 710 #1 and 672 #1 on netDOS|ms-wbt-server, 711 #2 and 10 #67 on CnC|unknown, 712 #1 and 201 #1 on vulnD|mysql, 1335 #1 and 5 #328 on serD|unknown, 1337 #1 and 10 #68 on CnC|unknown, 1338 #1 and 205 #2 on rPrivEsc|unknown, 1785 #1 and 5 #328 on serD|unknown, 1787 #1 and 721 #1 on CnC|unknown (merge 100, page 48)
+---------
+Merge 101
+Merged 224 #6 (blue) and 2 #68 (red) on serD|ssh. Merged during determinization: 1201 #1 and 2 #74 on serD|ssh, 751 #1 and 5 #330 on serD|unknown, 752 #2 and 16 #109 on vulnD|mysql, 1363 #1 and 3 #103 on vulnD|ms-sql-s, 1810 #1 and 233 #5 on serD|rfb, 1691 #1 and 5 #330 on serD|unknown, 1997 #1 and 3 #103 on vulnD|ms-sql-s (merge 101, page 49)
+---------
+Merge 102
+Merged 233 #6 (blue) and 129 #7 (red) on serD|rfb. Merged during determinization: 767 #2 and 554 #1 on vulnD|mysql (merge 102, page 50)
+---------
+Merge 103
+Merged 297 #6 (blue) and 5 #331 (red) on serD|unknown. Merged during determinization: 869 #2 and 3 #104 on vulnD|ms-sql-s, 870 #1 and 5 #340 on serD|unknown, 871 #2 and 12 #61 on vulnD|postgresql, 872 #1 and 481 #4 on serD|cm, 1448 #1 and 573 #1 on serD|epmap, 1449 #1 and 5 #340 on serD|unknown, 1863 #1 and 5 #340 on serD|unknown, 2107 #1 and 5 #340 on serD|unknown, 2275 #1 and 16 #111 on vulnD|mysql (merge 103, page 51)
+---------
+Merge 104
+No merges have occurred -- skipping
+---------
+Merge 105
+Merged 930 #6 (blue) and 43 #17 (red) on infoD|xdmcp. Merged during determinization: - (merge 105, page 52)
+---------
+Merge 106
+Merged 1043 #6 (blue) and 140 #69 (red) on vulnD|ncube-lm. Merged during determinization: 1061 #1 and 587 #4 on serD|rpas-c2, 1595 #2 and 5 #342 on serD|unknown, 1945 #1 and 140 #75 on vulnD|ncube-lm, 2157 #1 and 5 #343 on serD|unknown (merge 106, page 53)
+---------
+Merge 107
+Merged 1045 #6 (blue) and 12 #63 (red) on vulnD|postgresql. Merged during determinization: 1064 #1 and 486 #1 on serD|ssh, 1065 #1 and 2387 #1 on serD|fis, 1597 #1 and 5 #346 on serD|unknown, 1947 #1 and 5 #346 on serD|unknown, 2158 #1 and 12 #70 on vulnD|postgresql, 2310 #1 and 5 #346 on serD|unknown, 2423 #1 and 12 #70 on vulnD|postgresql (merge 107, page 54)
+---------
+Merge 108
+Merged 1361 #6 (blue) and 16 #112 (red) on vulnD|mysql. Merged during determinization: 1804 #1 and 2 #75 on serD|ssh, 2184 #1 and 609 #3 on vulnD|ms-sql-s, 2034 #1 and 5 #347 on serD|unknown, 2221 #1 and 16 #118 on vulnD|mysql (merge 108, page 55)
+---------
+Merge 109
+Merged 1634 #6 (blue) and 10 #69 (red) on CnC|unknown. Merged during determinization: - (merge 109, page 56)
+---------
+Merge 110
+No merges have occurred -- skipping
+---------
+Merge 111
+No merges have occurred -- skipping
+---------
+Merge 112
+No merges have occurred -- skipping
+---------
+Merge 113
+No merges have occurred -- skipping
+---------
+Merge 114
+Merged 92 #5 (blue) and 1 #124 (red) on hostD|http. Merged during determinization: 457 #1 and 1 #131 on hostD|http, 458 #1 and 2 #76 on serD|ssh, 1189 #1 and 3 #107 on vulnD|ms-sql-s, 1136 #1 and 5 #349 on serD|unknown, 1137 #1 and 1 #131 on hostD|http, 1653 #1 and 1 #131 on hostD|http, 1654 #1 and 5 #349 on serD|unknown, 1974 #1 and 105 #2 on serD|cm, 1975 #1 and 3 #107 on vulnD|ms-sql-s, 2178 #1 and 569 #1 on hostD|ms-wbt-server (merge 114, page 57)
+---------
+Merge 115
+No merges have occurred -- skipping
+---------
+Merge 116
+Merged 102 #5 (blue) and 16 #119 (red) on vulnD|mysql. Merged during determinization: 497 #1 and 2 #77 on serD|ssh, 498 #4 and 5 #351 on serD|unknown, 1183 #1 and 1 #132 on hostD|http, 1184 #1 and 16 #125 on vulnD|mysql, 1681 #1 and 5 #354 on serD|unknown, 1682 #1 and 223 #20 on hostD|http, 1993 #1 and 16 #125 on vulnD|mysql, 2187 #1 and 609 #4 on vulnD|ms-sql-s (merge 116, page 58)
+---------
+Merge 117
+Merged 111 #5 (blue) and 140 #76 (red) on vulnD|ncube-lm. Merged during determinization: 1142 #1 and 1163 #1 on hostD|http, 520 #1 and 5 #356 on serD|unknown, 1143 #1 and 12 #71 on vulnD|postgresql, 1658 #1 and 5 #356 on serD|unknown (merge 117, page 59)
+---------
+Merge 118
+Merged 125 #5 (blue) and 12 #72 (red) on vulnD|postgresql. Merged during determinization: 1230 #1 and 5 #357 on serD|unknown, 547 #1 and 1328 #2 on vulnD|mysql, 548 #2 and 1778 #1 on vulnD|ahsp, 1709 #1 and 149 #3 on serD|netbios-ssn (merge 118, page 60)
+---------
+Merge 119
+Merged 185 #5 (blue) and 16 #126 (red) on vulnD|mysql. Merged during determinization: 678 #3 and 5 #358 on serD|unknown, 680 #1 and 232 #5 on surf|http (merge 119, page 61)
+---------
+Merge 120
+Merged 232 #6 (blue) and 304 #46 (red) on surf|http. Merged during determinization: 765 #2 and 1 #133 on hostD|http, 2057 #1 and 5 #361 on serD|unknown, 1371 #1 and 99 #2 on serD|ag-swim, 1813 #1 and 490 #2 on vulnD|mysql, 2237 #1 and 16 #131 on vulnD|mysql (merge 120, page 62)
+---------
+Merge 121
+Merged 198 #5 (blue) and 140 #81 (red) on vulnD|ncube-lm. Merged during determinization: 705 #2 and 5 #362 on serD|unknown, 706 #1 and 12 #77 on vulnD|postgresql, 707 #1 and 162 #1 on serD|ff-ice, 1336 #1 and 25 #30 on vulnD|ahsp, 1332 #1 and 152 #6 on serD|fis, 1333 #1 and 1778 #3 on vulnD|ahsp, 1334 #1 and 640 #1 on vulnD|postgresql, 1782 #1 and 1835 #4 on serD|unknown, 1786 #1 and 259 #1 on serD|ssh, 2060 #1 and 2043 #1 on serD|unknown, 2064 #1 and 808 #1 on serD|ssh (merge 121, page 63)
+---------
+Merge 122
+Merged 235 #5 (blue) and 5 #364 (red) on serD|unknown. Merged during determinization: 769 #1 and 5 #370 on serD|unknown, 770 #1 and 140 #86 on vulnD|ncube-lm, 771 #1 and 12 #79 on vulnD|postgresql, 772 #2 and 16 #132 on vulnD|mysql, 1375 #1 and 12 #79 on vulnD|postgresql, 1376 #1 and 5 #370 on serD|unknown, 1816 #1 and 598 #2 on vulnD|ms-sql-s, 1817 #1 and 584 #2 on serD|agma, 2084 #1 and 1246 #2 on serD|ipsma, 2262 #1 and 1723 #1 on serD|rpas-c2 (merge 122, page 64)
+---------
+Merge 123
+Merged 325 #5 (blue) and 10 #75 (red) on CnC|unknown. Merged during determinization: 917 #1 and 206 #3 on rPrivEsc|ms-wbt-server (merge 123, page 65)
+---------
+Merge 124
+No merges have occurred -- skipping
+---------
+Merge 125
+Merged 362 #5 (blue) and 5 #371 (red) on serD|unknown. Merged during determinization: 986 #2 and 5 #376 on serD|unknown, 987 #1 and 142 #2 on serD|dsd, 988 #2 and 585 #1 on serD|asmgcs, 1541 #2 and 1237 #2 on serD|ag-swim, 1542 #1 and 606 #1 on serD|unknown, 1919 #1 and 1259 #1 on serD|unknown, 2143 #1 and 1735 #1 on vulnD|ncube-lm, 2301 #1 and 2033 #1 on vulnD|ahsp (merge 125, page 66)
+---------
+Merge 126
+No merges have occurred -- skipping
+---------
+Merge 127
+Merged 394 #5 (blue) and 288 #10 (red) on ACE|microsoft-ds. Merged during determinization: - (merge 127, page 67)
+---------
+Merge 128
+Merged 409 #5 (blue) and 3 #108 (red) on vulnD|ms-sql-s. Merged during determinization: 1071 #1 and 2 #78 on serD|ssh, 1072 #4 and 5 #378 on serD|unknown (merge 128, page 68)
+---------
+Merge 129
+Merged 410 #5 (blue) and 5 #382 (red) on serD|unknown. Merged during determinization: 1073 #1 and 3 #113 on vulnD|ms-sql-s, 1074 #1 and 139 #3 on hostD|ms-wbt-server, 1075 #1 and 140 #87 on vulnD|ncube-lm, 1076 #2 and 16 #134 on vulnD|mysql, 1617 #1 and 1210 #1 on vulnD|ms-sql-s (merge 129, page 69)
+---------
+Merge 130
+No merges have occurred -- skipping
+---------
+Merge 131
+No merges have occurred -- skipping
+---------
+Merge 132
+Merged 587 #5 (blue) and 4 #5 (red) on serD|rpas-c2. Merged during determinization: - (merge 132, page 70)
+---------
+Merge 133
+Merged 609 #5 (blue) and 3 #114 (red) on vulnD|ms-sql-s. Merged during determinization: 1261 #2 and 5 #387 on serD|unknown, 1262 #1 and 569 #2 on hostD|ms-wbt-server, 2324 #1 and 126 #4 on serD|ag-swim (merge 133, page 71)
+---------
+Merge 134
+No merges have occurred -- skipping
+---------
+Merge 135
+Merged 894 #5 (blue) and 42 #47 (red) on acctManip|snmp. Merged during determinization: 1476 #4 and 331 #3 on infoD|xdmcp, 1477 #1 and 332 #8 on remoteexp|snmp, 1877 #1 and 43 #23 on infoD|xdmcp (merge 135, page 72)
+---------
+Merge 136
+Merged 331 #7 (blue) and 43 #24 (red) on infoD|xdmcp. Merged during determinization: 928 #1 and 337 #4 on serD|unknown (merge 136, page 73)
+---------
+Merge 137
+Merged 337 #5 (blue) and 5 #389 (red) on serD|unknown. Merged during determinization: 1496 #1 and 5 #394 on serD|unknown, 939 #2 and 16 #136 on vulnD|mysql, 1888 #1 and 142 #3 on serD|dsd (merge 137, page 74)
+---------
+Merge 138
+Merged 998 #5 (blue) and 365 #14 (red) on hostD|unknown. Merged during determinization: 1552 #1 and 993 #1 on vulnD|ncube-lm, 1553 #1 and 995 #1 on vulnD|ahsp, 1555 #1 and 997 #2 on surf|wsman, 1926 #1 and 1551 #2 on hostD|wsman (merge 138, page 75)
+---------
+Merge 139
+Merged 1041 #5 (blue) and 3 #119 (red) on vulnD|ms-sql-s. Merged during determinization: 1591 #3 and 2 #79 on serD|ssh, 1610 #1 and 117 #1 on surf|http, 1944 #1 and 112 #4 on vulnD|postgresql (merge 139, page 76)
+---------
+Merge 140
+Merged 112 #5 (blue) and 12 #80 (red) on vulnD|postgresql. Merged during determinization: 521 #1 and 1172 #2 on serD|rpas-c2, 522 #1 and 5 #395 on serD|unknown, 1662 #1 and 599 #2 on vulnD|ncube-lm, 523 #1 and 600 #2 on bfCred|unknown (merge 140, page 77)
+---------
+Merge 141
+Merged 1835 #5 (blue) and 5 #396 (red) on serD|unknown. Merged during determinization: 1749 #1 and 12 #86 on vulnD|postgresql, 2043 #2 and 5 #404 on serD|unknown, 2044 #1 and 5 #405 on serD|unknown, 2227 #1 and 140 #88 on vulnD|ncube-lm, 2240 #1 and 12 #86 on vulnD|postgresql, 2228 #1 and 5 #405 on serD|unknown, 2359 #1 and 25 #32 on vulnD|ahsp, 2360 #1 and 25 #32 on vulnD|ahsp, 2370 #1 and 211 #3 on vulnD|postgresql, 2457 #1 and 5 #405 on serD|unknown (merge 141, page 78)
+---------
+Merge 142
+Merged 11 #4 (BLUE SINK) and 288 #15 (red) on ACE|microsoft-ds. Merged during determinization: 208 #1 and 853 #4 on ACE|microsoft-ds, 209 #2 and 856 #3 on acctManip|snmp (merge 142, page 79)
+---------
+Merge 143
+Merged 853 #5 (blue) and 288 #19 (red) on ACE|microsoft-ds. Merged during determinization: - (merge 143, page 80)
+---------
+Merge 144
+Merged 856 #5 (blue) and 42 #52 (red) on acctManip|snmp. Merged during determinization: 1432 #1 and 323 #1 on vulnD|ncube-lm, 1433 #1 and 10 #80 on CnC|unknown, 1854 #1 and 206 #4 on rPrivEsc|ms-wbt-server (merge 144, page 81)
+---------
+Merge 145
+No merges have occurred -- skipping
+---------
+Merge 146
+Merged 14 #4 (BLUE SINK) and 100 #5 (red) on serD|dsd. Merged during determinization: 216 #1 and 493 #1 on serD|unknown, 218 #1 and 1667 #1 on vulnD|mysql (merge 146, page 82)
+---------
+Merge 147
+No merges have occurred -- skipping
+---------
+Merge 148
+No merges have occurred -- skipping
+---------
+Merge 149
+No merges have occurred -- skipping
+---------
+Merge 150
+No merges have occurred -- skipping
+---------
+Merge 151
+Merged 121 #4 (BLUE SINK) and 1 #135 (red) on hostD|http. Merged during determinization: 1655 #1 and 3 #125 on vulnD|ms-sql-s, 535 #2 and 5 #406 on serD|unknown, 2119 #1 and 12 #87 on vulnD|postgresql, 1206 #1 and 3 #125 on vulnD|ms-sql-s, 2248 #1 and 16 #138 on vulnD|mysql, 1976 #1 and 127 #3 on serD|cpdlc, 2283 #1 and 597 #2 on hostD|http (merge 151, page 83)
+---------
+Merge 152
+Merged 127 #4 (BLUE SINK) and 101 #6 (red) on serD|cpdlc. Merged during determinization: 1776 #1 and 495 #2 on vulnD|ncube-lm (merge 152, page 84)
+---------
+Merge 153
+No merges have occurred -- skipping
+---------
+Merge 154
+Merged 142 #4 (BLUE SINK) and 100 #9 (red) on serD|dsd. Merged during determinization: 606 #2 and 493 #2 on serD|unknown (merge 154, page 85)
+---------
+Merge 155
+No merges have occurred -- skipping
+---------
+Merge 156
+Merged 166 #4 (BLUE SINK) and 1 #139 (red) on hostD|http. Merged during determinization: 644 #1 and 2 #82 on serD|ssh, 645 #2 and 5 #408 on serD|unknown, 646 #1 and 99 #3 on serD|ag-swim, 1289 #1 and 16 #140 on vulnD|mysql, 1756 #1 and 16 #140 on vulnD|mysql, 2047 #1 and 129 #13 on serD|rfb (merge 156, page 86)
+---------
+Merge 157
+Merged 99 #4 (BLUE SINK) and 126 #5 (red) on serD|ag-swim. Merged during determinization: - (merge 157, page 87)
+---------
+Merge 158
+Merged 169 #4 (BLUE SINK) and 5 #410 (red) on serD|unknown. Merged during determinization: 649 #1 and 3 #126 on vulnD|ms-sql-s, 650 #2 and 16 #141 on vulnD|mysql (merge 158, page 88)
+---------
+Merge 159
+Merged 192 #4 (BLUE SINK) and 63 #34 (red) on remoteexp|snmp. Merged during determinization: 691 #1 and 396 #46 on ACE|ssdp (merge 159, page 89)
+---------
+Merge 160
+Merged 211 #4 (BLUE SINK) and 12 #88 (red) on vulnD|postgresql. Merged during determinization: 734 #2 and 5 #415 on serD|unknown, 735 #1 and 12 #93 on vulnD|postgresql, 2466 #1 and 1778 #4 on vulnD|ahsp, 1350 #1 and 5 #416 on serD|unknown, 1795 #1 and 12 #93 on vulnD|postgresql, 2072 #1 and 1349 #1 on serD|dsd, 2250 #1 and 1794 #1 on vulnD|postgresql (merge 160, page 90)
+---------
+Merge 161
+Merged 1778 #5 (blue) and 25 #33 (red) on vulnD|ahsp. Merged during determinization: 1710 #1 and 259 #2 on serD|ssh, 1783 #1 and 2458 #1 on serD|ads-c, 2056 #1 and 5 #417 on serD|unknown, 2061 #1 and 2534 #1 on serD|unknown, 2241 #1 and 2586 #1 on serD|unknown (merge 161, page 91)
+---------
+Merge 162
+Merged 347 #4 (BLUE SINK) and 16 #143 (red) on vulnD|mysql. Merged during determinization: 961 #4 and 223 #21 on hostD|http, 1518 #2 and 748 #6 on serD|unknown, 1894 #1 and 16 #147 on vulnD|mysql (merge 162, page 92)
+---------
+Merge 163
+No merges have occurred -- skipping
+---------
+Merge 164
+Merged 493 #4 (BLUE SINK) and 5 #418 (red) on serD|unknown. Merged during determinization: 740 #1 and 16 #148 on vulnD|mysql, 1180 #1 and 3 #127 on vulnD|ms-sql-s, 1259 #2 and 5 #422 on serD|unknown, 1680 #1 and 1208 #1 on serD|cm, 1735 #2 and 140 #89 on vulnD|ncube-lm, 2033 #2 and 25 #38 on vulnD|ahsp (merge 164, page 93)
+---------
+Merge 165
+Merged 882 #4 (BLUE SINK) and 349 #36 (red) on vulnD|http. Merged during determinization: 1456 #3 and 1 #144 on hostD|http, 1867 #1 and 1 #146 on hostD|http, 2109 #1 and 5 #424 on serD|unknown, 2277 #1 and 16 #149 on vulnD|mysql, 2400 #1 and 304 #52 on surf|http (merge 165, page 94)
+---------
+Merge 166
+Merged 967 #4 (BLUE SINK) and 304 #53 (red) on surf|http. Merged during determinization: - (merge 166, page 95)
+---------
+Merge 167
+No merges have occurred -- skipping
+---------
+Merge 168
+Merged 1161 #4 (BLUE SINK) and 140 #91 (red) on vulnD|ncube-lm. Merged during determinization: 1152 #1 and 5 #428 on serD|unknown, 1153 #1 and 158 #3 on hostD|ms-wbt-server, 1664 #1 and 5 #428 on serD|unknown, 2183 #1 and 156 #3 on serD|ssh, 1982 #1 and 12 #94 on vulnD|postgresql, 2182 #1 and 25 #40 on vulnD|ahsp, 2322 #1 and 5 #428 on serD|unknown, 2430 #1 and 5 #428 on serD|unknown, 2513 #1 and 584 #3 on serD|agma (merge 168, page 96)
+---------
+Merge 169
+Merged 156 #4 (BLUE SINK) and 2 #83 (red) on serD|ssh. Merged during determinization: 1886 #1 and 1 #147 on hostD|http, 629 #1 and 12 #97 on vulnD|postgresql, 1276 #1 and 5 #430 on serD|unknown, 1747 #1 and 5 #430 on serD|unknown, 2042 #1 and 12 #97 on vulnD|postgresql, 2120 #1 and 12 #97 on vulnD|postgresql, 2226 #1 and 486 #3 on serD|ssh, 2284 #1 and 486 #3 on serD|ssh (merge 169, page 97)
+---------
+Merge 170
+Merged 158 #4 (BLUE SINK) and 139 #4 (RED SINK) on hostD|ms-wbt-server. Merged during determinization: - (merge 170, page 98)
+---------
+Merge 171
+Merged 486 #4 (BLUE SINK) and 2 #87 (red) on serD|ssh. Merged during determinization: 1175 #1 and 1 #148 on hostD|http, 2358 #1 and 5 #433 on serD|unknown, 1676 #1 and 5 #433 on serD|unknown, 1990 #1 and 3 #129 on vulnD|ms-sql-s, 2456 #1 and 16 #151 on vulnD|mysql, 2532 #1 and 5 #433 on serD|unknown, 2584 #1 and 16 #151 on vulnD|mysql, 2622 #1 and 2 #91 on serD|ssh, 2644 #1 and 3 #129 on vulnD|ms-sql-s (merge 171, page 99)
+---------
+Merge 172
+No merges have occurred -- skipping
+---------
+Merge 173
+Merged 1237 #4 (BLUE SINK) and 126 #9 (red) on serD|ag-swim. Merged during determinization: - (merge 173, page 100)
+---------
+Merge 174
+Merged 1457 #4 (BLUE SINK) and 1 #149 (red) on hostD|http. Merged during determinization: 1868 #1 and 140 #95 on vulnD|ncube-lm, 2110 #1 and 5 #434 on serD|unknown (merge 174, page 101)
+---------
+Merge 175
+Merged 1641 #4 (BLUE SINK) and 43 #31 (red) on infoD|xdmcp. Merged during determinization: 1967 #1 and 336 #2 on serD|rpas-c2 (merge 175, page 102)
+---------
+Merge 176
+Merged 13 #3 (BLUE SINK) and 126 #13 (red) on serD|ag-swim. Merged during determinization: 214 #1 and 1832 #1 on serD|unknown (merge 176, page 103)
+---------
+Merge 177
+Merged 15 #3 (BLUE SINK) and 101 #10 (red) on serD|cpdlc. Merged during determinization: 222 #1 and 550 #1 on vulnD|postgresql (merge 177, page 104)
+---------
+Merge 178
+No merges have occurred -- skipping
+---------
+Merge 179
+Merged 27 #3 (BLUE SINK) and 1003 #15 (red) on surf|unknown. Merged during determinization: - (merge 179, page 105)
+---------
+Merge 180
+No merges have occurred -- skipping
+---------
+Merge 181
+No merges have occurred -- skipping
+---------
+Merge 182
+No merges have occurred -- skipping
+---------
+Merge 183
+No merges have occurred -- skipping
+---------
+Merge 184
+Merged 95 #3 (BLUE SINK) and 4 #10 (red) on serD|rpas-c2. Merged during determinization: 473 #1 and 133 #2 on vulnD|mysql (merge 184, page 106)
+---------
+Merge 185
+Merged 105 #3 (BLUE SINK) and 481 #5 (red) on serD|cm. Merged during determinization: - (merge 185, page 107)
+---------
+Merge 186
+Merged 115 #3 (BLUE SINK) and 18 #6 (red) on serD|ff-ice. Merged during determinization: 529 #1 and 242 #2 on vulnD|postgresql, 1689 #1 and 243 #1 on vulnD|mysql (merge 186, page 108)
+---------
+Merge 187
+Merged 124 #3 (BLUE SINK) and 8 #29 (red) on bfCred|unknown. Merged during determinization: 545 #1 and 5 #435 on serD|unknown (merge 187, page 109)
+---------
+Merge 188
+Merged 133 #3 (BLUE SINK) and 16 #152 (red) on vulnD|mysql. Merged during determinization: 560 #1 and 223 #25 on hostD|http, 1220 #1 and 748 #8 on serD|unknown, 1702 #1 and 16 #155 on vulnD|mysql, 2006 #1 and 230 #1 on serD|cm (merge 188, page 110)
+---------
+Merge 189
+Merged 145 #3 (BLUE SINK) and 18 #9 (red) on serD|ff-ice. Merged during determinization: 1330 #1 and 242 #3 on vulnD|postgresql, 1780 #1 and 782 #1 on serD|unknown (merge 189, page 111)
+---------
+Merge 190
+Merged 242 #4 (BLUE SINK) and 12 #98 (red) on vulnD|postgresql. Merged during determinization: 782 #2 and 5 #438 on serD|unknown, 783 #1 and 25 #42 on vulnD|ahsp, 1382 #1 and 16 #156 on vulnD|mysql, 2058 #1 and 25 #42 on vulnD|ahsp, 1383 #1 and 5 #439 on serD|unknown, 1822 #1 and 5 #439 on serD|unknown, 2238 #1 and 2540 #1 on serD|spt-automation (merge 190, page 112)
+---------
+Merge 191
+Merged 148 #3 (BLUE SINK) and 30 #17 (red) on hostD|http-alt. Merged during determinization: 621 #2 and 5 #440 on serD|unknown, 1848 #1 and 12 #102 on vulnD|postgresql, 1272 #1 and 16 #157 on vulnD|mysql, 2099 #1 and 212 #1 on hostD|http-alt (merge 191, page 113)
+---------
+Merge 192
+Merged 173 #3 (BLUE SINK) and 16 #158 (red) on vulnD|mysql. Merged during determinization: 655 #2 and 16 #163 on vulnD|mysql, 656 #1 and 616 #1 on hostD|unknown, 1295 #1 and 16 #164 on vulnD|mysql, 1759 #1 and 5 #442 on serD|unknown, 2049 #1 and 16 #164 on vulnD|mysql (merge 192, page 114)
+---------
+Merge 193
+Merged 181 #3 (BLUE SINK) and 5 #443 (red) on serD|unknown. Merged during determinization: 667 #2 and 3 #130 on vulnD|ms-sql-s, 668 #1 and 651 #1 on infoD|ftp, 1301 #1 and 1208 #2 on serD|cm, 1302 #1 and 1292 #1 on surf|http (merge 193, page 115)
+---------
+Merge 194
+Merged 182 #3 (BLUE SINK) and 9 #32 (red) on netDOS|ms-wbt-server. Merged during determinization: 669 #2 and 9 #35 on netDOS|ms-wbt-server (merge 194, page 116)
+---------
+Merge 195
+Merged 187 #3 (BLUE SINK) and 32 #43 (red) on exfil|microsoft-ds. Merged during determinization: 683 #2 and 10 #81 on CnC|unknown, 1311 #1 and 5 #446 on serD|unknown, 1312 #1 and 1436 #1 on serD|ag-swim (merge 195, page 117)
+---------
+Merge 196
+Merged 200 #3 (BLUE SINK) and 12 #103 (red) on vulnD|postgresql. Merged during determinization: 713 #1 and 1172 #3 on serD|rpas-c2, 714 #1 and 1598 #1 on hostD|ms-wbt-server, 1340 #1 and 1176 #1 on vulnD|ms-sql-s, 1788 #1 and 1677 #1 on vulnD|ncube-lm (merge 196, page 118)
+---------
+Merge 197
+Merged 1172 #4 (BLUE SINK) and 4 #13 (red) on serD|rpas-c2. Merged during determinization: 1176 #2 and 472 #1 on vulnD|ms-sql-s (merge 197, page 119)
+---------
+Merge 198
+Merged 202 #3 (BLUE SINK) and 18 #12 (red) on serD|ff-ice. Merged during determinization: 718 #1 and 243 #2 on vulnD|mysql (merge 198, page 120)
+---------
+Merge 199
+Merged 205 #3 (BLUE SINK) and 38 #3 (RED SINK) on rPrivEsc|unknown. Merged during determinization: - (merge 199, page 121)
+---------
+Merge 200
+Merged 227 #3 (BLUE SINK) and 12 #106 (red) on vulnD|postgresql. Merged during determinization: 758 #1 and 1599 #1 on serD|epmap, 1741 #1 and 1242 #2 on serD|rfb, 1366 #1 and 1949 #1 on serD|unknown (merge 200, page 122)
+---------
+Merge 201
+Merged 243 #3 (BLUE SINK) and 16 #165 (red) on vulnD|mysql. Merged during determinization: 1996 #1 and 5 #448 on serD|unknown, 784 #1 and 1739 #2 on hostD|http-alt, 2190 #1 and 16 #168 on vulnD|mysql, 2326 #1 and 5 #448 on serD|unknown (merge 201, page 123)
+---------
+Merge 202
+Merged 244 #3 (BLUE SINK) and 25 #43 (red) on vulnD|ahsp. Merged during determinization: 785 #2 and 5 #449 on serD|unknown, 786 #1 and 263 #1 on serD|fis, 1385 #1 and 3 #133 on vulnD|ms-sql-s, 1386 #1 and 16 #169 on vulnD|mysql, 1824 #1 and 575 #2 on serD|netbios-ssn, 1825 #1 and 3 #133 on vulnD|ms-sql-s (merge 202, page 124)
+---------
+Merge 203
+Merged 256 #3 (BLUE SINK) and 304 #57 (red) on surf|http. Merged during determinization: 802 #1 and 254 #1 on serD|ag-swim, 803 #1 and 304 #60 on surf|http (merge 203, page 125)
+---------
+Merge 204
+Merged 259 #3 (BLUE SINK) and 2 #92 (red) on serD|ssh. Merged during determinization: 808 #2 and 2 #95 on serD|ssh, 2012 #1 and 16 #170 on vulnD|mysql, 2244 #1 and 3 #134 on vulnD|ms-sql-s, 2374 #1 and 129 #14 on serD|rfb (merge 204, page 126)
+---------
+Merge 205
+Merged 261 #3 (BLUE SINK) and 140 #96 (red) on vulnD|ncube-lm. Merged during determinization: 814 #1 and 2 #97 on serD|ssh, 815 #1 and 5 #451 on serD|unknown, 816 #1 and 161 #2 on vulnD|mysql, 1409 #1 and 117 #2 on surf|http (merge 205, page 127)
+---------
+Merge 206
+Merged 117 #3 (BLUE SINK) and 304 #61 (red) on surf|http. Merged during determinization: 531 #1 and 1471 #1 on serD|ssh, 1953 #1 and 1475 #2 on infoD|xdmcp (merge 206, page 128)
+---------
+Merge 207
+Merged 161 #3 (BLUE SINK) and 16 #171 (red) on vulnD|mysql. Merged during determinization: 638 #1 and 223 #27 on hostD|http, 639 #1 and 16 #175 on vulnD|mysql, 1284 #1 and 748 #9 on serD|unknown, 1285 #1 and 223 #27 on hostD|http, 1752 #1 and 16 #175 on vulnD|mysql, 1753 #1 and 750 #1 on vulnD|mysql (merge 207, page 129)
+---------
+Merge 208
+Merged 271 #3 (BLUE SINK) and 28 #6 (red) on serD|microsoft-ds. Merged during determinization: 827 #1 and 269 #2 on vulnD|ncube-lm, 828 #2 and 28 #9 on serD|microsoft-ds (merge 208, page 130)
+---------
+Merge 209
+Merged 269 #3 (BLUE SINK) and 140 #99 (red) on vulnD|ncube-lm. Merged during determinization: 824 #1 and 5 #452 on serD|unknown, 825 #1 and 1211 #1 on vulnD|ncube-lm (merge 209, page 131)
+---------
+Merge 210
+Merged 279 #3 (BLUE SINK) and 12 #109 (red) on vulnD|postgresql. Merged during determinization: 841 #1 and 5 #453 on serD|unknown, 842 #1 and 1598 #2 on hostD|ms-wbt-server, 843 #1 and 1328 #3 on vulnD|mysql, 1424 #1 and 1212 #1 on serD|unknown (merge 210, page 132)
+---------
+Merge 211
+Merged 1328 #4 (BLUE SINK) and 16 #176 (red) on vulnD|mysql. Merged during determinization: 1212 #2 and 5 #454 on serD|unknown, 1727 #1 and 129 #15 on serD|rfb (merge 211, page 133)
+---------
+Merge 212
+Merged 334 #3 (BLUE SINK) and 1 #153 (red) on hostD|http. Merged during determinization: 933 #1 and 1 #157 on hostD|http, 934 #1 and 2 #98 on serD|ssh, 935 #1 and 953 #3 on serD|rfb, 1499 #1 and 1 #157 on hostD|http (merge 212, page 134)
+---------
+Merge 213
+Merged 953 #4 (BLUE SINK) and 129 #16 (red) on serD|rfb. Merged during determinization: 1500 #1 and 766 #1 on hostD|http (merge 213, page 135)
+---------
+Merge 214
+Merged 336 #3 (BLUE SINK) and 4 #17 (red) on serD|rpas-c2. Merged during determinization: 2172 #1 and 472 #3 on vulnD|ms-sql-s, 937 #1 and 132 #2 on vulnD|ncube-lm, 938 #1 and 16 #180 on vulnD|mysql, 1503 #1 and 226 #2 on hostD|ms-wbt-server (merge 214, page 136)
+---------
+Merge 215
+Merged 472 #4 (BLUE SINK) and 3 #135 (red) on vulnD|ms-sql-s. Merged during determinization: 1156 #1 and 2 #99 on serD|ssh, 1677 #2 and 140 #102 on vulnD|ncube-lm, 1666 #1 and 5 #456 on serD|unknown, 1983 #1 and 16 #181 on vulnD|mysql, 2065 #1 and 594 #1 on serD|microsoft-ds (merge 215, page 137)
+---------
+Merge 216
+Merged 132 #3 (BLUE SINK) and 140 #104 (red) on vulnD|ncube-lm. Merged during determinization: 558 #1 and 1211 #2 on vulnD|ncube-lm, 559 #1 and 16 #182 on vulnD|mysql (merge 216, page 138)
+---------
+Merge 217
+Merged 226 #3 (BLUE SINK) and 139 #8 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 217, page 139)
+---------
+Merge 218
+Merged 343 #3 (BLUE SINK) and 3 #139 (red) on vulnD|ms-sql-s. Merged during determinization: 956 #2 and 1 #158 on hostD|http, 1514 #1 and 5 #457 on serD|unknown (merge 218, page 140)
+---------
+Merge 219
+Merged 350 #3 (BLUE SINK) and 42 #57 (red) on acctManip|snmp. Merged during determinization: - (merge 219, page 141)
+---------
+Merge 220
+Merged 417 #3 (BLUE SINK) and 33 #6 (red) on bfCred|pop3. Merged during determinization: 1085 #2 and 292 #1 on vulnD|ncube-lm (merge 220, page 142)
+---------
+Merge 221
+Merged 292 #3 (BLUE SINK) and 140 #107 (red) on vulnD|ncube-lm. Merged during determinization: 862 #1 and 1199 #1 on surf|http (merge 221, page 143)
+---------
+Merge 222
+Merged 419 #3 (BLUE SINK) and 42 #60 (red) on acctManip|snmp. Merged during determinization: 1087 #1 and 43 #37 on infoD|xdmcp, 1088 #2 and 332 #9 on remoteexp|snmp, 1625 #2 and 43 #36 on infoD|xdmcp (merge 222, page 144)
+---------
+Merge 223
+No merges have occurred -- skipping
+---------
+Merge 224
+No merges have occurred -- skipping
+---------
+Merge 225
+No merges have occurred -- skipping
+---------
+Merge 226
+No merges have occurred -- skipping
+---------
+Merge 227
+No merges have occurred -- skipping
+---------
+Merge 228
+Merged 490 #3 (BLUE SINK) and 16 #183 (red) on vulnD|mysql. Merged during determinization: - (merge 228, page 145)
+---------
+Merge 229
+Merged 495 #3 (BLUE SINK) and 140 #110 (red) on vulnD|ncube-lm. Merged during determinization: 2055 #1 and 595 #1 on serD|icmpd (merge 229, page 146)
+---------
+Merge 230
+Merged 554 #3 (BLUE SINK) and 16 #186 (red) on vulnD|mysql. Merged during determinization: 1373 #1 and 5 #461 on serD|unknown, 1374 #1 and 139 #11 on hostD|ms-wbt-server, 1815 #1 and 16 #190 on vulnD|mysql, 2082 #1 and 5 #461 on serD|unknown, 2260 #1 and 140 #113 on vulnD|ncube-lm, 2388 #1 and 5 #461 on serD|unknown, 2479 #1 and 16 #190 on vulnD|mysql, 2547 #1 and 3 #142 on vulnD|ms-sql-s, 2594 #1 and 5 #461 on serD|unknown (merge 230, page 147)
+---------
+Merge 231
+Merged 569 #3 (BLUE SINK) and 139 #12 (red) on hostD|ms-wbt-server. Merged during determinization: 2320 #1 and 2129 #2 on hostD|http (merge 231, page 148)
+---------
+Merge 232
+Merged 575 #3 (BLUE SINK) and 149 #4 (RED SINK) on serD|netbios-ssn. Merged during determinization: - (merge 232, page 149)
+---------
+Merge 233
+No merges have occurred -- skipping
+---------
+Merge 234
+Merged 597 #3 (BLUE SINK) and 1 #160 (red) on hostD|http. Merged during determinization: 1174 #1 and 5 #462 on serD|unknown (merge 234, page 150)
+---------
+Merge 235
+Merged 598 #3 (BLUE SINK) and 3 #143 (red) on vulnD|ms-sql-s. Merged during determinization: 1670 #1 and 2 #101 on serD|ssh, 2083 #1 and 149 #7 on serD|netbios-ssn, 1984 #1 and 2 #101 on serD|ssh (merge 235, page 151)
+---------
+Merge 236
+Merged 599 #3 (BLUE SINK) and 140 #114 (red) on vulnD|ncube-lm. Merged during determinization: 1255 #1 and 2 #102 on serD|ssh (merge 236, page 152)
+---------
+Merge 237
+Merged 600 #3 (BLUE SINK) and 8 #32 (red) on bfCred|unknown. Merged during determinization: - (merge 237, page 153)
+---------
+Merge 238
+Merged 603 #3 (BLUE SINK) and 481 #8 (red) on serD|cm. Merged during determinization: 1177 #2 and 1450 #1 on vulnD|ms-sql-s, 1257 #1 and 2027 #2 on serD|unknown (merge 238, page 154)
+---------
+Merge 239
+Merged 891 #3 (BLUE SINK) and 349 #40 (red) on vulnD|http. Merged during determinization: 1469 #1 and 1 #163 on hostD|http, 1470 #2 and 304 #64 on surf|http (merge 239, page 155)
+---------
+Merge 240
+Merged 964 #3 (BLUE SINK) and 5 #463 (red) on serD|unknown. Merged during determinization: 1525 #2 and 1 #164 on hostD|http, 1526 #1 and 16 #193 on vulnD|mysql, 1684 #1 and 349 #43 on vulnD|http, 1904 #1 and 5 #466 on serD|unknown, 1905 #1 and 223 #29 on hostD|http, 2132 #1 and 16 #193 on vulnD|mysql, 2293 #1 and 223 #29 on hostD|http, 2409 #1 and 748 #10 on serD|unknown, 2495 #1 and 16 #193 on vulnD|mysql, 2560 #1 and 3 #146 on vulnD|ms-sql-s, 2604 #1 and 2 #103 on serD|ssh (merge 240, page 156)
+---------
+Merge 241
+Merged 976 #3 (BLUE SINK) and 30 #20 (red) on hostD|http-alt. Merged during determinization: 1535 #3 and 5 #468 on serD|unknown, 1914 #2 and 140 #117 on vulnD|ncube-lm, 2138 #1 and 2 #104 on serD|ssh, 2139 #1 and 5 #470 on serD|unknown, 2297 #1 and 30 #23 on hostD|http-alt (merge 241, page 157)
+---------
+Merge 242
+Merged 997 #3 (BLUE SINK) and 429 #3 (RED SINK) on surf|wsman. Merged during determinization: 1551 #3 and 1100 #2 on hostD|wsman (merge 242, page 158)
+---------
+Merge 243
+Merged 1100 #5 (blue) and 48 #5 (red) on hostD|wsman. Merged during determinization: - (merge 243, page 159)
+---------
+Merge 244
+Merged 1004 #3 (BLUE SINK) and 1003 #18 (red) on surf|unknown. Merged during determinization: - (merge 244, page 160)
+---------
+Merge 245
+Merged 1046 #3 (BLUE SINK) and 16 #194 (red) on vulnD|mysql. Merged during determinization: 1601 #1 and 12 #112 on vulnD|postgresql, 1950 #1 and 1349 #2 on serD|dsd (merge 245, page 161)
+---------
+Merge 246
+Merged 1047 #3 (BLUE SINK) and 25 #46 (red) on vulnD|ahsp. Merged during determinization: 1066 #1 and 5 #471 on serD|unknown (merge 246, page 162)
+---------
+Merge 247
+Merged 1048 #3 (BLUE SINK) and 33 #9 (red) on bfCred|pop3. Merged during determinization: 1602 #2 and 1084 #1 on vulnD|ms-sql-s, 1603 #1 and 293 #2 on vulnD|mysql (merge 247, page 163)
+---------
+Merge 248
+Merged 293 #3 (BLUE SINK) and 16 #197 (red) on vulnD|mysql. Merged during determinization: 863 #1 and 2 #105 on serD|ssh, 864 #1 and 3 #147 on vulnD|ms-sql-s, 1951 #1 and 12 #113 on vulnD|postgresql, 2161 #1 and 1349 #3 on serD|dsd (merge 248, page 164)
+---------
+Merge 249
+Merged 1349 #4 (BLUE SINK) and 100 #13 (red) on serD|dsd. Merged during determinization: - (merge 249, page 165)
+---------
+Merge 250
+Merged 1084 #3 (BLUE SINK) and 3 #148 (red) on vulnD|ms-sql-s. Merged during determinization: 1622 #1 and 5 #472 on serD|unknown (merge 250, page 166)
+---------
+Merge 251
+Merged 1099 #3 (BLUE SINK) and 429 #6 (red) on surf|wsman. Merged during determinization: - (merge 251, page 167)
+---------
+Merge 252
+No merges have occurred -- skipping
+---------
+Merge 253
+Merged 1208 #3 (BLUE SINK) and 481 #11 (red) on serD|cm. Merged during determinization: 1694 #1 and 501 #1 on vulnD|ncube-lm (merge 253, page 168)
+---------
+Merge 254
+Merged 1211 #3 (BLUE SINK) and 140 #119 (red) on vulnD|ncube-lm. Merged during determinization: 1219 #1 and 2 #106 on serD|ssh, 1697 #1 and 12 #115 on vulnD|postgresql, 2001 #1 and 5 #474 on serD|unknown, 2193 #1 and 18 #15 on serD|ff-ice, 2329 #1 and 12 #115 on vulnD|postgresql, 2434 #1 and 5 #474 on serD|unknown, 2517 #1 and 25 #49 on vulnD|ahsp (merge 254, page 169)
+---------
+Merge 255
+Merged 1242 #3 (BLUE SINK) and 129 #20 (red) on serD|rfb. Merged during determinization: 2289 #1 and 766 #2 on hostD|http, 2037 #1 and 555 #1 on serD|rfb, 2222 #1 and 1218 #1 on vulnD|mysql, 2354 #1 and 1701 #1 on serD|unknown, 2406 #1 and 1372 #1 on serD|unknown (merge 255, page 170)
+---------
+Merge 256
+Merged 766 #3 (BLUE SINK) and 1 #166 (red) on hostD|http. Merged during determinization: 1372 #2 and 5 #475 on serD|unknown, 2494 #1 and 2 #107 on serD|ssh, 1814 #1 and 16 #200 on vulnD|mysql, 2559 #1 and 1 #169 on hostD|http, 2603 #1 and 129 #23 on serD|rfb (merge 256, page 171)
+---------
+Merge 257
+No merges have occurred -- skipping
+---------
+Merge 258
+Merged 1450 #3 (BLUE SINK) and 3 #151 (red) on vulnD|ms-sql-s. Merged during determinization: 2292 #1 and 101 #13 on serD|cpdlc, 1864 #1 and 139 #15 on hostD|ms-wbt-server, 2408 #1 and 220 #1 on serD|unknown (merge 258, page 172)
+---------
+Merge 259
+Merged 1475 #3 (BLUE SINK) and 43 #38 (red) on infoD|xdmcp. Merged during determinization: - (merge 259, page 173)
+---------
+Merge 260
+Merged 1598 #3 (BLUE SINK) and 139 #16 (red) on hostD|ms-wbt-server. Merged during determinization: 1948 #1 and 1616 #1 on vulnD|ms-sql-s (merge 260, page 174)
+---------
+Merge 261
+Merged 1739 #3 (BLUE SINK) and 30 #24 (red) on hostD|http-alt. Merged during determinization: 1203 #1 and 5 #477 on serD|unknown, 1384 #1 and 283 #1 on hostD|http-alt, 1693 #1 and 126 #16 on serD|ag-swim, 1999 #1 and 215 #2 on vulnD|ahsp, 2035 #1 and 281 #2 on vulnD|mysql, 2191 #1 and 739 #2 on serD|unknown (merge 261, page 175)
+---------
+Merge 262
+Merged 215 #3 (BLUE SINK) and 25 #50 (red) on vulnD|ahsp. Merged during determinization: 739 #3 and 5 #480 on serD|unknown, 2327 #1 and 3 #154 on vulnD|ms-sql-s, 1353 #1 and 5 #482 on serD|unknown, 1354 #1 and 152 #8 on serD|fis, 1797 #1 and 152 #8 on serD|fis, 1798 #1 and 625 #1 on vulnD|postgresql, 2432 #1 and 5 #482 on serD|unknown, 2515 #1 and 139 #19 on hostD|ms-wbt-server, 2573 #1 and 1665 #1 on vulnD|postgresql (merge 262, page 176)
+---------
+Merge 263
+Merged 281 #3 (BLUE SINK) and 16 #201 (red) on vulnD|mysql. Merged during determinization: 845 #1 and 5 #484 on serD|unknown, 1426 #1 and 30 #27 on hostD|http-alt, 1851 #1 and 5 #484 on serD|unknown, 2101 #1 and 16 #204 on vulnD|mysql (merge 263, page 177)
+---------
+Merge 264
+Merged 2027 #3 (BLUE SINK) and 5 #485 (red) on serD|unknown. Merged during determinization: 1733 #1 and 140 #122 on vulnD|ncube-lm, 2031 #1 and 5 #489 on serD|unknown, 2441 #1 and 16 #205 on vulnD|mysql, 2214 #1 and 146 #2 on serD|sunrpc, 2218 #1 and 5 #489 on serD|unknown, 2352 #1 and 25 #53 on vulnD|ahsp (merge 264, page 178)
+---------
+Merge 265
+Merged 146 #3 (BLUE SINK) and 441 #3 (RED SINK) on serD|sunrpc. Merged during determinization: - (merge 265, page 179)
+---------
+Merge 266
+Merged 2129 #3 (BLUE SINK) and 1 #170 (red) on hostD|http. Merged during determinization: 2290 #1 and 2 #108 on serD|ssh, 2429 #1 and 3 #155 on vulnD|ms-sql-s, 2428 #1 and 12 #116 on vulnD|postgresql, 2511 #1 and 1 #173 on hostD|http, 2512 #1 and 101 #14 on serD|cpdlc, 2571 #1 and 103 #2 on serD|ff-ice (merge 266, page 180)
+---------
+Merge 267
+Merged 103 #3 (BLUE SINK) and 18 #16 (red) on serD|ff-ice. Merged during determinization: 499 #2 and 16 #206 on vulnD|mysql (merge 267, page 181)
+---------
+Merge 268
+Merged 6 #2 (BLUE SINK) and 139 #20 (red) on hostD|ms-wbt-server. Merged during determinization: 154 #1 and 1 #174 on hostD|http, 155 #1 and 1616 #2 on vulnD|ms-sql-s, 627 #1 and 5 #490 on serD|unknown, 1274 #1 and 16 #208 on vulnD|mysql (merge 268, page 182)
+---------
+Merge 269
+Merged 1616 #3 (BLUE SINK) and 3 #156 (red) on vulnD|ms-sql-s. Merged during determinization: 628 #1 and 2 #109 on serD|ssh, 1275 #1 and 16 #209 on vulnD|mysql, 2159 #1 and 5 #491 on serD|unknown (merge 269, page 183)
+---------
+Merge 270
+Merged 21 #2 (BLUE SINK) and 441 #6 (red) on serD|sunrpc. Merged during determinization: 248 #1 and 1834 #1 on vulnD|postgresql (merge 270, page 184)
+---------
+Merge 271
+No merges have occurred -- skipping
+---------
+Merge 272
+Merged 26 #2 (BLUE SINK) and 129 #24 (red) on serD|rfb. Merged during determinization: 265 #1 and 16 #210 on vulnD|mysql, 820 #1 and 30 #28 on hostD|http-alt, 1410 #1 and 283 #2 on hostD|http-alt (merge 272, page 185)
+---------
+Merge 273
+Merged 283 #3 (BLUE SINK) and 30 #29 (red) on hostD|http-alt. Merged during determinization: 1838 #1 and 1421 #1 on serD|ssh, 848 #1 and 280 #1 on serD|cpdlc (merge 273, page 186)
+---------
+Merge 274
+No merges have occurred -- skipping
+---------
+Merge 275
+Merged 47 #2 (BLUE SINK) and 980 #10 (red) on surf|http-alt. Merged during determinization: - (merge 275, page 187)
+---------
+Merge 276
+No merges have occurred -- skipping
+---------
+Merge 277
+No merges have occurred -- skipping
+---------
+Merge 278
+Merged 61 #2 (BLUE SINK) and 1123 #4 (RED SINK) on surf|vrml-multi-use. Merged during determinization: - (merge 278, page 188)
+---------
+Merge 279
+Merged 67 #2 (BLUE SINK) and 371 #4 (RED SINK) on delivery|unknown. Merged during determinization: 421 #1 and 1003 #21 on surf|unknown, 1090 #1 and 1557 #1 on infoD|xdmcp (merge 279, page 189)
+---------
+Merge 280
+Merged 69 #2 (BLUE SINK) and 430 #10 (red) on delivery|wsman. Merged during determinization: - (merge 280, page 190)
+---------
+Merge 281
+No merges have occurred -- skipping
+---------
+Merge 282
+No merges have occurred -- skipping
+---------
+Merge 283
+No merges have occurred -- skipping
+---------
+Merge 284
+No merges have occurred -- skipping
+---------
+Merge 285
+Merged 130 #2 (BLUE SINK) and 28 #11 (red) on serD|microsoft-ds. Merged during determinization: - (merge 285, page 191)
+---------
+Merge 286
+Merged 143 #2 (BLUE SINK) and 101 #15 (red) on serD|cpdlc. Merged during determinization: 1243 #1 and 220 #2 on serD|unknown, 607 #1 and 496 #2 on vulnD|mysql (merge 286, page 192)
+---------
+Merge 287
+Merged 220 #3 (BLUE SINK) and 5 #492 (red) on serD|unknown. Merged during determinization: 1719 #1 and 5 #495 on serD|unknown, 744 #1 and 140 #123 on vulnD|ncube-lm, 1356 #1 and 4 #20 on serD|rpas-c2, 1800 #1 and 2011 #1 on serD|fis, 2020 #1 and 1755 #1 on serD|rfb (merge 287, page 193)
+---------
+Merge 288
+Merged 496 #3 (BLUE SINK) and 16 #211 (red) on vulnD|mysql. Merged during determinization: 1182 #1 and 2 #110 on serD|ssh (merge 288, page 194)
+---------
+Merge 289
+Merged 151 #2 (BLUE SINK) and 34 #14 (red) on bfCred|pop3s. Merged during determinization: 624 #1 and 300 #2 on vulnD|mysql (merge 289, page 195)
+---------
+Merge 290
+Merged 300 #3 (BLUE SINK) and 16 #214 (red) on vulnD|mysql. Merged during determinization: 876 #1 and 846 #1 on bfCred|pop3 (merge 290, page 196)
+---------
+Merge 291
+Merged 162 #2 (BLUE SINK) and 18 #19 (red) on serD|ff-ice. Merged during determinization: 640 #2 and 12 #117 on vulnD|postgresql, 1784 #1 and 5 #497 on serD|unknown, 1286 #1 and 16 #217 on vulnD|mysql, 2062 #1 and 25 #54 on vulnD|ahsp, 2242 #1 and 5 #497 on serD|unknown, 2372 #1 and 584 #4 on serD|agma (merge 291, page 197)
+---------
+Merge 292
+Merged 170 #2 (BLUE SINK) and 140 #124 (red) on vulnD|ncube-lm. Merged during determinization: 652 #2 and 5 #498 on serD|unknown (merge 292, page 198)
+---------
+Merge 293
+Merged 177 #2 (BLUE SINK) and 48 #10 (red) on hostD|wsman. Merged during determinization: - (merge 293, page 199)
+---------
+Merge 294
+Merged 184 #2 (BLUE SINK) and 12 #119 (red) on vulnD|postgresql. Merged during determinization: 676 #1 and 3 #159 on vulnD|ms-sql-s, 677 #1 and 12 #121 on vulnD|postgresql, 1309 #1 and 5 #500 on serD|unknown, 1310 #1 and 100 #17 on serD|dsd, 1768 #1 and 1 #175 on hostD|http (merge 294, page 200)
+---------
+Merge 295
+Merged 197 #2 (BLUE SINK) and 139 #22 (red) on hostD|ms-wbt-server. Merged during determinization: 2104 #1 and 635 #1 on serD|unknown (merge 295, page 201)
+---------
+Merge 296
+Merged 201 #2 (BLUE SINK) and 16 #218 (red) on vulnD|mysql. Merged during determinization: 1339 #1 and 2 #111 on serD|ssh, 716 #1 and 129 #26 on serD|rfb (merge 296, page 202)
+---------
+Merge 297
+Merged 203 #2 (BLUE SINK) and 481 #14 (red) on serD|cm. Merged during determinization: 719 #1 and 3 #160 on vulnD|ms-sql-s, 1308 #1 and 501 #2 on vulnD|ncube-lm (merge 297, page 203)
+---------
+Merge 298
+Merged 501 #3 (BLUE SINK) and 140 #126 (red) on vulnD|ncube-lm. Merged during determinization: 1767 #1 and 139 #24 on hostD|ms-wbt-server (merge 298, page 204)
+---------
+Merge 299
+Merged 212 #2 (BLUE SINK) and 30 #32 (red) on hostD|http-alt. Merged during determinization: 2270 #1 and 5 #501 on serD|unknown, 736 #1 and 16 #220 on vulnD|mysql, 2396 #1 and 140 #129 on vulnD|ncube-lm (merge 299, page 205)
+---------
+Merge 300
+Merged 213 #2 (BLUE SINK) and 585 #3 (RED SINK) on serD|asmgcs. Merged during determinization: 2206 #1 and 1543 #2 on serD|unknown (merge 300, page 206)
+---------
+Merge 301
+Merged 1543 #3 (BLUE SINK) and 5 #502 (red) on serD|unknown. Merged during determinization: 1920 #1 and 2063 #1 on serD|rpas-c2, 1921 #1 and 140 #130 on vulnD|ncube-lm, 2341 #1 and 25 #56 on vulnD|ahsp, 2144 #1 and 2243 #1 on serD|unknown, 2145 #1 and 25 #56 on vulnD|ahsp, 2303 #1 and 5 #506 on serD|unknown, 2443 #1 and 5 #506 on serD|unknown (merge 301, page 207)
+---------
+Merge 302
+Merged 230 #2 (BLUE SINK) and 481 #16 (red) on serD|cm. Merged during determinization: 763 #1 and 5 #508 on serD|unknown, 2196 #1 and 502 #1 on vulnD|mysql, 1370 #1 and 5 #508 on serD|unknown, 1812 #1 and 16 #221 on vulnD|mysql (merge 302, page 208)
+---------
+Merge 303
+Merged 236 #2 (BLUE SINK) and 140 #131 (red) on vulnD|ncube-lm. Merged during determinization: 773 #1 and 139 #25 on hostD|ms-wbt-server, 774 #1 and 12 #122 on vulnD|postgresql, 1378 #1 and 5 #509 on serD|unknown (merge 303, page 209)
+---------
+Merge 304
+Merged 239 #2 (BLUE SINK) and 100 #18 (red) on serD|dsd. Merged during determinization: 777 #1 and 492 #1 on vulnD|ms-sql-s, 778 #1 and 1667 #2 on vulnD|mysql (merge 304, page 210)
+---------
+Merge 305
+Merged 1667 #3 (BLUE SINK) and 16 #222 (red) on vulnD|mysql. Merged during determinization: 742 #1 and 223 #30 on hostD|http (merge 305, page 211)
+---------
+Merge 306
+Merged 241 #2 (BLUE SINK) and 16 #225 (red) on vulnD|mysql. Merged during determinization: 780 #1 and 614 #1 on hostD|wap-wsp (merge 306, page 212)
+---------
+Merge 307
+Merged 249 #2 (BLUE SINK) and 1 #176 (red) on hostD|http. Merged during determinization: 791 #1 and 5 #510 on serD|unknown, 792 #1 and 16 #228 on vulnD|mysql, 1390 #1 and 16 #228 on vulnD|mysql, 1827 #1 and 223 #31 on hostD|http (merge 307, page 213)
+---------
+Merge 308
+Merged 251 #2 (BLUE SINK) and 10 #83 (red) on CnC|unknown. Merged during determinization: 794 #1 and 3 #161 on vulnD|ms-sql-s, 795 #1 and 12 #123 on vulnD|postgresql (merge 308, page 214)
+---------
+Merge 309
+Merged 253 #2 (BLUE SINK) and 5 #511 (red) on serD|unknown. Merged during determinization: 798 #1 and 140 #133 on vulnD|ncube-lm, 799 #1 and 25 #57 on vulnD|ahsp, 1394 #1 and 5 #514 on serD|unknown, 1395 #1 and 5 #514 on serD|unknown (merge 309, page 215)
+---------
+Merge 310
+Merged 254 #2 (BLUE SINK) and 126 #17 (red) on serD|ag-swim. Merged during determinization: 800 #1 and 25 #58 on vulnD|ahsp, 1396 #1 and 140 #134 on vulnD|ncube-lm, 1829 #1 and 2 #112 on serD|ssh (merge 310, page 216)
+---------
+Merge 311
+Merged 258 #2 (BLUE SINK) and 35 #109 (red) on exfil|http. Merged during determinization: 807 #1 and 303 #2 on vulnD|ms-sql-s (merge 311, page 217)
+---------
+Merge 312
+Merged 303 #3 (BLUE SINK) and 3 #162 (red) on vulnD|ms-sql-s. Merged during determinization: 879 #1 and 5 #515 on serD|unknown, 880 #1 and 957 #1 on surf|http (merge 312, page 218)
+---------
+Merge 313
+Merged 263 #2 (BLUE SINK) and 152 #9 (red) on serD|fis. Merged during determinization: 818 #1 and 5 #516 on serD|unknown (merge 313, page 219)
+---------
+Merge 314
+Merged 276 #2 (BLUE SINK) and 18 #21 (red) on serD|ff-ice. Merged during determinization: 833 #1 and 12 #124 on vulnD|postgresql, 834 #1 and 16 #229 on vulnD|mysql (merge 314, page 220)
+---------
+Merge 315
+Merged 280 #2 (BLUE SINK) and 101 #17 (red) on serD|cpdlc. Merged during determinization: 844 #1 and 550 #2 on vulnD|postgresql, 1427 #1 and 16 #230 on vulnD|mysql (merge 315, page 221)
+---------
+Merge 316
+Merged 550 #3 (BLUE SINK) and 12 #125 (red) on vulnD|postgresql. Merged during determinization: 746 #1 and 12 #128 on vulnD|postgresql, 1425 #1 and 5 #520 on serD|unknown, 1215 #1 and 16 #231 on vulnD|mysql, 1358 #1 and 5 #520 on serD|unknown, 1802 #1 and 5 #520 on serD|unknown, 1850 #1 and 140 #136 on vulnD|ncube-lm, 2078 #1 and 140 #136 on vulnD|ncube-lm, 2256 #1 and 5 #520 on serD|unknown, 2384 #1 and 25 #59 on vulnD|ahsp, 2476 #1 and 1250 #1 on vulnD|ms-sql-s (merge 316, page 222)
+---------
+Merge 317
+Merged 286 #2 (BLUE SINK) and 9 #37 (red) on netDOS|ms-wbt-server. Merged during determinization: 851 #1 and 5 #521 on serD|unknown, 1858 #1 and 32 #46 on exfil|microsoft-ds (merge 317, page 223)
+---------
+Merge 318
+Merged 296 #2 (BLUE SINK) and 1 #178 (red) on hostD|http. Merged during determinization: 867 #1 and 16 #232 on vulnD|mysql, 1447 #1 and 129 #27 on serD|rfb (merge 318, page 224)
+---------
+Merge 319
+Merged 306 #2 (BLUE SINK) and 35 #111 (red) on exfil|http. Merged during determinization: 885 #2 and 309 #19 on delivery|http, 1461 #1 and 304 #66 on surf|http, 1462 #1 and 893 #1 on infoD|http (merge 319, page 225)
+---------
+Merge 320
+Merged 322 #2 (BLUE SINK) and 3 #165 (red) on vulnD|ms-sql-s. Merged during determinization: 912 #2 and 5 #522 on serD|unknown (merge 320, page 226)
+---------
+Merge 321
+Merged 323 #2 (BLUE SINK) and 140 #137 (red) on vulnD|ncube-lm. Merged during determinization: 913 #1 and 1210 #2 on vulnD|ms-sql-s, 1853 #1 and 139 #26 on hostD|ms-wbt-server, 2102 #1 and 1665 #2 on vulnD|postgresql (merge 321, page 227)
+---------
+Merge 322
+Merged 1210 #3 (BLUE SINK) and 3 #167 (red) on vulnD|ms-sql-s. Merged during determinization: 1696 #1 and 573 #2 on serD|epmap (merge 322, page 228)
+---------
+Merge 323
+Merged 573 #3 (BLUE SINK) and 23 #3 (RED SINK) on serD|epmap. Merged during determinization: - (merge 323, page 229)
+---------
+Merge 324
+Merged 1665 #3 (BLUE SINK) and 12 #129 (red) on vulnD|postgresql. Merged during determinization: 2272 #1 and 1407 #1 on serD|ff-ice (merge 324, page 230)
+---------
+Merge 325
+Merged 324 #2 (BLUE SINK) and 8 #35 (red) on bfCred|unknown. Merged during determinization: 914 #1 and 42 #63 on acctManip|snmp, 1492 #1 and 330 #28 on acctManip|snmp (merge 325, page 231)
+---------
+Merge 326
+Merged 338 #2 (BLUE SINK) and 140 #139 (red) on vulnD|ncube-lm. Merged during determinization: 942 #1 and 5 #524 on serD|unknown (merge 326, page 232)
+---------
+Merge 327
+Merged 339 #2 (BLUE SINK) and 12 #132 (red) on vulnD|postgresql. Merged during determinization: 944 #1 and 2 #113 on serD|ssh, 945 #1 and 140 #141 on vulnD|ncube-lm, 1504 #1 and 5 #526 on serD|unknown, 1505 #1 and 5 #526 on serD|unknown (merge 327, page 233)
+---------
+Merge 328
+Merged 341 #2 (BLUE SINK) and 30 #34 (red) on hostD|http-alt. Merged during determinization: 947 #1 and 5 #527 on serD|unknown, 948 #1 and 30 #37 on hostD|http-alt, 1507 #1 and 30 #37 on hostD|http-alt (merge 328, page 234)
+---------
+Merge 329
+Merged 344 #2 (BLUE SINK) and 5 #528 (red) on serD|unknown. Merged during determinization: 958 #2 and 16 #234 on vulnD|mysql, 1515 #1 and 223 #32 on hostD|http, 1893 #1 and 748 #11 on serD|unknown, 2125 #1 and 16 #235 on vulnD|mysql (merge 329, page 235)
+---------
+Merge 330
+Merged 345 #2 (BLUE SINK) and 12 #134 (red) on vulnD|postgresql. Merged during determinization: 959 #2 and 1 #180 on hostD|http, 1516 #1 and 2 #114 on serD|ssh (merge 330, page 236)
+---------
+Merge 331
+Merged 348 #2 (BLUE SINK) and 304 #67 (red) on surf|http. Merged during determinization: 962 #2 and 1 #182 on hostD|http, 1520 #2 and 5 #530 on serD|unknown, 1895 #1 and 12 #136 on vulnD|postgresql, 1896 #1 and 16 #236 on vulnD|mysql (merge 331, page 237)
+---------
+Merge 332
+No merges have occurred -- skipping
+---------
+Merge 333
+Merged 368 #2 (BLUE SINK) and 1003 #22 (red) on surf|unknown. Merged during determinization: 1001 #1 and 268 #1 on hostD|unknown (merge 333, page 238)
+---------
+Merge 334
+Merged 268 #2 (BLUE SINK) and 365 #19 (red) on hostD|unknown. Merged during determinization: - (merge 334, page 239)
+---------
+Merge 335
+Merged 377 #2 (BLUE SINK) and 42 #64 (red) on acctManip|snmp. Merged during determinization: 1018 #2 and 43 #41 on infoD|xdmcp (merge 335, page 240)
+---------
+Merge 336
+Merged 401 #2 (BLUE SINK) and 139 #27 (red) on hostD|ms-wbt-server. Merged during determinization: 1059 #1 and 704 #1 on vulnD|ncube-lm (merge 336, page 241)
+---------
+Merge 337
+Merged 413 #2 (BLUE SINK) and 25 #60 (red) on vulnD|ahsp. Merged during determinization: - (merge 337, page 242)
+---------
+Merge 338
+Merged 416 #2 (BLUE SINK) and 32 #47 (red) on exfil|microsoft-ds. Merged during determinization: 1083 #2 and 288 #24 on ACE|microsoft-ds, 1621 #1 and 854 #1 on vulnD|ahsp (merge 338, page 243)
+---------
+Merge 339
+Merged 423 #2 (BLUE SINK) and 48 #12 (red) on hostD|wsman. Merged during determinization: 1092 #1 and 662 #1 on vulnD|ncube-lm (merge 339, page 244)
+---------
+Merge 340
+No merges have occurred -- skipping
+---------
+Merge 341
+Merged 427 #2 (BLUE SINK) and 371 #6 (red) on delivery|unknown. Merged during determinization: 1098 #2 and 1005 #1 on acctManip|snmp (merge 341, page 245)
+---------
+Merge 342
+Merged 1005 #3 (BLUE SINK) and 42 #66 (red) on acctManip|snmp. Merged during determinization: 1629 #2 and 10 #85 on CnC|unknown, 1559 #1 and 43 #43 on infoD|xdmcp, 1961 #1 and 916 #1 on infoD|xdmcp (merge 342, page 246)
+---------
+Merge 343
+Merged 433 #2 (BLUE SINK) and 432 #3 (RED SINK) on infoD|remoteware-cl. Merged during determinization: - (merge 343, page 247)
+---------
+Merge 344
+No merges have occurred -- skipping
+---------
+Merge 345
+Merged 438 #2 (BLUE SINK) and 42 #69 (red) on acctManip|snmp. Merged during determinization: 1113 #2 and 43 #44 on infoD|xdmcp (merge 345, page 248)
+---------
+Merge 346
+Merged 447 #2 (BLUE SINK) and 10 #87 (red) on CnC|unknown. Merged during determinization: 1125 #2 and 193 #1 on serD|ssh (merge 346, page 249)
+---------
+Merge 347
+Merged 193 #3 (BLUE SINK) and 2 #115 (red) on serD|ssh. Merged during determinization: 1643 #1 and 2 #118 on serD|ssh, 692 #1 and 3 #170 on vulnD|ms-sql-s (merge 347, page 250)
+---------
+Merge 348
+Merged 448 #2 (BLUE SINK) and 84 #4 (RED SINK) on CnC|http-alt. Merged during determinization: 1127 #1 and 84 #6 on CnC|http-alt, 1645 #1 and 10 #89 on CnC|unknown (merge 348, page 251)
+---------
+Merge 349
+No merges have occurred -- skipping
+---------
+Merge 350
+Merged 466 #2 (BLUE SINK) and 4 #21 (red) on serD|rpas-c2. Merged during determinization: 1656 #1 and 1248 #1 on serD|unknown (merge 350, page 252)
+---------
+Merge 351
+Merged 492 #2 (BLUE SINK) and 3 #171 (red) on vulnD|ms-sql-s. Merged during determinization: 1380 #1 and 5 #533 on serD|unknown, 1179 #1 and 481 #18 on serD|cm, 1820 #1 and 12 #137 on vulnD|postgresql, 2086 #1 and 5 #533 on serD|unknown (merge 351, page 253)
+---------
+Merge 352
+Merged 494 #2 (BLUE SINK) and 3 #173 (red) on vulnD|ms-sql-s. Merged during determinization: 1181 #2 and 5 #534 on serD|unknown (merge 352, page 254)
+---------
+Merge 353
+Merged 502 #2 (BLUE SINK) and 16 #237 (red) on vulnD|mysql. Merged during determinization: 2332 #1 and 5 #536 on serD|unknown (merge 353, page 255)
+---------
+Merge 354
+Merged 541 #2 (BLUE SINK) and 8 #37 (red) on bfCred|unknown. Merged during determinization: - (merge 354, page 256)
+---------
+Merge 355
+Merged 555 #2 (BLUE SINK) and 129 #28 (red) on serD|rfb. Merged during determinization: 1218 #2 and 16 #241 on vulnD|mysql, 1701 #2 and 5 #537 on serD|unknown, 2454 #1 and 16 #242 on vulnD|mysql, 2005 #1 and 441 #8 on serD|sunrpc, 2530 #1 and 16 #242 on vulnD|mysql, 2582 #1 and 2 #119 on serD|ssh (merge 355, page 257)
+---------
+Merge 356
+Merged 570 #2 (BLUE SINK) and 9 #39 (red) on netDOS|ms-wbt-server. Merged during determinization: - (merge 356, page 258)
+---------
+Merge 357
+Merged 589 #2 (BLUE SINK) and 8 #39 (red) on bfCred|unknown. Merged during determinization: - (merge 357, page 259)
+---------
+Merge 358
+Merged 593 #2 (BLUE SINK) and 129 #30 (red) on serD|rfb. Merged during determinization: 1252 #1 and 552 #1 on serD|unknown (merge 358, page 260)
+---------
+Merge 359
+Merged 552 #2 (BLUE SINK) and 5 #539 (red) on serD|unknown. Merged during determinization: 1217 #1 and 12 #140 on vulnD|postgresql, 1730 #1 and 16 #245 on vulnD|mysql, 1700 #1 and 2 #124 on serD|ssh, 2004 #1 and 2 #124 on serD|ssh, 2028 #1 and 5 #544 on serD|unknown, 2195 #1 and 2 #124 on serD|ssh, 2215 #1 and 3 #176 on vulnD|ms-sql-s, 2331 #1 and 3 #176 on vulnD|ms-sql-s, 2349 #1 and 129 #32 on serD|rfb, 2436 #1 and 5 #544 on serD|unknown, 2519 #1 and 2 #124 on serD|ssh, 2576 #1 and 12 #140 on vulnD|postgresql, 2615 #1 and 2 #124 on serD|ssh, 2639 #1 and 12 #140 on vulnD|postgresql, 2656 #1 and 5 #544 on serD|unknown, 2666 #1 and 16 #245 on vulnD|mysql, 2675 #1 and 5 #544 on serD|unknown, 2679 #1 and 16 #245 on vulnD|mysql (merge 359, page 261)
+---------
+Merge 360
+Merged 594 #2 (BLUE SINK) and 28 #13 (red) on serD|microsoft-ds. Merged during determinization: - (merge 360, page 262)
+---------
+Merge 361
+Merged 595 #2 (BLUE SINK) and 36 #2 (RED SINK) on serD|icmpd. Merged during determinization: 2236 #1 and 311 #1 on vulnD|postgresql, 2367 #1 and 898 #1 on serD|unknown (merge 361, page 263)
+---------
+Merge 362
+Merged 311 #2 (BLUE SINK) and 12 #141 (red) on vulnD|postgresql. Merged during determinization: 898 #2 and 5 #547 on serD|unknown, 1481 #1 and 5 #548 on serD|unknown, 2463 #1 and 25 #64 on vulnD|ahsp, 1880 #1 and 140 #142 on vulnD|ncube-lm, 2116 #1 and 25 #64 on vulnD|ahsp, 2281 #1 and 5 #548 on serD|unknown, 2402 #1 and 25 #64 on vulnD|ahsp, 2538 #1 and 2458 #2 on serD|ads-c, 2589 #1 and 2534 #2 on serD|unknown (merge 362, page 264)
+---------
+Merge 363
+No merges have occurred -- skipping
+---------
+Merge 364
+Merged 2534 #3 (BLUE SINK) and 5 #549 (red) on serD|unknown. Merged during determinization: 2371 #1 and 584 #5 on serD|agma, 2625 #1 and 3 #177 on vulnD|ms-sql-s, 2586 #2 and 5 #553 on serD|unknown, 2647 #1 and 5 #554 on serD|unknown, 2662 #1 and 12 #143 on vulnD|postgresql, 2672 #1 and 16 #247 on vulnD|mysql, 2677 #1 and 16 #247 on vulnD|mysql (merge 364, page 265)
+---------
+Merge 365
+Merged 614 #2 (BLUE SINK) and 17 #15 (red) on hostD|wap-wsp. Merged during determinization: 1268 #1 and 237 #1 on vulnD|postgresql (merge 365, page 266)
+---------
+Merge 366
+Merged 237 #2 (BLUE SINK) and 12 #144 (red) on vulnD|postgresql. Merged during determinization: 775 #1 and 100 #20 on serD|dsd (merge 366, page 267)
+---------
+Merge 367
+Merged 616 #2 (BLUE SINK) and 365 #21 (red) on hostD|unknown. Merged during determinization: 1269 #1 and 992 #2 on serD|unknown, 1296 #1 and 994 #2 on vulnD|mysql, 1760 #1 and 1548 #1 on serD|unknown (merge 367, page 268)
+---------
+Merge 368
+Merged 992 #3 (BLUE SINK) and 5 #555 (red) on serD|unknown. Merged during determinization: 830 #1 and 5 #558 on serD|unknown, 1416 #1 and 16 #249 on vulnD|mysql, 1742 #1 and 16 #249 on vulnD|mysql, 1843 #1 and 612 #1 on serD|dsd, 2094 #1 and 1266 #1 on vulnD|mysql (merge 368, page 269)
+---------
+Merge 369
+Merged 994 #3 (BLUE SINK) and 16 #250 (red) on vulnD|mysql. Merged during determinization: 832 #1 and 304 #69 on surf|http, 1548 #2 and 5 #559 on serD|unknown (merge 369, page 270)
+---------
+Merge 370
+Merged 612 #2 (BLUE SINK) and 100 #21 (red) on serD|dsd. Merged during determinization: 1266 #2 and 16 #253 on vulnD|mysql (merge 370, page 271)
+---------
+Merge 371
+Merged 617 #2 (BLUE SINK) and 5 #561 (red) on serD|unknown. Merged during determinization: 1270 #1 and 585 #5 on serD|asmgcs (merge 371, page 272)
+---------
+Merge 372
+Merged 625 #2 (BLUE SINK) and 12 #146 (red) on vulnD|postgresql. Merged during determinization: 2075 #1 and 12 #149 on vulnD|postgresql, 1273 #1 and 25 #65 on vulnD|ahsp, 1746 #1 and 2220 #1 on serD|cm, 2041 #1 and 2353 #1 on serD|unknown, 2253 #1 and 12 #149 on vulnD|postgresql, 2381 #1 and 5 #563 on serD|unknown, 2473 #1 and 16 #255 on vulnD|mysql (merge 372, page 273)
+---------
+Merge 373
+Merged 635 #2 (BLUE SINK) and 5 #564 (red) on serD|unknown. Merged during determinization: 1280 #1 and 25 #66 on vulnD|ahsp, 2273 #1 and 940 #1 on serD|microsoft-ds, 1750 #1 and 1250 #2 on vulnD|ms-sql-s (merge 373, page 274)
+---------
+Merge 374
+Merged 1250 #3 (BLUE SINK) and 3 #178 (red) on vulnD|ms-sql-s. Merged during determinization: 1728 #1 and 695 #1 on serD|dsd (merge 374, page 275)
+---------
+Merge 375
+No merges have occurred -- skipping
+---------
+Merge 376
+Merged 662 #2 (BLUE SINK) and 140 #143 (red) on vulnD|ncube-lm. Merged during determinization: 1298 #1 and 5 #566 on serD|unknown, 1761 #1 and 25 #67 on vulnD|ahsp (merge 376, page 276)
+---------
+Merge 377
+Merged 672 #2 (BLUE SINK) and 9 #41 (red) on netDOS|ms-wbt-server. Merged during determinization: - (merge 377, page 277)
+---------
+Merge 378
+Merged 695 #2 (BLUE SINK) and 100 #23 (red) on serD|dsd. Merged during determinization: - (merge 378, page 278)
+---------
+Merge 379
+Merged 704 #2 (BLUE SINK) and 140 #145 (red) on vulnD|ncube-lm. Merged during determinization: 1612 #1 and 2 #125 on serD|ssh, 1331 #1 and 12 #150 on vulnD|postgresql, 1781 #1 and 139 #30 on hostD|ms-wbt-server, 2059 #1 and 5 #567 on serD|unknown, 2239 #1 and 139 #30 on hostD|ms-wbt-server (merge 379, page 279)
+---------
+Merge 380
+Merged 721 #2 (BLUE SINK) and 10 #90 (red) on CnC|unknown. Merged during determinization: - (merge 380, page 280)
+---------
+Merge 381
+Merged 728 #2 (BLUE SINK) and 23 #6 (red) on serD|epmap. Merged during determinization: - (merge 381, page 281)
+---------
+Merge 382
+Merged 747 #2 (BLUE SINK) and 3 #181 (red) on vulnD|ms-sql-s. Merged during determinization: 1359 #1 and 2 #126 on serD|ssh, 1360 #1 and 12 #151 on vulnD|postgresql, 1803 #1 and 16 #256 on vulnD|mysql (merge 382, page 282)
+---------
+Merge 383
+Merged 750 #2 (BLUE SINK) and 16 #257 (red) on vulnD|mysql. Merged during determinization: 2046 #1 and 5 #568 on serD|unknown, 1362 #1 and 12 #152 on vulnD|postgresql, 1805 #1 and 481 #19 on serD|cm, 2230 #1 and 1 #184 on hostD|http, 2362 #1 and 16 #259 on vulnD|mysql (merge 383, page 283)
+---------
+Merge 384
+Merged 846 #2 (BLUE SINK) and 33 #12 (red) on bfCred|pop3. Merged during determinization: - (merge 384, page 284)
+---------
+Merge 385
+Merged 854 #2 (BLUE SINK) and 25 #68 (red) on vulnD|ahsp. Merged during determinization: 1956 #1 and 5 #569 on serD|unknown, 1431 #1 and 140 #147 on vulnD|ncube-lm, 2165 #1 and 12 #153 on vulnD|postgresql (merge 385, page 285)
+---------
+Merge 386
+Merged 887 #2 (BLUE SINK) and 1 #185 (red) on hostD|http. Merged during determinization: 1463 #1 and 2 #127 on serD|ssh, 1872 #1 and 16 #260 on vulnD|mysql (merge 386, page 286)
+---------
+Merge 387
+Merged 893 #2 (BLUE SINK) and 308 #67 (red) on infoD|http. Merged during determinization: - (merge 387, page 287)
+---------
+Merge 388
+Merged 896 #2 (BLUE SINK) and 396 #47 (red) on ACE|ssdp. Merged during determinization: 1478 #1 and 5 #570 on serD|unknown, 1479 #1 and 1050 #1 on acctManip|snmp, 1878 #1 and 139 #31 on hostD|ms-wbt-server, 2114 #1 and 3 #183 on vulnD|ms-sql-s (merge 388, page 288)
+---------
+Merge 389
+Merged 916 #2 (BLUE SINK) and 43 #46 (red) on infoD|xdmcp. Merged during determinization: - (merge 389, page 289)
+---------
+Merge 390
+Merged 923 #2 (BLUE SINK) and 8 #41 (red) on bfCred|unknown. Merged during determinization: - (merge 390, page 290)
+---------
+Merge 391
+Merged 926 #2 (BLUE SINK) and 43 #48 (red) on infoD|xdmcp. Merged during determinization: - (merge 391, page 291)
+---------
+Merge 392
+Merged 940 #2 (BLUE SINK) and 28 #15 (red) on serD|microsoft-ds. Merged during determinization: - (merge 392, page 292)
+---------
+Merge 393
+Merged 957 #2 (BLUE SINK) and 304 #70 (red) on surf|http. Merged during determinization: 1453 #1 and 883 #9 on infoD|http, 1866 #1 and 1 #187 on hostD|http (merge 393, page 293)
+---------
+Merge 394
+Merged 965 #2 (BLUE SINK) and 16 #261 (red) on vulnD|mysql. Merged during determinization: 911 #1 and 16 #263 on vulnD|mysql, 1491 #1 and 223 #34 on hostD|http, 1527 #1 and 223 #34 on hostD|http, 1906 #1 and 1873 #1 on serD|rfb (merge 394, page 294)
+---------
+Merge 395
+Merged 970 #2 (BLUE SINK) and 349 #44 (red) on vulnD|http. Merged during determinization: 1530 #2 and 1 #188 on hostD|http, 1910 #1 and 129 #33 on serD|rfb (merge 395, page 295)
+---------
+Merge 396
+Merged 983 #2 (BLUE SINK) and 980 #12 (red) on surf|http-alt. Merged during determinization: - (merge 396, page 296)
+---------
+Merge 397
+Merged 993 #2 (BLUE SINK) and 140 #148 (red) on vulnD|ncube-lm. Merged during determinization: 1547 #1 and 5 #571 on serD|unknown (merge 397, page 297)
+---------
+Merge 398
+Merged 995 #2 (BLUE SINK) and 25 #70 (red) on vulnD|ahsp. Merged during determinization: 1925 #1 and 5 #572 on serD|unknown (merge 398, page 298)
+---------
+Merge 399
+Merged 1035 #2 (BLUE SINK) and 5 #573 (red) on serD|unknown. Merged during determinization: 1583 #1 and 3 #184 on vulnD|ms-sql-s, 1584 #1 and 140 #150 on vulnD|ncube-lm, 1940 #1 and 12 #154 on vulnD|postgresql (merge 399, page 299)
+---------
+Merge 400
+Merged 1040 #2 (BLUE SINK) and 2 #128 (red) on serD|ssh. Merged during determinization: 1589 #1 and 3 #185 on vulnD|ms-sql-s, 1590 #1 and 12 #155 on vulnD|postgresql, 1943 #1 and 139 #32 on hostD|ms-wbt-server (merge 400, page 300)
+---------
+Merge 401
+Merged 1049 #2 (BLUE SINK) and 34 #16 (red) on bfCred|pop3s. Merged during determinization: 1604 #1 and 298 #1 on vulnD|ncube-lm (merge 401, page 301)
+---------
+Merge 402
+Merged 298 #2 (BLUE SINK) and 140 #151 (red) on vulnD|ncube-lm. Merged during determinization: 873 #1 and 590 #1 on netDOS|ms-wbt-server (merge 402, page 302)
+---------
+Merge 403
+Merged 590 #2 (BLUE SINK) and 9 #43 (red) on netDOS|ms-wbt-server. Merged during determinization: - (merge 403, page 303)
+---------
+Merge 404
+Merged 1050 #2 (BLUE SINK) and 42 #71 (red) on acctManip|snmp. Merged during determinization: 1606 #1 and 43 #50 on infoD|xdmcp (merge 404, page 304)
+---------
+Merge 405
+Merged 1102 #2 (BLUE SINK) and 10 #92 (red) on CnC|unknown. Merged during determinization: 1632 #1 and 43 #51 on infoD|xdmcp, 1633 #1 and 918 #1 on remoteexp|snmp (merge 405, page 305)
+---------
+Merge 406
+Merged 918 #2 (BLUE SINK) and 63 #38 (red) on remoteexp|snmp. Merged during determinization: 1963 #1 and 690 #1 on infoD|xdmcp (merge 406, page 306)
+---------
+Merge 407
+Merged 690 #2 (BLUE SINK) and 43 #52 (red) on infoD|xdmcp. Merged during determinization: 1318 #1 and 12 #156 on vulnD|postgresql, 1771 #1 and 5 #575 on serD|unknown (merge 407, page 307)
+---------
+Merge 408
+No merges have occurred -- skipping
+---------
+Merge 409
+Merged 1108 #2 (BLUE SINK) and 1109 #3 (RED SINK) on surf|remoteware-cl. Merged during determinization: - (merge 409, page 308)
+---------
+Merge 410
+No merges have occurred -- skipping
+---------
+Merge 411
+Merged 1132 #2 (BLUE SINK) and 17 #17 (red) on hostD|wap-wsp. Merged during determinization: 1649 #2 and 140 #153 on vulnD|ncube-lm, 1971 #2 and 5 #576 on serD|unknown, 2175 #1 and 2 #130 on serD|ssh, 2317 #1 and 16 #264 on vulnD|mysql (merge 411, page 309)
+---------
+Merge 412
+Merged 1163 #2 (BLUE SINK) and 1 #190 (red) on hostD|http. Merged during determinization: 1657 #1 and 2 #131 on serD|ssh, 1669 #1 and 12 #158 on vulnD|postgresql, 1978 #1 and 12 #158 on vulnD|postgresql (merge 412, page 310)
+---------
+Merge 413
+Merged 1199 #2 (BLUE SINK) and 304 #72 (red) on surf|http. Merged during determinization: - (merge 413, page 311)
+---------
+Merge 414
+Merged 1239 #2 (BLUE SINK) and 1246 #3 (RED SINK) on serD|ipsma. Merged during determinization: - (merge 414, page 312)
+---------
+Merge 415
+Merged 1248 #2 (BLUE SINK) and 5 #578 (red) on serD|unknown. Merged during determinization: 1977 #1 and 2 #132 on serD|ssh, 1726 #1 and 152 #11 on serD|fis, 2025 #1 and 5 #580 on serD|unknown, 2179 #1 and 2407 #1 on hostD|ms-wbt-server, 2212 #1 and 1246 #5 on serD|ipsma, 2347 #1 and 2234 #1 on vulnD|postgresql (merge 415, page 313)
+---------
+Merge 416
+Merged 1292 #2 (BLUE SINK) and 304 #74 (red) on surf|http. Merged during determinization: 1764 #1 and 1 #192 on hostD|http (merge 416, page 314)
+---------
+Merge 417
+Merged 1365 #2 (BLUE SINK) and 18 #23 (red) on serD|ff-ice. Merged during determinization: 1807 #1 and 16 #265 on vulnD|mysql (merge 417, page 315)
+---------
+Merge 418
+Merged 1407 #2 (BLUE SINK) and 18 #25 (red) on serD|ff-ice. Merged during determinization: 1837 #1 and 12 #159 on vulnD|postgresql, 2090 #1 and 5 #581 on serD|unknown, 2265 #1 and 585 #6 on serD|asmgcs, 2391 #1 and 737 #1 on vulnD|ahsp (merge 418, page 316)
+---------
+Merge 419
+Merged 737 #2 (BLUE SINK) and 25 #72 (red) on vulnD|ahsp. Merged during determinization: 1351 #1 and 5 #582 on serD|unknown, 2482 #1 and 2540 #2 on serD|spt-automation (merge 419, page 317)
+---------
+Merge 420
+No merges have occurred -- skipping
+---------
+Merge 421
+Merged 1421 #2 (BLUE SINK) and 2 #133 (red) on serD|ssh. Merged during determinization: - (merge 421, page 318)
+---------
+Merge 422
+Merged 1436 #2 (BLUE SINK) and 126 #19 (red) on serD|ag-swim. Merged during determinization: 1769 #1 and 16 #266 on vulnD|mysql, 1856 #1 and 1917 #1 on vulnD|ncube-lm (merge 422, page 319)
+---------
+Merge 423
+Merged 1471 #2 (BLUE SINK) and 2 #135 (red) on serD|ssh. Merged during determinization: - (merge 423, page 320)
+---------
+Merge 424
+Merged 1529 #2 (BLUE SINK) and 3 #186 (red) on vulnD|ms-sql-s. Merged during determinization: 1908 #1 and 5 #584 on serD|unknown, 1909 #1 and 12 #160 on vulnD|postgresql, 2134 #1 and 5 #584 on serD|unknown (merge 424, page 321)
+---------
+Merge 425
+Merged 1539 #2 (BLUE SINK) and 43 #54 (red) on infoD|xdmcp. Merged during determinization: - (merge 425, page 322)
+---------
+Merge 426
+Merged 1557 #2 (BLUE SINK) and 43 #56 (red) on infoD|xdmcp. Merged during determinization: - (merge 426, page 323)
+---------
+Merge 427
+Merged 1599 #2 (BLUE SINK) and 23 #8 (red) on serD|epmap. Merged during determinization: 1808 #1 and 793 #1 on vulnD|mysql, 1949 #2 and 250 #1 on serD|unknown (merge 427, page 324)
+---------
+Merge 428
+Merged 250 #3 (BLUE SINK) and 5 #585 (red) on serD|unknown. Merged during determinization: 2160 #1 and 140 #155 on vulnD|ncube-lm, 793 #2 and 16 #268 on vulnD|mysql, 2080 #1 and 16 #269 on vulnD|mysql, 1391 #1 and 129 #34 on serD|rfb, 2258 #1 and 5 #588 on serD|unknown, 2311 #1 and 12 #161 on vulnD|postgresql, 2386 #1 and 3 #189 on vulnD|ms-sql-s, 2424 #1 and 100 #25 on serD|dsd, 2507 #1 and 3 #189 on vulnD|ms-sql-s (merge 428, page 325)
+---------
+Merge 429
+Merged 1723 #2 (BLUE SINK) and 4 #23 (red) on serD|rpas-c2. Merged during determinization: 2022 #1 and 5 #590 on serD|unknown, 2389 #1 and 140 #157 on vulnD|ncube-lm, 2209 #1 and 140 #157 on vulnD|ncube-lm, 2344 #1 and 25 #75 on vulnD|ahsp, 2445 #1 and 2540 #3 on serD|spt-automation, 2480 #1 and 25 #75 on vulnD|ahsp, 2524 #1 and 2590 #1 on serD|unknown, 2548 #1 and 5 #590 on serD|unknown, 2595 #1 and 2533 #1 on serD|icmpd (merge 429, page 326)
+---------
+Merge 430
+Merged 1755 #2 (BLUE SINK) and 129 #35 (red) on serD|rfb. Merged during determinization: 2207 #1 and 264 #1 on vulnD|postgresql (merge 430, page 327)
+---------
+Merge 431
+Merged 264 #2 (BLUE SINK) and 12 #162 (red) on vulnD|postgresql. Merged during determinization: 2342 #1 and 5 #591 on serD|unknown, 819 #1 and 12 #164 on vulnD|postgresql (merge 431, page 328)
+---------
+Merge 432
+Merged 1794 #2 (BLUE SINK) and 12 #165 (red) on vulnD|postgresql. Merged during determinization: 2071 #1 and 5 #593 on serD|unknown, 2249 #1 and 12 #167 on vulnD|postgresql, 2378 #1 and 5 #593 on serD|unknown (merge 432, page 329)
+---------
+Merge 433
+Merged 1832 #2 (BLUE SINK) and 5 #594 (red) on serD|unknown. Merged during determinization: 738 #1 and 5 #598 on serD|unknown, 1352 #1 and 140 #158 on vulnD|ncube-lm, 1796 #1 and 12 #168 on vulnD|postgresql, 2073 #1 and 5 #598 on serD|unknown, 2251 #1 and 25 #76 on vulnD|ahsp, 2379 #1 and 5 #598 on serD|unknown, 2472 #1 and 139 #33 on hostD|ms-wbt-server (merge 433, page 330)
+---------
+Merge 434
+Merged 1834 #2 (BLUE SINK) and 12 #169 (red) on vulnD|postgresql. Merged during determinization: 790 #1 and 5 #599 on serD|unknown, 1389 #1 and 16 #270 on vulnD|mysql, 2088 #1 and 1154 #1 on serD|microsoft-ds (merge 434, page 331)
+---------
+Merge 435
+Merged 1154 #2 (BLUE SINK) and 28 #17 (red) on serD|microsoft-ds. Merged during determinization: - (merge 435, page 332)
+---------
+Merge 436
+Merged 1873 #2 (BLUE SINK) and 129 #37 (red) on serD|rfb. Merged during determinization: - (merge 436, page 333)
+---------
+Merge 437
+Merged 1917 #2 (BLUE SINK) and 140 #159 (red) on vulnD|ncube-lm. Merged during determinization: 2141 #1 and 25 #77 on vulnD|ahsp, 2299 #1 and 5 #604 on serD|unknown, 2415 #1 and 5 #604 on serD|unknown, 2500 #1 and 5 #604 on serD|unknown, 2564 #1 and 5 #604 on serD|unknown, 2607 #1 and 5 #604 on serD|unknown (merge 437, page 334)
+---------
+Merge 438
+Merged 2011 #2 (BLUE SINK) and 152 #12 (red) on serD|fis. Merged during determinization: 2076 #1 and 5 #607 on serD|unknown, 2254 #1 and 18 #27 on serD|ff-ice, 2382 #1 and 12 #171 on vulnD|postgresql, 2474 #1 and 5 #607 on serD|unknown, 2545 #1 and 5 #607 on serD|unknown, 2592 #1 and 25 #78 on vulnD|ahsp, 2627 #1 and 2540 #4 on serD|spt-automation, 2648 #1 and 2590 #2 on serD|unknown (merge 438, page 335)
+---------
+Merge 439
+Merged 2590 #3 (BLUE SINK) and 5 #608 (red) on serD|unknown. Merged during determinization: - (merge 439, page 336)
+---------
+Merge 440
+Merged 2063 #2 (BLUE SINK) and 4 #25 (red) on serD|rpas-c2. Merged during determinization: 2243 #2 and 5 #612 on serD|unknown, 2302 #1 and 5 #613 on serD|unknown, 2373 #1 and 16 #271 on vulnD|mysql, 2417 #1 and 25 #79 on vulnD|ahsp, 2468 #1 and 2 #137 on serD|ssh (merge 440, page 337)
+---------
+Merge 441
+Merged 2220 #2 (BLUE SINK) and 481 #20 (red) on serD|cm. Merged during determinization: 2225 #1 and 584 #6 on serD|agma, 2353 #2 and 5 #615 on serD|unknown, 2357 #1 and 2467 #1 on serD|unknown, 2453 #1 and 5 #616 on serD|unknown, 2529 #1 and 16 #272 on vulnD|mysql (merge 441, page 338)
+---------
+Merge 442
+Merged 2234 #2 (BLUE SINK) and 12 #172 (red) on vulnD|postgresql. Merged during determinization: 2448 #1 and 5 #620 on serD|unknown, 2365 #1 and 25 #81 on vulnD|ahsp, 2461 #1 and 481 #22 on serD|cm, 2526 #1 and 585 #7 on serD|asmgcs, 2580 #1 and 25 #81 on vulnD|ahsp, 2619 #1 and 5 #620 on serD|unknown, 2642 #1 and 5 #620 on serD|unknown, 2659 #1 and 5 #620 on serD|unknown, 2669 #1 and 28 #19 on serD|microsoft-ds (merge 442, page 339)
+---------
+Merge 443
+Merged 2387 #2 (BLUE SINK) and 152 #14 (red) on serD|fis. Merged during determinization: 2478 #1 and 1715 #1 on vulnD|ncube-lm (merge 443, page 340)
+---------
+Merge 444
+Merged 1715 #2 (BLUE SINK) and 140 #161 (red) on vulnD|ncube-lm. Merged during determinization: 2546 #1 and 5 #623 on serD|unknown, 2017 #1 and 25 #83 on vulnD|ahsp, 2204 #1 and 481 #23 on serD|cm, 2593 #1 and 25 #83 on vulnD|ahsp, 2628 #1 and 5 #623 on serD|unknown, 2649 #1 and 16 #273 on vulnD|mysql, 2663 #1 and 5 #623 on serD|unknown (merge 444, page 341)
+---------
+Merge 445
+Merged 2407 #2 (BLUE SINK) and 139 #34 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 445, page 342)
+---------
+Merge 446
+Merged 2467 #2 (BLUE SINK) and 5 #624 (red) on serD|unknown. Merged during determinization: 2541 #1 and 16 #274 on vulnD|mysql, 2591 #1 and 129 #40 on serD|rfb, 2626 #1 and 129 #40 on serD|rfb (merge 446, page 343)
+---------
+Merge 447
+Merged 2533 #2 (BLUE SINK) and 36 #4 (RED SINK) on serD|icmpd. Merged during determinization: - (merge 447, page 344)
+---------
+Merge 448
+No merges have occurred -- skipping
+---------
+Merge 449
+No merges have occurred -- skipping
+---------
+Merge 450
+Merged 31 #1 (BLUE SINK) and 149 #8 (red) on serD|netbios-ssn. Merged during determinization: - (merge 450, page 345)
+---------
+Merge 451
+Merged 37 #1 (BLUE SINK) and 2458 #3 (RED SINK) on serD|ads-c. Merged during determinization: - (merge 451, page 346)
+---------
+Merge 452
+Merged 39 #1 (BLUE SINK) and 152 #16 (red) on serD|fis. Merged during determinization: 317 #1 and 5 #626 on serD|unknown, 904 #1 and 12 #174 on vulnD|postgresql, 1485 #1 and 140 #163 on vulnD|ncube-lm, 1883 #1 and 129 #41 on serD|rfb, 2118 #1 and 16 #275 on vulnD|mysql, 2282 #1 and 365 #23 on hostD|unknown, 2403 #1 and 991 #1 on serD|ssh (merge 452, page 347)
+---------
+Merge 453
+Merged 991 #2 (BLUE SINK) and 2 #138 (red) on serD|ssh. Merged during determinization: 1546 #1 and 3 #190 on vulnD|ms-sql-s, 2491 #1 and 16 #276 on vulnD|mysql (merge 453, page 348)
+---------
+Merge 454
+Merged 40 #1 (BLUE SINK) and 2540 #5 (red) on serD|spt-automation. Merged during determinization: - (merge 454, page 349)
+---------
+Merge 455
+Merged 51 #1 (BLUE SINK) and 206 #5 (red) on rPrivEsc|ms-wbt-server. Merged during determinization: 372 #1 and 725 #1 on acctManip|snmp (merge 455, page 350)
+---------
+Merge 456
+Merged 725 #2 (BLUE SINK) and 42 #73 (red) on acctManip|snmp. Merged during determinization: 1006 #1 and 10 #94 on CnC|unknown (merge 456, page 351)
+---------
+Merge 457
+No merges have occurred -- skipping
+---------
+Merge 458
+No merges have occurred -- skipping
+---------
+Merge 459
+No merges have occurred -- skipping
+---------
+Merge 460
+No merges have occurred -- skipping
+---------
+Merge 461
+No merges have occurred -- skipping
+---------
+Merge 462
+No merges have occurred -- skipping
+---------
+Merge 463
+No merges have occurred -- skipping
+---------
+Merge 464
+No merges have occurred -- skipping
+---------
+Merge 465
+No merges have occurred -- skipping
+---------
+Merge 466
+No merges have occurred -- skipping
+---------
+Merge 467
+No merges have occurred -- skipping
+---------
+Merge 468
+No merges have occurred -- skipping
+---------
+Merge 469
+No merges have occurred -- skipping
+---------
+Merge 470
+No merges have occurred -- skipping
+---------
+Merge 471
+No merges have occurred -- skipping
+---------
+Merge 472
+No merges have occurred -- skipping
+---------
+Merge 473
+No merges have occurred -- skipping
+---------
+Merge 474
+Merged 104 #1 (BLUE SINK) and 19 #1 (RED SINK) on serD|ms-sql-m. Merged during determinization: - (merge 474, page 352)
+---------
+Merge 475
+Merged 113 #1 (BLUE SINK) and 101 #19 (red) on serD|cpdlc. Merged during determinization: 524 #1 and 16 #277 on vulnD|mysql (merge 475, page 353)
+---------
+Merge 476
+Merged 116 #1 (BLUE SINK) and 441 #9 (red) on serD|sunrpc. Merged during determinization: 530 #1 and 12 #175 on vulnD|postgresql, 1204 #1 and 28 #20 on serD|microsoft-ds (merge 476, page 354)
+---------
+Merge 477
+Merged 118 #1 (BLUE SINK) and 25 #84 (red) on vulnD|ahsp. Merged during determinization: - (merge 477, page 355)
+---------
+Merge 478
+Merged 119 #1 (BLUE SINK) and 28 #21 (red) on serD|microsoft-ds. Merged during determinization: - (merge 478, page 356)
+---------
+Merge 479
+Merged 120 #1 (BLUE SINK) and 55 #2 (RED SINK) on bfCred|ssh. Merged during determinization: 534 #1 and 380 #1 on serD|ssh (merge 479, page 357)
+---------
+Merge 480
+Merged 380 #2 (BLUE SINK) and 2 #140 (red) on serD|ssh. Merged during determinization: 1021 #1 and 16 #278 on vulnD|mysql, 1571 #1 and 2 #142 on serD|ssh (merge 480, page 358)
+---------
+Merge 481
+Merged 128 #1 (BLUE SINK) and 25 #85 (red) on vulnD|ahsp. Merged during determinization: 551 #1 and 1213 #1 on vulnD|mysql (merge 481, page 359)
+---------
+Merge 482
+Merged 1213 #2 (BLUE SINK) and 16 #279 (red) on vulnD|mysql. Merged during determinization: 1216 #1 and 5 #628 on serD|unknown, 1699 #1 and 5 #628 on serD|unknown, 2003 #1 and 16 #281 on vulnD|mysql (merge 482, page 360)
+---------
+Merge 483
+Merged 131 #1 (BLUE SINK) and 30 #38 (red) on hostD|http-alt. Merged during determinization: 557 #1 and 5 #629 on serD|unknown (merge 483, page 361)
+---------
+Merge 484
+Merged 134 #1 (BLUE SINK) and 22 #2 (RED SINK) on infoD|domain. Merged during determinization: 562 #1 and 1 #193 on hostD|http, 1221 #1 and 5 #630 on serD|unknown, 1703 #1 and 16 #283 on vulnD|mysql, 2007 #1 and 16 #283 on vulnD|mysql (merge 484, page 362)
+---------
+Merge 485
+Merged 150 #1 (BLUE SINK) and 33 #14 (red) on bfCred|pop3. Merged during determinization: - (merge 485, page 363)
+---------
+Merge 486
+Merged 153 #1 (BLUE SINK) and 371 #8 (red) on delivery|unknown. Merged during determinization: - (merge 486, page 364)
+---------
+Merge 487
+Merged 160 #1 (BLUE SINK) and 101 #20 (red) on serD|cpdlc. Merged during determinization: - (merge 487, page 365)
+---------
+Merge 488
+Merged 163 #1 (BLUE SINK) and 481 #24 (red) on serD|cm. Merged during determinization: 641 #1 and 140 #165 on vulnD|ncube-lm, 1287 #1 and 5 #631 on serD|unknown, 1754 #1 and 140 #165 on vulnD|ncube-lm (merge 488, page 366)
+---------
+Merge 489
+Merged 165 #1 (BLUE SINK) and 365 #24 (red) on hostD|unknown. Merged during determinization: 643 #1 and 272 #1 on vulnD|ms-sql-s (merge 489, page 367)
+---------
+Merge 490
+Merged 272 #2 (BLUE SINK) and 3 #191 (red) on vulnD|ms-sql-s. Merged during determinization: - (merge 490, page 368)
+---------
+Merge 491
+Merged 167 #1 (BLUE SINK) and 2 #143 (red) on serD|ssh. Merged during determinization: 647 #1 and 5 #632 on serD|unknown (merge 491, page 369)
+---------
+Merge 492
+Merged 168 #1 (BLUE SINK) and 4 #27 (red) on serD|rpas-c2. Merged during determinization: 648 #1 and 16 #284 on vulnD|mysql (merge 492, page 370)
+---------
+Merge 493
+Merged 171 #1 (BLUE SINK) and 10 #95 (red) on CnC|unknown. Merged during determinization: 653 #1 and 12 #176 on vulnD|postgresql, 1293 #1 and 28 #22 on serD|microsoft-ds (merge 493, page 371)
+---------
+Merge 494
+Merged 172 #1 (BLUE SINK) and 12 #177 (red) on vulnD|postgresql. Merged during determinization: 654 #1 and 5 #633 on serD|unknown, 1294 #1 and 3 #193 on vulnD|ms-sql-s, 1758 #1 and 101 #21 on serD|cpdlc (merge 494, page 372)
+---------
+Merge 495
+Merged 174 #1 (BLUE SINK) and 129 #42 (red) on serD|rfb. Merged during determinization: 657 #1 and 1 #194 on hostD|http, 1297 #1 and 5 #634 on serD|unknown (merge 495, page 373)
+---------
+Merge 496
+Merged 175 #1 (BLUE SINK) and 30 #39 (red) on hostD|http-alt. Merged during determinization: 658 #1 and 12 #178 on vulnD|postgresql (merge 496, page 374)
+---------
+Merge 497
+Merged 178 #1 (BLUE SINK) and 56 #4 (RED SINK) on uPrivEsc|unknown. Merged during determinization: 664 #1 and 384 #1 on hostD|unknown (merge 497, page 375)
+---------
+Merge 498
+Merged 384 #2 (BLUE SINK) and 365 #25 (red) on hostD|unknown. Merged during determinization: 1300 #1 and 5 #635 on serD|unknown, 1763 #1 and 140 #166 on vulnD|ncube-lm, 2051 #1 and 129 #43 on serD|rfb, 2232 #1 and 2469 #1 on vulnD|ms-sql-s (merge 498, page 376)
+---------
+Merge 499
+Merged 2469 #2 (BLUE SINK) and 3 #194 (red) on vulnD|ms-sql-s. Merged during determinization: 2542 #1 and 5 #636 on serD|unknown (merge 499, page 377)
+---------
+Merge 500
+No merges have occurred -- skipping
+---------
+Merge 501
+Merged 180 #1 (BLUE SINK) and 3 #196 (red) on vulnD|ms-sql-s. Merged during determinization: 666 #1 and 5 #637 on serD|unknown (merge 501, page 378)
+---------
+Merge 502
+Merged 186 #1 (BLUE SINK) and 23 #10 (red) on serD|epmap. Merged during determinization: 681 #1 and 5 #638 on serD|unknown (merge 502, page 379)
+---------
+Merge 503
+Merged 188 #1 (BLUE SINK) and 35 #113 (red) on exfil|http. Merged during determinization: 684 #1 and 308 #69 on infoD|http, 1313 #1 and 890 #60 on surf|http (merge 503, page 380)
+---------
+Merge 504
+Merged 189 #1 (BLUE SINK) and 42 #75 (red) on acctManip|snmp. Merged during determinization: 685 #1 and 43 #58 on infoD|xdmcp, 1314 #1 and 1 #195 on hostD|http (merge 504, page 381)
+---------
+Merge 505
+Merged 190 #1 (BLUE SINK) and 50 #23 (red) on exfil|unknown. Merged during determinization: 686 #1 and 370 #15 on infoD|unknown, 1315 #1 and 1003 #24 on surf|unknown (merge 505, page 382)
+---------
+Merge 506
+Merged 191 #1 (BLUE SINK) and 206 #6 (red) on rPrivEsc|ms-wbt-server. Merged during determinization: 687 #1 and 724 #1 on CnC|unknown, 1316 #1 and 1344 #1 on rPrivEsc|ms-wbt-server, 1770 #1 and 1791 #1 on CnC|unknown (merge 506, page 383)
+---------
+Merge 507
+Merged 724 #2 (BLUE SINK) and 10 #96 (red) on CnC|unknown. Merged during determinization: 1344 #2 and 206 #9 on rPrivEsc|ms-wbt-server, 1791 #2 and 10 #99 on CnC|unknown, 2068 #1 and 206 #10 on rPrivEsc|ms-wbt-server, 2247 #1 and 10 #100 on CnC|unknown, 2377 #1 and 206 #10 on rPrivEsc|ms-wbt-server (merge 507, page 384)
+---------
+Merge 508
+Merged 195 #1 (BLUE SINK) and 4 #28 (red) on serD|rpas-c2. Merged during determinization: 697 #1 and 140 #167 on vulnD|ncube-lm (merge 508, page 385)
+---------
+Merge 509
+Merged 204 #1 (BLUE SINK) and 304 #76 (red) on surf|http. Merged during determinization: 720 #1 and 255 #1 on vulnD|mysql (merge 509, page 386)
+---------
+Merge 510
+Merged 255 #2 (BLUE SINK) and 16 #285 (red) on vulnD|mysql. Merged during determinization: 801 #1 and 5 #639 on serD|unknown, 1341 #1 and 304 #77 on surf|http, 1397 #1 and 941 #1 on serD|ms-sql-s, 1789 #1 and 1 #196 on hostD|http, 2066 #1 and 3 #197 on vulnD|ms-sql-s, 2245 #1 and 2 #144 on serD|ssh, 2375 #1 and 16 #287 on vulnD|mysql (merge 510, page 387)
+---------
+Merge 511
+No merges have occurred -- skipping
+---------
+Merge 512
+Merged 207 #1 (BLUE SINK) and 8 #43 (red) on bfCred|unknown. Merged during determinization: 726 #1 and 5 #640 on serD|unknown (merge 512, page 388)
+---------
+Merge 513
+Merged 217 #1 (BLUE SINK) and 140 #168 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 513, page 389)
+---------
+Merge 514
+Merged 219 #1 (BLUE SINK) and 481 #25 (red) on serD|cm. Merged during determinization: 743 #1 and 3 #198 on vulnD|ms-sql-s (merge 514, page 390)
+---------
+Merge 515
+Merged 221 #1 (BLUE SINK) and 139 #36 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 515, page 391)
+---------
+Merge 516
+Merged 228 #1 (BLUE SINK) and 101 #22 (red) on serD|cpdlc. Merged during determinization: 759 #1 and 12 #179 on vulnD|postgresql, 1367 #1 and 5 #641 on serD|unknown, 1809 #1 and 16 #288 on vulnD|mysql (merge 516, page 392)
+---------
+Merge 517
+Merged 231 #1 (BLUE SINK) and 23 #11 (red) on serD|epmap. Merged during determinization: - (merge 517, page 393)
+---------
+Merge 518
+Merged 234 #1 (BLUE SINK) and 2 #145 (red) on serD|ssh. Merged during determinization: 768 #1 and 16 #289 on vulnD|mysql (merge 518, page 394)
+---------
+Merge 519
+Merged 238 #1 (BLUE SINK) and 126 #21 (red) on serD|ag-swim. Merged during determinization: - (merge 519, page 395)
+---------
+Merge 520
+Merged 240 #1 (BLUE SINK) and 101 #23 (red) on serD|cpdlc. Merged during determinization: 779 #1 and 5 #647 on serD|unknown, 1381 #1 and 5 #647 on serD|unknown, 1821 #1 and 5 #647 on serD|unknown, 2087 #1 and 152 #17 on serD|fis, 2263 #1 and 5 #647 on serD|unknown, 2390 #1 and 5 #647 on serD|unknown, 2481 #1 and 140 #169 on vulnD|ncube-lm, 2549 #1 and 25 #86 on vulnD|ahsp, 2596 #1 and 5 #647 on serD|unknown, 2630 #1 and 36 #6 on serD|icmpd, 2651 #1 and 1253 #1 on serD|unknown (merge 520, page 396)
+---------
+Merge 521
+Merged 1253 #2 (BLUE SINK) and 5 #648 (red) on serD|unknown. Merged during determinization: 1731 #1 and 152 #18 on serD|fis, 2029 #1 and 5 #651 on serD|unknown, 2216 #1 and 18 #28 on serD|ff-ice, 2350 #1 and 12 #180 on vulnD|postgresql, 2450 #1 and 25 #87 on vulnD|ahsp, 2527 #1 and 5 #651 on serD|unknown (merge 521, page 397)
+---------
+Merge 522
+Merged 245 #1 (BLUE SINK) and 3 #199 (red) on vulnD|ms-sql-s. Merged during determinization: 787 #1 and 5 #652 on serD|unknown (merge 522, page 398)
+---------
+Merge 523
+Merged 246 #1 (BLUE SINK) and 5 #653 (red) on serD|unknown. Merged during determinization: 788 #1 and 16 #290 on vulnD|mysql, 1388 #1 and 481 #26 on serD|cm (merge 523, page 399)
+---------
+Merge 524
+Merged 247 #1 (BLUE SINK) and 5 #654 (red) on serD|unknown. Merged during determinization: 789 #1 and 16 #291 on vulnD|mysql (merge 524, page 400)
+---------
+Merge 525
+Merged 257 #1 (BLUE SINK) and 25 #88 (red) on vulnD|ahsp. Merged during determinization: 805 #1 and 5 #655 on serD|unknown, 1400 #1 and 30 #40 on hostD|http-alt (merge 525, page 401)
+---------
+Merge 526
+Merged 262 #1 (BLUE SINK) and 584 #7 (red) on serD|agma. Merged during determinization: - (merge 526, page 402)
+---------
+Merge 527
+Merged 266 #1 (BLUE SINK) and 126 #22 (red) on serD|ag-swim. Merged during determinization: - (merge 527, page 403)
+---------
+Merge 528
+Merged 267 #1 (BLUE SINK) and 28 #23 (red) on serD|microsoft-ds. Merged during determinization: - (merge 528, page 404)
+---------
+Merge 529
+Merged 270 #1 (BLUE SINK) and 481 #27 (red) on serD|cm. Merged during determinization: 826 #1 and 5 #656 on serD|unknown, 1414 #1 and 149 #9 on serD|netbios-ssn, 1841 #1 and 2261 #1 on vulnD|mysql (merge 529, page 405)
+---------
+Merge 530
+Merged 2261 #2 (BLUE SINK) and 16 #292 (red) on vulnD|mysql. Merged during determinization: - (merge 530, page 406)
+---------
+Merge 531
+Merged 274 #1 (BLUE SINK) and 101 #24 (red) on serD|cpdlc. Merged during determinization: 831 #1 and 5 #662 on serD|unknown, 1417 #1 and 100 #26 on serD|dsd, 1844 #1 and 5 #662 on serD|unknown, 2095 #1 and 5 #662 on serD|unknown, 2268 #1 and 152 #19 on serD|fis, 2394 #1 and 140 #171 on vulnD|ncube-lm, 2485 #1 and 5 #662 on serD|unknown, 2552 #1 and 140 #171 on vulnD|ncube-lm, 2598 #1 and 25 #89 on vulnD|ahsp, 2631 #1 and 5 #662 on serD|unknown, 2652 #1 and 5 #662 on serD|unknown (merge 531, page 407)
+---------
+Merge 532
+Merged 278 #1 (BLUE SINK) and 139 #37 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 532, page 408)
+---------
+Merge 533
+Merged 282 #1 (BLUE SINK) and 129 #44 (red) on serD|rfb. Merged during determinization: 847 #1 and 1233 #1 on vulnD|ncube-lm (merge 533, page 409)
+---------
+Merge 534
+Merged 1233 #2 (BLUE SINK) and 140 #172 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 534, page 410)
+---------
+Merge 535
+Merged 284 #1 (BLUE SINK) and 2 #146 (red) on serD|ssh. Merged during determinization: 849 #1 and 140 #174 on vulnD|ncube-lm, 1428 #1 and 304 #79 on surf|http, 1852 #1 and 304 #79 on surf|http (merge 535, page 411)
+---------
+Merge 536
+Merged 285 #1 (BLUE SINK) and 3 #200 (red) on vulnD|ms-sql-s. Merged during determinization: 850 #1 and 1197 #1 on vulnD|ms-sql-s (merge 536, page 412)
+---------
+Merge 537
+Merged 1197 #2 (BLUE SINK) and 3 #201 (red) on vulnD|ms-sql-s. Merged during determinization: 1429 #1 and 100 #27 on serD|dsd, 1690 #1 and 129 #45 on serD|rfb (merge 537, page 413)
+---------
+Merge 538
+Merged 289 #1 (BLUE SINK) and 18 #29 (red) on serD|ff-ice. Merged during determinization: 857 #1 and 717 #1 on vulnD|ms-sql-s (merge 538, page 414)
+---------
+Merge 539
+Merged 717 #2 (BLUE SINK) and 3 #203 (red) on vulnD|ms-sql-s. Merged during determinization: - (merge 539, page 415)
+---------
+Merge 540
+Merged 291 #1 (BLUE SINK) and 5 #663 (red) on serD|unknown. Merged during determinization: 861 #1 and 16 #296 on vulnD|mysql, 1443 #1 and 5 #664 on serD|unknown, 1861 #1 and 16 #296 on vulnD|mysql, 2105 #1 and 16 #296 on vulnD|mysql (merge 540, page 416)
+---------
+Merge 541
+Merged 294 #1 (BLUE SINK) and 441 #10 (red) on serD|sunrpc. Merged during determinization: - (merge 541, page 417)
+---------
+Merge 542
+Merged 295 #1 (BLUE SINK) and 36 #7 (red) on serD|icmpd. Merged during determinization: - (merge 542, page 418)
+---------
+Merge 543
+Merged 299 #1 (BLUE SINK) and 288 #26 (red) on ACE|microsoft-ds. Merged during determinization: - (merge 543, page 419)
+---------
+Merge 544
+Merged 301 #1 (BLUE SINK) and 18 #30 (red) on serD|ff-ice. Merged during determinization: 877 #1 and 12 #181 on vulnD|postgresql, 1452 #1 and 140 #175 on vulnD|ncube-lm (merge 544, page 420)
+---------
+Merge 545
+Merged 302 #1 (BLUE SINK) and 30 #41 (red) on hostD|http-alt. Merged during determinization: 878 #1 and 2413 #1 on vulnD|ms-sql-s (merge 545, page 421)
+---------
+Merge 546
+Merged 2413 #2 (BLUE SINK) and 3 #205 (red) on vulnD|ms-sql-s. Merged during determinization: 2498 #1 and 30 #42 on hostD|http-alt (merge 546, page 422)
+---------
+Merge 547
+Merged 305 #1 (BLUE SINK) and 30 #43 (red) on hostD|http-alt. Merged during determinization: - (merge 547, page 423)
+---------
+Merge 548
+Merged 307 #1 (BLUE SINK) and 349 #46 (red) on vulnD|http. Merged during determinization: 886 #1 and 1 #197 on hostD|http (merge 548, page 424)
+---------
+Merge 549
+No merges have occurred -- skipping
+---------
+Merge 550
+Merged 312 #1 (BLUE SINK) and 25 #90 (red) on vulnD|ahsp. Merged during determinization: 899 #1 and 140 #176 on vulnD|ncube-lm, 1482 #1 and 101 #25 on serD|cpdlc, 1881 #1 and 5 #665 on serD|unknown (merge 550, page 425)
+---------
+Merge 551
+Merged 313 #1 (BLUE SINK) and 2 #147 (red) on serD|ssh. Merged during determinization: 900 #1 and 16 #297 on vulnD|mysql (merge 551, page 426)
+---------
+Merge 552
+Merged 314 #1 (BLUE SINK) and 1 #198 (red) on hostD|http. Merged during determinization: 901 #1 and 16 #298 on vulnD|mysql (merge 552, page 427)
+---------
+Merge 553
+Merged 315 #1 (BLUE SINK) and 2 #148 (red) on serD|ssh. Merged during determinization: 902 #1 and 2091 #1 on hostD|http-alt (merge 553, page 428)
+---------
+Merge 554
+Merged 2091 #2 (BLUE SINK) and 30 #44 (red) on hostD|http-alt. Merged during determinization: 1483 #1 and 3 #207 on vulnD|ms-sql-s, 2266 #1 and 16 #299 on vulnD|mysql, 2392 #1 and 5 #666 on serD|unknown, 2483 #1 and 140 #177 on vulnD|ncube-lm (merge 554, page 429)
+---------
+Merge 555
+Merged 316 #1 (BLUE SINK) and 16 #300 (red) on vulnD|mysql. Merged during determinization: 903 #1 and 16 #301 on vulnD|mysql, 1484 #1 and 5 #667 on serD|unknown (merge 555, page 430)
+---------
+Merge 556
+Merged 318 #1 (BLUE SINK) and 25 #91 (red) on vulnD|ahsp. Merged during determinization: 905 #1 and 5 #669 on serD|unknown, 1486 #1 and 140 #178 on vulnD|ncube-lm, 1884 #1 and 5 #669 on serD|unknown (merge 556, page 431)
+---------
+Merge 557
+Merged 320 #1 (BLUE SINK) and 139 #38 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 557, page 432)
+---------
+Merge 558
+Merged 326 #1 (BLUE SINK) and 12 #182 (red) on vulnD|postgresql. Merged during determinization: 919 #1 and 2 #149 on serD|ssh (merge 558, page 433)
+---------
+Merge 559
+Merged 327 #1 (BLUE SINK) and 149 #10 (red) on serD|netbios-ssn. Merged during determinization: - (merge 559, page 434)
+---------
+Merge 560
+Merged 328 #1 (BLUE SINK) and 33 #15 (red) on bfCred|pop3. Merged during determinization: 921 #1 and 5 #670 on serD|unknown, 1494 #1 and 3 #208 on vulnD|ms-sql-s (merge 560, page 435)
+---------
+Merge 561
+Merged 329 #1 (BLUE SINK) and 941 #2 (RED SINK) on serD|ms-sql-s. Merged during determinization: - (merge 561, page 436)
+---------
+Merge 562
+Merged 333 #1 (BLUE SINK) and 396 #49 (red) on ACE|ssdp. Merged during determinization: 932 #1 and 5 #671 on serD|unknown, 1498 #1 and 3 #209 on vulnD|ms-sql-s, 1889 #1 and 12 #183 on vulnD|postgresql, 2123 #1 and 100 #28 on serD|dsd (merge 562, page 437)
+---------
+Merge 563
+Merged 335 #1 (BLUE SINK) and 2 #150 (red) on serD|ssh. Merged during determinization: 936 #1 and 2 #151 on serD|ssh, 1501 #1 and 441 #11 on serD|sunrpc, 1890 #1 and 618 #1 on serD|sunrpc (merge 563, page 438)
+---------
+Merge 564
+Merged 618 #2 (BLUE SINK) and 441 #12 (red) on serD|sunrpc. Merged during determinization: - (merge 564, page 439)
+---------
+Merge 565
+Merged 340 #1 (BLUE SINK) and 365 #27 (red) on hostD|unknown. Merged during determinization: 946 #1 and 140 #179 on vulnD|ncube-lm, 1506 #1 and 12 #184 on vulnD|postgresql (merge 565, page 440)
+---------
+Merge 566
+Merged 346 #1 (BLUE SINK) and 126 #23 (red) on serD|ag-swim. Merged during determinization: 960 #1 and 776 #1 on vulnD|postgresql (merge 566, page 441)
+---------
+Merge 567
+Merged 776 #2 (BLUE SINK) and 12 #185 (red) on vulnD|postgresql. Merged during determinization: - (merge 567, page 442)
+---------
+Merge 568
+Merged 351 #1 (BLUE SINK) and 66 #4 (RED SINK) on uPrivEsc|http. Merged during determinization: - (merge 568, page 443)
+---------
+Merge 569
+Merged 352 #1 (BLUE SINK) and 20 #1 (RED SINK) on hostD|websm. Merged during determinization: - (merge 569, page 444)
+---------
+Merge 570
+Merged 353 #1 (BLUE SINK) and 481 #28 (red) on serD|cm. Merged during determinization: 973 #1 and 140 #180 on vulnD|ncube-lm, 1533 #1 and 2487 #1 on hostD|http-alt (merge 570, page 445)
+---------
+Merge 571
+Merged 2487 #2 (BLUE SINK) and 30 #46 (red) on hostD|http-alt. Merged during determinization: 1912 #1 and 5 #674 on serD|unknown, 2136 #1 and 16 #303 on vulnD|mysql, 2295 #1 and 561 #1 on infoD|xdmcp, 2554 #1 and 129 #46 on serD|rfb, 2600 #1 and 16 #303 on vulnD|mysql, 2633 #1 and 30 #49 on hostD|http-alt, 2653 #1 and 5 #674 on serD|unknown, 2664 #1 and 12 #187 on vulnD|postgresql, 2673 #1 and 2 #153 on serD|ssh, 2678 #1 and 30 #49 on hostD|http-alt, 2680 #1 and 5 #674 on serD|unknown, 2681 #1 and 3 #210 on vulnD|ms-sql-s, 2682 #1 and 2 #153 on serD|ssh (merge 571, page 446)
+---------
+Merge 572
+Merged 561 #2 (BLUE SINK) and 43 #59 (red) on infoD|xdmcp. Merged during determinization: - (merge 572, page 447)
+---------
+Merge 573
+Merged 354 #1 (BLUE SINK) and 584 #8 (red) on serD|agma. Merged during determinization: - (merge 573, page 448)
+---------
+Merge 574
+No merges have occurred -- skipping
+---------
+Merge 575
+Merged 357 #1 (BLUE SINK) and 12 #188 (red) on vulnD|postgresql. Merged during determinization: 979 #1 and 30 #50 on hostD|http-alt, 1537 #1 and 16 #304 on vulnD|mysql (merge 575, page 449)
+---------
+Merge 576
+Merged 360 #1 (BLUE SINK) and 3 #211 (red) on vulnD|ms-sql-s. Merged during determinization: 984 #1 and 126 #24 on serD|ag-swim, 1540 #1 and 5 #675 on serD|unknown, 1916 #1 and 3 #212 on vulnD|ms-sql-s (merge 576, page 450)
+---------
+Merge 577
+Merged 361 #1 (BLUE SINK) and 980 #14 (red) on surf|http-alt. Merged during determinization: 985 #1 and 980 #15 on surf|http-alt (merge 577, page 451)
+---------
+Merge 578
+Merged 363 #1 (BLUE SINK) and 5 #676 (red) on serD|unknown. Merged during determinization: 989 #1 and 3 #213 on vulnD|ms-sql-s, 1544 #1 and 829 #1 on hostD|unknown (merge 578, page 452)
+---------
+Merge 579
+Merged 829 #2 (BLUE SINK) and 365 #28 (red) on hostD|unknown. Merged during determinization: 1922 #1 and 140 #181 on vulnD|ncube-lm, 1415 #1 and 823 #1 on serD|ag-swim, 1842 #1 and 1413 #1 on vulnD|mysql, 2146 #1 and 365 #30 on hostD|unknown, 2304 #1 and 1025 #1 on vulnD|postgresql (merge 579, page 453)
+---------
+Merge 580
+Merged 823 #2 (BLUE SINK) and 126 #25 (red) on serD|ag-swim. Merged during determinization: 1413 #2 and 16 #306 on vulnD|mysql, 2093 #1 and 16 #307 on vulnD|mysql (merge 580, page 454)
+---------
+Merge 581
+Merged 1025 #2 (BLUE SINK) and 12 #189 (red) on vulnD|postgresql. Merged during determinization: 1574 #1 and 100 #29 on serD|dsd, 2419 #1 and 129 #47 on serD|rfb (merge 581, page 455)
+---------
+Merge 582
+Merged 364 #1 (BLUE SINK) and 140 #182 (red) on vulnD|ncube-lm. Merged during determinization: 990 #1 and 2 #154 on serD|ssh, 1545 #1 and 16 #310 on vulnD|mysql, 1923 #1 and 365 #31 on hostD|unknown, 2147 #1 and 5 #678 on serD|unknown, 2305 #1 and 16 #310 on vulnD|mysql, 2420 #1 and 43 #61 on infoD|xdmcp, 2504 #1 and 5 #678 on serD|unknown, 2567 #1 and 16 #310 on vulnD|mysql (merge 582, page 456)
+---------
+Merge 583
+Merged 367 #1 (BLUE SINK) and 8 #44 (red) on bfCred|unknown. Merged during determinization: 999 #1 and 42 #76 on acctManip|snmp, 1556 #1 and 43 #62 on infoD|xdmcp (merge 583, page 457)
+---------
+Merge 584
+Merged 369 #1 (BLUE SINK) and 50 #24 (red) on exfil|unknown. Merged during determinization: - (merge 584, page 458)
+---------
+Merge 585
+Merged 373 #1 (BLUE SINK) and 52 #1 (RED SINK) on servS|remoteware-cl. Merged during determinization: - (merge 585, page 459)
+---------
+Merge 586
+Merged 374 #1 (BLUE SINK) and 1 #199 (red) on hostD|http. Merged during determinization: 1008 #1 and 5 #679 on serD|unknown, 1561 #1 and 16 #311 on vulnD|mysql (merge 586, page 460)
+---------
+Merge 587
+Merged 376 #1 (BLUE SINK) and 349 #47 (red) on vulnD|http. Merged during determinization: - (merge 587, page 461)
+---------
+Merge 588
+Merged 378 #1 (BLUE SINK) and 65 #22 (red) on netDOS|ssdp. Merged during determinization: 1019 #1 and 5 #680 on serD|unknown (merge 588, page 462)
+---------
+Merge 589
+Merged 379 #1 (BLUE SINK) and 22 #3 (RED SINK) on infoD|domain. Merged during determinization: 1020 #1 and 1 #200 on hostD|http, 1570 #1 and 5 #681 on serD|unknown, 1933 #1 and 16 #312 on vulnD|mysql (merge 589, page 463)
+---------
+Merge 590
+Merged 381 #1 (BLUE SINK) and 140 #183 (red) on vulnD|ncube-lm. Merged during determinization: 1022 #1 and 2 #155 on serD|ssh (merge 590, page 464)
+---------
+Merge 591
+Merged 382 #1 (BLUE SINK) and 100 #30 (red) on serD|dsd. Merged during determinization: 1023 #1 and 16 #313 on vulnD|mysql, 1572 #1 and 365 #32 on hostD|unknown, 1934 #1 and 3 #214 on vulnD|ms-sql-s, 2152 #1 and 2 #156 on serD|ssh (merge 591, page 465)
+---------
+Merge 592
+Merged 383 #1 (BLUE SINK) and 16 #314 (red) on vulnD|mysql. Merged during determinization: 1024 #1 and 3 #215 on vulnD|ms-sql-s, 1573 #1 and 2 #157 on serD|ssh (merge 592, page 466)
+---------
+Merge 593
+Merged 385 #1 (BLUE SINK) and 56 #5 (red) on uPrivEsc|unknown. Merged during determinization: - (merge 593, page 467)
+---------
+Merge 594
+Merged 386 #1 (BLUE SINK) and 1 #201 (red) on hostD|http. Merged during determinization: 1027 #1 and 5 #682 on serD|unknown, 1576 #1 and 16 #315 on vulnD|mysql (merge 594, page 468)
+---------
+Merge 595
+Merged 387 #1 (BLUE SINK) and 10 #101 (red) on CnC|unknown. Merged during determinization: 1028 #1 and 304 #80 on surf|http (merge 595, page 469)
+---------
+Merge 596
+Merged 388 #1 (BLUE SINK) and 58 #1 (RED SINK) on CnC|irdmi. Merged during determinization: - (merge 596, page 470)
+---------
+Merge 597
+Merged 389 #1 (BLUE SINK) and 304 #81 (red) on surf|http. Merged during determinization: - (merge 597, page 471)
+---------
+Merge 598
+Merged 390 #1 (BLUE SINK) and 1 #202 (red) on hostD|http. Merged during determinization: 1031 #1 and 5 #683 on serD|unknown, 1579 #1 and 16 #316 on vulnD|mysql (merge 598, page 472)
+---------
+Merge 599
+Merged 391 #1 (BLUE SINK) and 1 #203 (red) on hostD|http. Merged during determinization: 1032 #1 and 3 #216 on vulnD|ms-sql-s, 1580 #1 and 5 #686 on serD|unknown, 1938 #1 and 5 #686 on serD|unknown, 2156 #1 and 12 #191 on vulnD|postgresql, 2309 #1 and 5 #686 on serD|unknown, 2422 #1 and 16 #317 on vulnD|mysql, 2506 #1 and 304 #82 on surf|http (merge 599, page 473)
+---------
+Merge 600
+Merged 392 #1 (BLUE SINK) and 5 #687 (red) on serD|unknown. Merged during determinization: 1033 #1 and 1 #204 on hostD|http, 1581 #1 and 101 #26 on serD|cpdlc, 1939 #1 and 16 #318 on vulnD|mysql (merge 600, page 474)
+---------
+Merge 601
+No merges have occurred -- skipping
+---------
+Merge 602
+Merged 395 #1 (BLUE SINK) and 34 #18 (red) on bfCred|pop3s. Merged during determinization: 1039 #1 and 5 #688 on serD|unknown, 1588 #1 and 140 #184 on vulnD|ncube-lm (merge 602, page 475)
+---------
+Merge 603
+Merged 397 #1 (BLUE SINK) and 72 #1 (RED SINK) on ACE|epmap. Merged during determinization: - (merge 603, page 476)
+---------
+Merge 604
+No merges have occurred -- skipping
+---------
+Merge 605
+Merged 406 #1 (BLUE SINK) and 2540 #6 (red) on serD|spt-automation. Merged during determinization: - (merge 605, page 477)
+---------
+Merge 606
+Merged 407 #1 (BLUE SINK) and 349 #48 (red) on vulnD|http. Merged during determinization: - (merge 606, page 478)
+---------
+Merge 607
+Merged 408 #1 (BLUE SINK) and 308 #70 (red) on infoD|http. Merged during determinization: - (merge 607, page 479)
+---------
+Merge 608
+Merged 411 #1 (BLUE SINK) and 12 #192 (red) on vulnD|postgresql. Merged during determinization: - (merge 608, page 480)
+---------
+Merge 609
+Merged 412 #1 (BLUE SINK) and 16 #319 (red) on vulnD|mysql. Merged during determinization: 1078 #1 and 23 #12 on serD|epmap (merge 609, page 481)
+---------
+Merge 610
+Merged 414 #1 (BLUE SINK) and 28 #24 (red) on serD|microsoft-ds. Merged during determinization: - (merge 610, page 482)
+---------
+Merge 611
+Merged 415 #1 (BLUE SINK) and 149 #11 (red) on serD|netbios-ssn. Merged during determinization: 1082 #1 and 622 #1 on vulnD|ncube-lm (merge 611, page 483)
+---------
+Merge 612
+Merged 622 #2 (BLUE SINK) and 140 #185 (red) on vulnD|ncube-lm. Merged during determinization: 1619 #1 and 1063 #1 on infoD|xdmcp (merge 612, page 484)
+---------
+Merge 613
+Merged 1063 #2 (BLUE SINK) and 43 #63 (red) on infoD|xdmcp. Merged during determinization: - (merge 613, page 485)
+---------
+Merge 614
+Merged 418 #1 (BLUE SINK) and 50 #25 (red) on exfil|unknown. Merged during determinization: 1086 #1 and 371 #9 on delivery|unknown (merge 614, page 486)
+---------
+Merge 615
+Merged 420 #1 (BLUE SINK) and 63 #40 (red) on remoteexp|snmp. Merged during determinization: 1089 #1 and 43 #65 on infoD|xdmcp (merge 615, page 487)
+---------
+Merge 616
+Merged 422 #1 (BLUE SINK) and 50 #26 (red) on exfil|unknown. Merged during determinization: 1091 #1 and 8 #45 on bfCred|unknown, 1626 #1 and 42 #77 on acctManip|snmp, 1958 #1 and 43 #66 on infoD|xdmcp, 2167 #1 and 5 #691 on serD|unknown, 2313 #1 and 3 #217 on vulnD|ms-sql-s, 2425 #1 and 5 #691 on serD|unknown, 2508 #1 and 16 #321 on vulnD|mysql, 2569 #1 and 18 #31 on serD|ff-ice, 2611 #1 and 5 #691 on serD|unknown, 2636 #1 and 16 #321 on vulnD|mysql (merge 616, page 488)
+---------
+Merge 617
+No merges have occurred -- skipping
+---------
+Merge 618
+Merged 426 #1 (BLUE SINK) and 32 #49 (red) on exfil|microsoft-ds. Merged during determinization: 1097 #1 and 288 #27 on ACE|microsoft-ds (merge 618, page 489)
+---------
+Merge 619
+Merged 431 #1 (BLUE SINK) and 12 #193 (red) on vulnD|postgresql. Merged during determinization: - (merge 619, page 490)
+---------
+Merge 620
+Merged 435 #1 (BLUE SINK) and 76 #2 (RED SINK) on delivery|wap-wsp. Merged during determinization: 1110 #1 and 42 #78 on acctManip|snmp, 1637 #1 and 43 #67 on infoD|xdmcp (merge 620, page 491)
+---------
+Merge 621
+Merged 436 #1 (BLUE SINK) and 1112 #2 (RED SINK) on surf|wap-wsp. Merged during determinization: - (merge 621, page 492)
+---------
+Merge 622
+Merged 439 #1 (BLUE SINK) and 78 #1 (RED SINK) on exfil|distinct. Merged during determinization: - (merge 622, page 493)
+---------
+Merge 623
+Merged 440 #1 (BLUE SINK) and 77 #1 (RED SINK) on delivery|distinct. Merged during determinization: - (merge 623, page 494)
+---------
+Merge 624
+Merged 442 #1 (BLUE SINK) and 42 #79 (red) on acctManip|snmp. Merged during determinization: 1119 #1 and 43 #68 on infoD|xdmcp (merge 624, page 495)
+---------
+Merge 625
+Merged 443 #1 (BLUE SINK) and 310 #1 (RED SINK) on CnC|smtp. Merged during determinization: 1120 #1 and 897 #1 on acctManip|snmp, 1639 #1 and 1480 #1 on remoteexp|snmp (merge 625, page 496)
+---------
+Merge 626
+Merged 897 #2 (BLUE SINK) and 42 #80 (red) on acctManip|snmp. Merged during determinization: 1480 #2 and 332 #11 on remoteexp|snmp, 1965 #1 and 931 #1 on ACE|ssdp (merge 626, page 497)
+---------
+Merge 627
+Merged 931 #2 (BLUE SINK) and 396 #50 (red) on ACE|ssdp. Merged during determinization: 1497 #1 and 16 #322 on vulnD|mysql, 2171 #1 and 33 #16 on bfCred|pop3, 2315 #1 and 140 #187 on vulnD|ncube-lm (merge 627, page 498)
+---------
+Merge 628
+Merged 444 #1 (BLUE SINK) and 63 #41 (red) on remoteexp|snmp. Merged during determinization: 1121 #1 and 396 #52 on ACE|ssdp, 1640 #1 and 140 #188 on vulnD|ncube-lm, 1966 #1 and 2 #158 on serD|ssh (merge 628, page 499)
+---------
+Merge 629
+Merged 446 #1 (BLUE SINK) and 12 #194 (red) on vulnD|postgresql. Merged during determinization: 1124 #1 and 5 #692 on serD|unknown, 1642 #1 and 3 #218 on vulnD|ms-sql-s, 1968 #1 and 129 #48 on serD|rfb (merge 629, page 500)
+---------
+Merge 630
+Merged 449 #1 (BLUE SINK) and 10 #102 (red) on CnC|unknown. Merged during determinization: - (merge 630, page 501)
+---------
+Merge 631
+Merged 450 #1 (BLUE SINK) and 53 #20 (red) on delivery|http. Merged during determinization: 1129 #1 and 375 #15 on exfil|http (merge 631, page 502)
+---------
+Merge 632
+Merged 451 #1 (BLUE SINK) and 30 #51 (red) on hostD|http-alt. Merged during determinization: - (merge 632, page 503)
+---------
+Merge 633
+Merged 452 #1 (BLUE SINK) and 356 #5 (red) on vulnD|http-alt. Merged during determinization: 1131 #1 and 30 #52 on hostD|http-alt (merge 633, page 504)
+---------
+Merge 634
+Merged 454 #1 (BLUE SINK) and 1109 #5 (red) on surf|remoteware-cl. Merged during determinization: - (merge 634, page 505)
+---------
+Merge 635
+No merges have occurred -- skipping
+---------
+Merge 636
+Merged 456 #1 (BLUE SINK) and 365 #33 (red) on hostD|unknown. Merged during determinization: 1135 #1 and 5 #693 on serD|unknown, 1652 #1 and 16 #323 on vulnD|mysql, 1973 #1 and 139 #39 on hostD|ms-wbt-server, 2176 #1 and 745 #1 on serD|ssh (merge 636, page 506)
+---------
+Merge 637
+Merged 745 #2 (BLUE SINK) and 2 #159 (red) on serD|ssh. Merged during determinization: 1357 #1 and 5 #695 on serD|unknown, 2318 #1 and 16 #325 on vulnD|mysql, 1801 #1 and 16 #325 on vulnD|mysql, 2077 #1 and 2 #161 on serD|ssh, 2255 #1 and 12 #195 on vulnD|postgresql, 2383 #1 and 140 #189 on vulnD|ncube-lm, 2475 #1 and 5 #695 on serD|unknown (merge 637, page 507)
+---------
+Merge 638
+Merged 459 #1 (BLUE SINK) and 149 #12 (red) on serD|netbios-ssn. Merged during determinization: - (merge 638, page 508)
+---------
+Merge 639
+Merged 491 #1 (BLUE SINK) and 1 #205 (red) on hostD|http. Merged during determinization: 1178 #1 and 12 #197 on vulnD|postgresql, 1678 #1 and 5 #696 on serD|unknown, 1991 #1 and 12 #197 on vulnD|postgresql (merge 639, page 509)
+---------
+Merge 640
+Merged 500 #1 (BLUE SINK) and 16 #326 (red) on vulnD|mysql. Merged during determinization: 1185 #1 and 139 #40 on hostD|ms-wbt-server (merge 640, page 510)
+---------
+Merge 641
+Merged 503 #1 (BLUE SINK) and 4 #29 (red) on serD|rpas-c2. Merged during determinization: 1186 #1 and 5 #698 on serD|unknown, 1683 #1 and 3 #219 on vulnD|ms-sql-s, 1995 #1 and 5 #698 on serD|unknown, 2189 #1 and 101 #27 on serD|cpdlc, 2325 #1 and 140 #190 on vulnD|ncube-lm (merge 641, page 511)
+---------
+Merge 642
+Merged 505 #1 (BLUE SINK) and 12 #198 (red) on vulnD|postgresql. Merged during determinization: 1188 #1 and 481 #29 on serD|cm, 1685 #1 and 5 #699 on serD|unknown (merge 642, page 512)
+---------
+Merge 643
+Merged 506 #1 (BLUE SINK) and 941 #3 (RED SINK) on serD|ms-sql-s. Merged during determinization: - (merge 643, page 513)
+---------
+Merge 644
+Merged 511 #1 (BLUE SINK) and 4 #30 (red) on serD|rpas-c2. Merged during determinization: 1193 #1 and 16 #327 on vulnD|mysql (merge 644, page 514)
+---------
+Merge 645
+Merged 512 #1 (BLUE SINK) and 43 #69 (red) on infoD|xdmcp. Merged during determinization: 1194 #1 and 5 #700 on serD|unknown, 1688 #1 and 16 #328 on vulnD|mysql (merge 645, page 515)
+---------
+Merge 646
+Merged 528 #1 (BLUE SINK) and 140 #191 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 646, page 516)
+---------
+Merge 647
+Merged 532 #1 (BLUE SINK) and 101 #28 (red) on serD|cpdlc. Merged during determinization: 1205 #1 and 5 #701 on serD|unknown (merge 647, page 517)
+---------
+Merge 648
+Merged 533 #1 (BLUE SINK) and 304 #83 (red) on surf|http. Merged during determinization: - (merge 648, page 518)
+---------
+Merge 649
+Merged 537 #1 (BLUE SINK) and 129 #49 (red) on serD|rfb. Merged during determinization: 1207 #1 and 16 #329 on vulnD|mysql (merge 649, page 519)
+---------
+Merge 650
+Merged 544 #1 (BLUE SINK) and 3 #220 (red) on vulnD|ms-sql-s. Merged during determinization: - (merge 650, page 520)
+---------
+Merge 651
+Merged 546 #1 (BLUE SINK) and 8 #46 (red) on bfCred|unknown. Merged during determinization: - (merge 651, page 521)
+---------
+Merge 652
+Merged 549 #1 (BLUE SINK) and 101 #29 (red) on serD|cpdlc. Merged during determinization: 1214 #1 and 5 #709 on serD|unknown, 1698 #1 and 5 #709 on serD|unknown, 2002 #1 and 140 #192 on vulnD|ncube-lm, 2194 #1 and 36 #8 on serD|icmpd, 2330 #1 and 5 #709 on serD|unknown, 2435 #1 and 5 #709 on serD|unknown, 2518 #1 and 5 #709 on serD|unknown, 2575 #1 and 12 #199 on vulnD|postgresql, 2614 #1 and 5 #709 on serD|unknown, 2638 #1 and 5 #709 on serD|unknown, 2655 #1 and 25 #92 on vulnD|ahsp, 2665 #1 and 481 #30 on serD|cm, 2674 #1 and 5 #709 on serD|unknown (merge 652, page 522)
+---------
+Merge 653
+Merged 553 #1 (BLUE SINK) and 139 #41 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 653, page 523)
+---------
+Merge 654
+Merged 556 #1 (BLUE SINK) and 23 #13 (red) on serD|epmap. Merged during determinization: - (merge 654, page 524)
+---------
+Merge 655
+Merged 572 #1 (BLUE SINK) and 22 #4 (RED SINK) on infoD|domain. Merged during determinization: 1232 #1 and 1 #206 on hostD|http, 1711 #1 and 5 #711 on serD|unknown, 2013 #1 and 3 #221 on vulnD|ms-sql-s, 2200 #1 and 5 #711 on serD|unknown, 2335 #1 and 140 #193 on vulnD|ncube-lm, 2439 #1 and 596 #1 on serD|fis, 2522 #1 and 1254 #1 on serD|unknown (merge 655, page 525)
+---------
+Merge 656
+Merged 596 #2 (BLUE SINK) and 152 #20 (red) on serD|fis. Merged during determinization: 1254 #2 and 5 #714 on serD|unknown, 2578 #1 and 12 #200 on vulnD|postgresql, 1732 #1 and 126 #27 on serD|ag-swim, 2617 #1 and 5 #715 on serD|unknown, 2641 #1 and 25 #93 on vulnD|ahsp, 2658 #1 and 5 #715 on serD|unknown, 2668 #1 and 139 #42 on hostD|ms-wbt-server (merge 656, page 526)
+---------
+Merge 657
+Merged 586 #1 (BLUE SINK) and 16 #330 (red) on vulnD|mysql. Merged during determinization: - (merge 657, page 527)
+---------
+Merge 658
+Merged 601 #1 (BLUE SINK) and 9 #45 (red) on netDOS|ms-wbt-server. Merged during determinization: - (merge 658, page 528)
+---------
+Merge 659
+Merged 602 #1 (BLUE SINK) and 126 #28 (red) on serD|ag-swim. Merged during determinization: 1256 #1 and 12 #201 on vulnD|postgresql (merge 659, page 529)
+---------
+Merge 660
+Merged 604 #1 (BLUE SINK) and 941 #4 (RED SINK) on serD|ms-sql-s. Merged during determinization: - (merge 660, page 530)
+---------
+Merge 661
+Merged 605 #1 (BLUE SINK) and 36 #9 (red) on serD|icmpd. Merged during determinization: 1258 #1 and 25 #94 on vulnD|ahsp, 1734 #1 and 3 #222 on vulnD|ms-sql-s, 2032 #1 and 2 #162 on serD|ssh, 2219 #1 and 30 #53 on hostD|http-alt (merge 661, page 531)
+---------
+Merge 662
+Merged 611 #1 (BLUE SINK) and 140 #194 (red) on vulnD|ncube-lm. Merged during determinization: 1265 #1 and 5 #716 on serD|unknown, 1740 #1 and 12 #202 on vulnD|postgresql, 2036 #1 and 139 #43 on hostD|ms-wbt-server (merge 662, page 532)
+---------
+Merge 663
+Merged 619 #1 (BLUE SINK) and 4 #31 (red) on serD|rpas-c2. Merged during determinization: - (merge 663, page 533)
+---------
+Merge 664
+Merged 623 #1 (BLUE SINK) and 304 #84 (red) on surf|http. Merged during determinization: - (merge 664, page 534)
+---------
+Merge 665
+Merged 626 #1 (BLUE SINK) and 10 #103 (red) on CnC|unknown. Merged during determinization: - (merge 665, page 535)
+---------
+Merge 666
+Merged 633 #1 (BLUE SINK) and 23 #14 (red) on serD|epmap. Merged during determinization: - (merge 666, page 536)
+---------
+Merge 667
+Merged 637 #1 (BLUE SINK) and 585 #8 (red) on serD|asmgcs. Merged during determinization: - (merge 667, page 537)
+---------
+Merge 668
+Merged 663 #1 (BLUE SINK) and 101 #30 (red) on serD|cpdlc. Merged during determinization: 1299 #1 and 5 #720 on serD|unknown, 1762 #1 and 5 #720 on serD|unknown, 2050 #1 and 152 #22 on serD|fis, 2231 #1 and 140 #195 on vulnD|ncube-lm, 2363 #1 and 25 #95 on vulnD|ahsp, 2460 #1 and 5 #720 on serD|unknown, 2536 #1 and 5 #720 on serD|unknown, 2587 #1 and 36 #10 on serD|icmpd (merge 668, page 538)
+---------
+Merge 669
+Merged 665 #1 (BLUE SINK) and 54 #1 (RED SINK) on privEsc|http. Merged during determinization: - (merge 669, page 539)
+---------
+Merge 670
+Merged 670 #1 (BLUE SINK) and 481 #31 (red) on serD|cm. Merged during determinization: 1304 #1 and 140 #196 on vulnD|ncube-lm, 1765 #1 and 5 #721 on serD|unknown (merge 670, page 540)
+---------
+Merge 671
+Merged 673 #1 (BLUE SINK) and 288 #28 (red) on ACE|microsoft-ds. Merged during determinization: 1307 #1 and 1628 #1 on vulnD|ms-sql-s (merge 671, page 541)
+---------
+Merge 672
+Merged 1628 #2 (BLUE SINK) and 3 #223 (red) on vulnD|ms-sql-s. Merged during determinization: 1766 #1 and 4 #32 on serD|rpas-c2, 1960 #1 and 12 #203 on vulnD|postgresql, 2168 #1 and 5 #722 on serD|unknown (merge 672, page 542)
+---------
+Merge 673
+Merged 675 #1 (BLUE SINK) and 28 #25 (red) on serD|microsoft-ds. Merged during determinization: - (merge 673, page 543)
+---------
+Merge 674
+Merged 679 #1 (BLUE SINK) and 126 #29 (red) on serD|ag-swim. Merged during determinization: - (merge 674, page 544)
+---------
+Merge 675
+Merged 682 #1 (BLUE SINK) and 139 #44 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 675, page 545)
+---------
+Merge 676
+Merged 688 #1 (BLUE SINK) and 28 #26 (red) on serD|microsoft-ds. Merged during determinization: 1317 #1 and 1081 #1 on vulnD|ms-sql-s (merge 676, page 546)
+---------
+Merge 677
+Merged 1081 #2 (BLUE SINK) and 3 #225 (red) on vulnD|ms-sql-s. Merged during determinization: - (merge 677, page 547)
+---------
+Merge 678
+Merged 689 #1 (BLUE SINK) and 651 #2 (RED SINK) on infoD|ftp. Merged during determinization: - (merge 678, page 548)
+---------
+Merge 679
+Merged 715 #1 (BLUE SINK) and 34 #19 (red) on bfCred|pop3s. Merged during determinization: - (merge 679, page 549)
+---------
+Merge 680
+Merged 722 #1 (BLUE SINK) and 585 #9 (red) on serD|asmgcs. Merged during determinization: 1342 #1 and 25 #96 on vulnD|ahsp, 1790 #1 and 2458 #4 on serD|ads-c (merge 680, page 550)
+---------
+Merge 681
+Merged 723 #1 (BLUE SINK) and 3 #227 (red) on vulnD|ms-sql-s. Merged during determinization: 1343 #1 and 5 #723 on serD|unknown (merge 681, page 551)
+---------
+Merge 682
+Merged 727 #1 (BLUE SINK) and 32 #50 (red) on exfil|microsoft-ds. Merged during determinization: - (merge 682, page 552)
+---------
+Merge 683
+Merged 741 #1 (BLUE SINK) and 19 #2 (RED SINK) on serD|ms-sql-m. Merged during determinization: - (merge 683, page 553)
+---------
+Merge 684
+Merged 749 #1 (BLUE SINK) and 100 #31 (red) on serD|dsd. Merged during determinization: - (merge 684, page 554)
+---------
+Merge 685
+Merged 756 #1 (BLUE SINK) and 304 #85 (red) on surf|http. Merged during determinization: - (merge 685, page 555)
+---------
+Merge 686
+Merged 757 #1 (BLUE SINK) and 23 #15 (red) on serD|epmap. Merged during determinization: - (merge 686, page 556)
+---------
+Merge 687
+Merged 764 #1 (BLUE SINK) and 8 #47 (red) on bfCred|unknown. Merged during determinization: - (merge 687, page 557)
+---------
+Merge 688
+Merged 781 #1 (BLUE SINK) and 584 #9 (red) on serD|agma. Merged during determinization: - (merge 688, page 558)
+---------
+Merge 689
+Merged 804 #1 (BLUE SINK) and 1123 #6 (red) on surf|vrml-multi-use. Merged during determinization: 1399 #1 and 1 #207 on hostD|http, 1831 #1 and 5 #724 on serD|unknown (merge 689, page 559)
+---------
+Merge 690
+Merged 806 #1 (BLUE SINK) and 1 #208 (red) on hostD|http. Merged during determinization: - (merge 690, page 560)
+---------
+Merge 691
+Merged 817 #1 (BLUE SINK) and 129 #50 (red) on serD|rfb. Merged during determinization: - (merge 691, page 561)
+---------
+Merge 692
+Merged 821 #1 (BLUE SINK) and 152 #23 (red) on serD|fis. Merged during determinization: - (merge 692, page 562)
+---------
+Merge 693
+Merged 822 #1 (BLUE SINK) and 365 #34 (red) on hostD|unknown. Merged during determinization: 1412 #1 and 16 #331 on vulnD|mysql, 1840 #1 and 129 #51 on serD|rfb (merge 693, page 563)
+---------
+Merge 694
+Merged 840 #1 (BLUE SINK) and 101 #31 (red) on serD|cpdlc. Merged during determinization: 1423 #1 and 139 #46 on hostD|ms-wbt-server, 1849 #1 and 140 #197 on vulnD|ncube-lm, 2100 #1 and 139 #46 on hostD|ms-wbt-server (merge 694, page 564)
+---------
+Merge 695
+No merges have occurred -- skipping
+---------
+Merge 696
+Merged 859 #1 (BLUE SINK) and 101 #32 (red) on serD|cpdlc. Merged during determinization: 1438 #1 and 139 #47 on hostD|ms-wbt-server, 1857 #1 and 12 #204 on vulnD|postgresql (merge 696, page 565)
+---------
+Merge 697
+Merged 865 #1 (BLUE SINK) and 4 #33 (red) on serD|rpas-c2. Merged during determinization: 1445 #1 and 16 #332 on vulnD|mysql (merge 697, page 566)
+---------
+Merge 698
+Merged 866 #1 (BLUE SINK) and 349 #49 (red) on vulnD|http. Merged during determinization: 1446 #1 and 1 #209 on hostD|http, 1862 #1 and 126 #30 on serD|ag-swim (merge 698, page 567)
+---------
+Merge 699
+Merged 868 #1 (BLUE SINK) and 23 #16 (red) on serD|epmap. Merged during determinization: - (merge 699, page 568)
+---------
+Merge 700
+Merged 874 #1 (BLUE SINK) and 10 #104 (red) on CnC|unknown. Merged during determinization: - (merge 700, page 569)
+---------
+Merge 701
+Merged 875 #1 (BLUE SINK) and 4 #34 (red) on serD|rpas-c2. Merged during determinization: 1451 #1 and 16 #333 on vulnD|mysql, 1865 #1 and 2 #163 on serD|ssh, 2108 #1 and 12 #205 on vulnD|postgresql, 2276 #1 and 139 #48 on hostD|ms-wbt-server (merge 701, page 570)
+---------
+Merge 702
+Merged 884 #1 (BLUE SINK) and 308 #71 (red) on infoD|http. Merged during determinization: 1460 #1 and 890 #61 on surf|http (merge 702, page 571)
+---------
+Merge 703
+Merged 888 #1 (BLUE SINK) and 5 #725 (red) on serD|unknown. Merged during determinization: 1464 #1 and 304 #86 on surf|http (merge 703, page 572)
+---------
+Merge 704
+Merged 889 #1 (BLUE SINK) and 16 #334 (red) on vulnD|mysql. Merged during determinization: 1465 #1 and 304 #87 on surf|http (merge 704, page 573)
+---------
+Merge 705
+Merged 895 #1 (BLUE SINK) and 43 #70 (red) on infoD|xdmcp. Merged during determinization: - (merge 705, page 574)
+---------
+Merge 706
+Merged 910 #1 (BLUE SINK) and 651 #3 (RED SINK) on infoD|ftp. Merged during determinization: - (merge 706, page 575)
+---------
+Merge 707
+Merged 915 #1 (BLUE SINK) and 43 #71 (red) on infoD|xdmcp. Merged during determinization: - (merge 707, page 576)
+---------
+Merge 708
+Merged 920 #1 (BLUE SINK) and 42 #82 (red) on acctManip|snmp. Merged during determinization: - (merge 708, page 577)
+---------
+Merge 709
+Merged 922 #1 (BLUE SINK) and 16 #335 (red) on vulnD|mysql. Merged during determinization: - (merge 709, page 578)
+---------
+Merge 710
+Merged 924 #1 (BLUE SINK) and 149 #13 (red) on serD|netbios-ssn. Merged during determinization: - (merge 710, page 579)
+---------
+Merge 711
+Merged 927 #1 (BLUE SINK) and 63 #42 (red) on remoteexp|snmp. Merged during determinization: - (merge 711, page 580)
+---------
+Merge 712
+Merged 929 #1 (BLUE SINK) and 140 #198 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 712, page 581)
+---------
+Merge 713
+Merged 943 #1 (BLUE SINK) and 126 #31 (red) on serD|ag-swim. Merged during determinization: - (merge 713, page 582)
+---------
+Merge 714
+Merged 954 #1 (BLUE SINK) and 28 #27 (red) on serD|microsoft-ds. Merged during determinization: - (merge 714, page 583)
+---------
+Merge 715
+Merged 966 #1 (BLUE SINK) and 481 #32 (red) on serD|cm. Merged during determinization: - (merge 715, page 584)
+---------
+Merge 716
+Merged 968 #1 (BLUE SINK) and 129 #52 (red) on serD|rfb. Merged during determinization: - (merge 716, page 585)
+---------
+Merge 717
+Merged 969 #1 (BLUE SINK) and 1 #210 (red) on hostD|http. Merged during determinization: - (merge 717, page 586)
+---------
+Merge 718
+Merged 971 #1 (BLUE SINK) and 304 #88 (red) on surf|http. Merged during determinization: 1531 #1 and 1 #211 on hostD|http (merge 718, page 587)
+---------
+Merge 719
+Merged 972 #1 (BLUE SINK) and 140 #199 (red) on vulnD|ncube-lm. Merged during determinization: 1532 #1 and 30 #54 on hostD|http-alt, 1911 #1 and 2 #164 on serD|ssh (merge 719, page 588)
+---------
+Merge 720
+Merged 974 #1 (BLUE SINK) and 140 #200 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 720, page 589)
+---------
+Merge 721
+Merged 975 #1 (BLUE SINK) and 5 #726 (red) on serD|unknown. Merged during determinization: 1534 #1 and 5 #729 on serD|unknown, 1913 #1 and 140 #201 on vulnD|ncube-lm, 2137 #1 and 25 #97 on vulnD|ahsp, 2296 #1 and 5 #729 on serD|unknown, 2412 #1 and 5 #729 on serD|unknown (merge 721, page 590)
+---------
+Merge 722
+Merged 977 #1 (BLUE SINK) and 980 #16 (red) on surf|http-alt. Merged during determinization: - (merge 722, page 591)
+---------
+Merge 723
+No merges have occurred -- skipping
+---------
+Merge 724
+Merged 981 #1 (BLUE SINK) and 1109 #6 (red) on surf|remoteware-cl. Merged during determinization: - (merge 724, page 592)
+---------
+Merge 725
+No merges have occurred -- skipping
+---------
+Merge 726
+Merged 996 #1 (BLUE SINK) and 585 #10 (red) on serD|asmgcs. Merged during determinization: - (merge 726, page 593)
+---------
+Merge 727
+Merged 1000 #1 (BLUE SINK) and 22 #5 (red) on infoD|domain. Merged during determinization: - (merge 727, page 594)
+---------
+Merge 728
+Merged 1002 #1 (BLUE SINK) and 66 #5 (red) on uPrivEsc|http. Merged during determinization: - (merge 728, page 595)
+---------
+Merge 729
+Merged 1007 #1 (BLUE SINK) and 10 #105 (red) on CnC|unknown. Merged during determinization: - (merge 729, page 596)
+---------
+Merge 730
+Merged 1009 #1 (BLUE SINK) and 1 #212 (red) on hostD|http. Merged during determinization: 1562 #1 and 101 #33 on serD|cpdlc, 1927 #1 and 16 #336 on vulnD|mysql, 2148 #1 and 3 #228 on vulnD|ms-sql-s, 2306 #1 and 2477 #1 on vulnD|mysql (merge 730, page 597)
+---------
+Merge 731
+Merged 2477 #2 (BLUE SINK) and 16 #337 (red) on vulnD|mysql. Merged during determinization: - (merge 731, page 598)
+---------
+Merge 732
+Merged 1010 #1 (BLUE SINK) and 139 #49 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 732, page 599)
+---------
+Merge 733
+Merged 1011 #1 (BLUE SINK) and 8 #48 (red) on bfCred|unknown. Merged during determinization: 1563 #1 and 42 #83 on acctManip|snmp, 1928 #1 and 43 #72 on infoD|xdmcp (merge 733, page 600)
+---------
+Merge 734
+Merged 1013 #1 (BLUE SINK) and 42 #84 (red) on acctManip|snmp. Merged during determinization: 1565 #1 and 332 #13 on remoteexp|snmp, 1929 #1 and 43 #73 on infoD|xdmcp (merge 734, page 601)
+---------
+Merge 735
+Merged 1014 #1 (BLUE SINK) and 54 #2 (RED SINK) on privEsc|http. Merged during determinization: - (merge 735, page 602)
+---------
+Merge 736
+Merged 1015 #1 (BLUE SINK) and 66 #6 (red) on uPrivEsc|http. Merged during determinization: - (merge 736, page 603)
+---------
+Merge 737
+Merged 1016 #1 (BLUE SINK) and 179 #1 (RED SINK) on PAexp|http. Merged during determinization: 1568 #1 and 54 #3 on privEsc|http, 1932 #1 and 1566 #1 on hostD|http (merge 737, page 604)
+---------
+Merge 738
+Merged 1566 #2 (BLUE SINK) and 1 #213 (red) on hostD|http. Merged during determinization: 1930 #1 and 2 #165 on serD|ssh, 2151 #1 and 5 #730 on serD|unknown, 2307 #1 and 16 #340 on vulnD|mysql, 2421 #1 and 223 #35 on hostD|http, 2505 #1 and 129 #53 on serD|rfb, 2568 #1 and 16 #340 on vulnD|mysql, 2610 #1 and 3 #229 on vulnD|ms-sql-s (merge 738, page 605)
+---------
+Merge 739
+Merged 1017 #1 (BLUE SINK) and 43 #74 (red) on infoD|xdmcp. Merged during determinization: - (merge 739, page 606)
+---------
+Merge 740
+Merged 1026 #1 (BLUE SINK) and 5 #731 (red) on serD|unknown. Merged during determinization: 1575 #1 and 1882 #1 on hostD|unknown (merge 740, page 607)
+---------
+Merge 741
+Merged 1882 #2 (BLUE SINK) and 365 #35 (red) on hostD|unknown. Merged during determinization: 2117 #1 and 16 #341 on vulnD|mysql (merge 741, page 608)
+---------
+Merge 742
+Merged 1029 #1 (BLUE SINK) and 5 #732 (red) on serD|unknown. Merged during determinization: 1577 #1 and 100 #32 on serD|dsd, 1936 #1 and 16 #342 on vulnD|mysql, 2154 #1 and 304 #89 on surf|http, 2308 #1 and 5 #733 on serD|unknown (merge 742, page 609)
+---------
+Merge 743
+Merged 1030 #1 (BLUE SINK) and 22 #6 (red) on infoD|domain. Merged during determinization: 1578 #1 and 1 #215 on hostD|http, 1937 #1 and 3 #230 on vulnD|ms-sql-s, 2155 #1 and 5 #734 on serD|unknown (merge 743, page 610)
+---------
+Merge 744
+Merged 1034 #1 (BLUE SINK) and 58 #2 (RED SINK) on CnC|irdmi. Merged during determinization: 1582 #1 and 58 #3 on CnC|irdmi (merge 744, page 611)
+---------
+Merge 745
+Merged 1036 #1 (BLUE SINK) and 140 #202 (red) on vulnD|ncube-lm. Merged during determinization: 1585 #1 and 1623 #1 on serD|epmap (merge 745, page 612)
+---------
+Merge 746
+Merged 1623 #2 (BLUE SINK) and 23 #17 (red) on serD|epmap. Merged during determinization: - (merge 746, page 613)
+---------
+Merge 747
+Merged 1037 #1 (BLUE SINK) and 23 #19 (red) on serD|epmap. Merged during determinization: - (merge 747, page 614)
+---------
+Merge 748
+Merged 1038 #1 (BLUE SINK) and 28 #28 (red) on serD|microsoft-ds. Merged during determinization: - (merge 748, page 615)
+---------
+Merge 749
+Merged 1044 #1 (BLUE SINK) and 8 #49 (red) on bfCred|unknown. Merged during determinization: 1596 #1 and 16 #344 on vulnD|mysql, 1946 #1 and 16 #344 on vulnD|mysql (merge 749, page 616)
+---------
+Merge 750
+Merged 1051 #1 (BLUE SINK) and 366 #5 (red) on vulnD|unknown. Merged during determinization: - (merge 750, page 617)
+---------
+Merge 751
+Merged 1052 #1 (BLUE SINK) and 140 #203 (red) on vulnD|ncube-lm. Merged during determinization: 1608 #1 and 28 #29 on serD|microsoft-ds (merge 751, page 618)
+---------
+Merge 752
+Merged 1053 #1 (BLUE SINK) and 25 #98 (red) on vulnD|ahsp. Merged during determinization: 1609 #1 and 140 #204 on vulnD|ncube-lm (merge 752, page 619)
+---------
+Merge 753
+Merged 1055 #1 (BLUE SINK) and 43 #75 (red) on infoD|xdmcp. Merged during determinization: - (merge 753, page 620)
+---------
+Merge 754
+Merged 1060 #1 (BLUE SINK) and 25 #99 (red) on vulnD|ahsp. Merged during determinization: - (merge 754, page 621)
+---------
+Merge 755
+Merged 1068 #1 (BLUE SINK) and 16 #345 (red) on vulnD|mysql. Merged during determinization: - (merge 755, page 622)
+---------
+Merge 756
+Merged 1069 #1 (BLUE SINK) and 100 #33 (red) on serD|dsd. Merged during determinization: 1614 #1 and 3 #231 on vulnD|ms-sql-s (merge 756, page 623)
+---------
+Merge 757
+Merged 1070 #1 (BLUE SINK) and 2 #166 (red) on serD|ssh. Merged during determinization: 1615 #1 and 16 #346 on vulnD|mysql (merge 757, page 624)
+---------
+Merge 758
+Merged 1077 #1 (BLUE SINK) and 101 #34 (red) on serD|cpdlc. Merged during determinization: - (merge 758, page 625)
+---------
+Merge 759
+Merged 1079 #1 (BLUE SINK) and 28 #30 (red) on serD|microsoft-ds. Merged during determinization: - (merge 759, page 626)
+---------
+Merge 760
+Merged 1080 #1 (BLUE SINK) and 349 #50 (red) on vulnD|http. Merged during determinization: - (merge 760, page 627)
+---------
+Merge 761
+Merged 1093 #1 (BLUE SINK) and 25 #100 (red) on vulnD|ahsp. Merged during determinization: - (merge 761, page 628)
+---------
+Merge 762
+Merged 1094 #1 (BLUE SINK) and 48 #14 (red) on hostD|wsman. Merged during determinization: - (merge 762, page 629)
+---------
+Merge 763
+Merged 1095 #1 (BLUE SINK) and 139 #50 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 763, page 630)
+---------
+Merge 764
+Merged 1096 #1 (BLUE SINK) and 42 #85 (red) on acctManip|snmp. Merged during determinization: 1627 #1 and 10 #106 on CnC|unknown, 1959 #1 and 43 #76 on infoD|xdmcp (merge 764, page 631)
+---------
+Merge 765
+Merged 1101 #1 (BLUE SINK) and 428 #3 (RED SINK) on infoD|wsman. Merged during determinization: - (merge 765, page 632)
+---------
+Merge 766
+Merged 1104 #1 (BLUE SINK) and 428 #4 (RED SINK) on infoD|wsman. Merged during determinization: - (merge 766, page 633)
+---------
+Merge 767
+Merged 1105 #1 (BLUE SINK) and 398 #1 (RED SINK) on serD|ftp. Merged during determinization: - (merge 767, page 634)
+---------
+Merge 768
+Merged 1106 #1 (BLUE SINK) and 366 #6 (red) on vulnD|unknown. Merged during determinization: - (merge 768, page 635)
+---------
+Merge 769
+Merged 1111 #1 (BLUE SINK) and 437 #2 (RED SINK) on infoD|wap-wsp. Merged during determinization: - (merge 769, page 636)
+---------
+Merge 770
+Merged 1114 #1 (BLUE SINK) and 43 #77 (red) on infoD|xdmcp. Merged during determinization: - (merge 770, page 637)
+---------
+Merge 771
+No merges have occurred -- skipping
+---------
+Merge 772
+Merged 1116 #1 (BLUE SINK) and 3 #232 (red) on vulnD|ms-sql-s. Merged during determinization: - (merge 772, page 638)
+---------
+Merge 773
+Merged 1117 #1 (BLUE SINK) and 140 #205 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 773, page 639)
+---------
+Merge 774
+Merged 1118 #1 (BLUE SINK) and 16 #347 (red) on vulnD|mysql. Merged during determinization: - (merge 774, page 640)
+---------
+Merge 775
+Merged 1122 #1 (BLUE SINK) and 43 #78 (red) on infoD|xdmcp. Merged during determinization: - (merge 775, page 641)
+---------
+Merge 776
+Merged 1126 #1 (BLUE SINK) and 57 #2 (RED SINK) on CnC|http. Merged during determinization: - (merge 776, page 642)
+---------
+Merge 777
+Merged 1128 #1 (BLUE SINK) and 149 #14 (red) on serD|netbios-ssn. Merged during determinization: - (merge 777, page 643)
+---------
+Merge 778
+No merges have occurred -- skipping
+---------
+Merge 779
+Merged 1133 #1 (BLUE SINK) and 20 #2 (RED SINK) on hostD|websm. Merged during determinization: - (merge 779, page 644)
+---------
+Merge 780
+No merges have occurred -- skipping
+---------
+Merge 781
+Merged 1149 #1 (BLUE SINK) and 2 #167 (red) on serD|ssh. Merged during determinization: - (merge 781, page 645)
+---------
+Merge 782
+Merged 1155 #1 (BLUE SINK) and 2 #168 (red) on serD|ssh. Merged during determinization: - (merge 782, page 646)
+---------
+Merge 783
+Merged 1157 #1 (BLUE SINK) and 28 #31 (red) on serD|microsoft-ds. Merged during determinization: - (merge 783, page 647)
+---------
+Merge 784
+Merged 1170 #1 (BLUE SINK) and 149 #15 (red) on serD|netbios-ssn. Merged during determinization: - (merge 784, page 648)
+---------
+Merge 785
+Merged 1209 #1 (BLUE SINK) and 129 #54 (red) on serD|rfb. Merged during determinization: 1695 #1 and 5 #736 on serD|unknown, 2000 #1 and 12 #206 on vulnD|postgresql, 2192 #1 and 1 #216 on hostD|http, 2328 #1 and 5 #736 on serD|unknown, 2433 #1 and 16 #348 on vulnD|mysql, 2516 #1 and 3 #233 on vulnD|ms-sql-s, 2574 #1 and 126 #32 on serD|ag-swim (merge 785, page 649)
+---------
+Merge 786
+Merged 1247 #1 (BLUE SINK) and 1246 #6 (red) on serD|ipsma. Merged during determinization: 1725 #1 and 1724 #1 on serD|unknown, 2024 #1 and 2023 #1 on vulnD|ncube-lm, 2211 #1 and 2210 #1 on vulnD|ahsp, 2346 #1 and 2345 #1 on serD|unknown, 2447 #1 and 2446 #1 on serD|unknown (merge 786, page 650)
+---------
+Merge 787
+Merged 1724 #2 (BLUE SINK) and 5 #737 (red) on serD|unknown. Merged during determinization: 2023 #2 and 140 #206 on vulnD|ncube-lm, 2210 #2 and 25 #101 on vulnD|ahsp, 2345 #2 and 5 #742 on serD|unknown, 2446 #2 and 5 #742 on serD|unknown, 2525 #1 and 5 #743 on serD|unknown (merge 787, page 651)
+---------
+Merge 788
+Merged 1283 #1 (BLUE SINK) and 140 #208 (red) on vulnD|ncube-lm. Merged during determinization: 1751 #1 and 5 #745 on serD|unknown, 2045 #1 and 25 #103 on vulnD|ahsp, 2229 #1 and 584 #10 on serD|agma, 2361 #1 and 5 #745 on serD|unknown, 2459 #1 and 3 #234 on vulnD|ms-sql-s, 2535 #1 and 139 #51 on hostD|ms-wbt-server (merge 788, page 652)
+---------
+Merge 789
+Merged 1290 #1 (BLUE SINK) and 139 #52 (red) on hostD|ms-wbt-server. Merged during determinization: 1757 #1 and 5 #746 on serD|unknown, 2048 #1 and 16 #349 on vulnD|mysql (merge 789, page 653)
+---------
+Merge 790
+Merged 1291 #1 (BLUE SINK) and 19 #3 (RED SINK) on serD|ms-sql-m. Merged during determinization: - (merge 790, page 654)
+---------
+Merge 791
+Merged 1303 #1 (BLUE SINK) and 8 #50 (red) on bfCred|unknown. Merged during determinization: - (merge 791, page 655)
+---------
+Merge 792
+Merged 1319 #1 (BLUE SINK) and 398 #2 (RED SINK) on serD|ftp. Merged during determinization: - (merge 792, page 656)
+---------
+Merge 793
+Merged 1322 #1 (BLUE SINK) and 101 #35 (red) on serD|cpdlc. Merged during determinization: - (merge 793, page 657)
+---------
+Merge 794
+Merged 1345 #1 (BLUE SINK) and 16 #350 (red) on vulnD|mysql. Merged during determinization: - (merge 794, page 658)
+---------
+Merge 795
+Merged 1346 #1 (BLUE SINK) and 140 #209 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 795, page 659)
+---------
+Merge 796
+Merged 1355 #1 (BLUE SINK) and 2 #169 (red) on serD|ssh. Merged during determinization: 1799 #1 and 16 #351 on vulnD|mysql (merge 796, page 660)
+---------
+Merge 797
+Merged 1377 #1 (BLUE SINK) and 1112 #3 (RED SINK) on surf|wap-wsp. Merged during determinization: - (merge 797, page 661)
+---------
+Merge 798
+Merged 1379 #1 (BLUE SINK) and 17 #19 (red) on hostD|wap-wsp. Merged during determinization: - (merge 798, page 662)
+---------
+Merge 799
+Merged 1387 #1 (BLUE SINK) and 3 #235 (red) on vulnD|ms-sql-s. Merged during determinization: 1826 #1 and 126 #33 on serD|ag-swim (merge 799, page 663)
+---------
+Merge 800
+Merged 1398 #1 (BLUE SINK) and 1 #217 (red) on hostD|http. Merged during determinization: 1830 #1 and 2 #170 on serD|ssh (merge 800, page 664)
+---------
+Merge 801
+Merged 1411 #1 (BLUE SINK) and 25 #104 (red) on vulnD|ahsp. Merged during determinization: - (merge 801, page 665)
+---------
+Merge 802
+Merged 1418 #1 (BLUE SINK) and 365 #37 (red) on hostD|unknown. Merged during determinization: 1845 #1 and 5 #747 on serD|unknown, 2096 #1 and 16 #352 on vulnD|mysql (merge 802, page 666)
+---------
+Merge 803
+Merged 1419 #1 (BLUE SINK) and 365 #38 (red) on hostD|unknown. Merged during determinization: 1846 #1 and 3 #237 on vulnD|ms-sql-s, 2097 #1 and 365 #41 on hostD|unknown, 2269 #1 and 12 #207 on vulnD|postgresql, 2395 #1 and 365 #41 on hostD|unknown, 2486 #1 and 5 #748 on serD|unknown, 2553 #1 and 3 #237 on vulnD|ms-sql-s, 2599 #1 and 365 #41 on hostD|unknown (merge 803, page 667)
+---------
+Merge 804
+Merged 1434 #1 (BLUE SINK) and 428 #5 (red) on infoD|wsman. Merged during determinization: 1855 #1 and 429 #9 on surf|wsman (merge 804, page 668)
+---------
+Merge 805
+Merged 1437 #1 (BLUE SINK) and 34 #20 (red) on bfCred|pop3s. Merged during determinization: - (merge 805, page 669)
+---------
+Merge 806
+Merged 1439 #1 (BLUE SINK) and 140 #210 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 806, page 670)
+---------
+Merge 807
+Merged 1444 #1 (BLUE SINK) and 12 #208 (red) on vulnD|postgresql. Merged during determinization: - (merge 807, page 671)
+---------
+Merge 808
+Merged 1458 #1 (BLUE SINK) and 12 #209 (red) on vulnD|postgresql. Merged during determinization: 1870 #1 and 1 #218 on hostD|http, 2112 #1 and 16 #353 on vulnD|mysql, 2279 #1 and 304 #90 on surf|http (merge 808, page 672)
+---------
+Merge 809
+Merged 1459 #1 (BLUE SINK) and 16 #354 (red) on vulnD|mysql. Merged during determinization: 1871 #1 and 223 #36 on hostD|http, 2113 #1 and 748 #12 on serD|unknown (merge 809, page 673)
+---------
+Merge 810
+Merged 1467 #1 (BLUE SINK) and 16 #355 (red) on vulnD|mysql. Merged during determinization: 1875 #1 and 223 #37 on hostD|http (merge 810, page 674)
+---------
+Merge 811
+Merged 1468 #1 (BLUE SINK) and 349 #51 (red) on vulnD|http. Merged during determinization: - (merge 811, page 675)
+---------
+Merge 812
+Merged 1472 #1 (BLUE SINK) and 651 #4 (RED SINK) on infoD|ftp. Merged during determinization: - (merge 812, page 676)
+---------
+Merge 813
+Merged 1490 #1 (BLUE SINK) and 1 #219 (red) on hostD|http. Merged during determinization: - (merge 813, page 677)
+---------
+Merge 814
+No merges have occurred -- skipping
+---------
+Merge 815
+Merged 1495 #1 (BLUE SINK) and 25 #105 (red) on vulnD|ahsp. Merged during determinization: - (merge 815, page 678)
+---------
+Merge 816
+Merged 1502 #1 (BLUE SINK) and 941 #5 (red) on serD|ms-sql-s. Merged during determinization: - (merge 816, page 679)
+---------
+Merge 817
+Merged 1508 #1 (BLUE SINK) and 139 #53 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 817, page 680)
+---------
+Merge 818
+Merged 1512 #1 (BLUE SINK) and 1246 #7 (red) on serD|ipsma. Merged during determinization: - (merge 818, page 681)
+---------
+Merge 819
+Merged 1513 #1 (BLUE SINK) and 140 #211 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 819, page 682)
+---------
+Merge 820
+Merged 1517 #1 (BLUE SINK) and 304 #91 (red) on surf|http. Merged during determinization: - (merge 820, page 683)
+---------
+Merge 821
+Merged 1519 #1 (BLUE SINK) and 140 #212 (red) on vulnD|ncube-lm. Merged during determinization: - (merge 821, page 684)
+---------
+Merge 822
+Merged 1528 #1 (BLUE SINK) and 12 #210 (red) on vulnD|postgresql. Merged during determinization: 1907 #1 and 5 #749 on serD|unknown, 2133 #1 and 16 #356 on vulnD|mysql, 2294 #1 and 2 #171 on serD|ssh, 2410 #1 and 1 #220 on hostD|http, 2496 #1 and 140 #213 on vulnD|ncube-lm (merge 822, page 685)
+---------
+Merge 823
+Merged 1536 #1 (BLUE SINK) and 101 #36 (red) on serD|cpdlc. Merged during determinization: 1915 #1 and 5 #751 on serD|unknown, 2140 #1 and 140 #216 on vulnD|ncube-lm, 2298 #1 and 140 #216 on vulnD|ncube-lm, 2414 #1 and 152 #24 on serD|fis, 2499 #1 and 5 #751 on serD|unknown, 2563 #1 and 140 #216 on vulnD|ncube-lm, 2606 #1 and 25 #106 on vulnD|ahsp, 2634 #1 and 2502 #1 on serD|icmpd (merge 823, page 686)
+---------
+Merge 824
+Merged 2502 #2 (BLUE SINK) and 36 #11 (red) on serD|icmpd. Merged during determinization: - (merge 824, page 687)
+---------
+Merge 825
+Merged 1538 #1 (BLUE SINK) and 980 #17 (red) on surf|http-alt. Merged during determinization: - (merge 825, page 688)
+---------
+Merge 826
+Merged 1549 #1 (BLUE SINK) and 12 #211 (red) on vulnD|postgresql. Merged during determinization: - (merge 826, page 689)
+---------
+Merge 827
+Merged 1550 #1 (BLUE SINK) and 12 #212 (red) on vulnD|postgresql. Merged during determinization: 1924 #1 and 2 #172 on serD|ssh (merge 827, page 690)
+---------
+Merge 828
+Merged 1554 #1 (BLUE SINK) and 1003 #25 (red) on surf|unknown. Merged during determinization: - (merge 828, page 691)
+---------
+Merge 829
+Merged 1558 #1 (BLUE SINK) and 370 #16 (red) on infoD|unknown. Merged during determinization: - (merge 829, page 692)
+---------
+Merge 830
+Merged 1560 #1 (BLUE SINK) and 8 #51 (red) on bfCred|unknown. Merged during determinization: - (merge 830, page 693)
+---------
+Merge 831
+Merged 1567 #1 (BLUE SINK) and 8 #52 (red) on bfCred|unknown. Merged during determinization: 1931 #1 and 42 #86 on acctManip|snmp, 2150 #1 and 43 #79 on infoD|xdmcp (merge 831, page 694)
+---------
+Merge 832
+Merged 1569 #1 (BLUE SINK) and 43 #80 (red) on infoD|xdmcp. Merged during determinization: - (merge 832, page 695)
+---------
+Merge 833
+Merged 1586 #1 (BLUE SINK) and 3 #238 (red) on vulnD|ms-sql-s. Merged during determinization: 1941 #1 and 140 #217 on vulnD|ncube-lm (merge 833, page 696)
+---------
+Merge 834
+Merged 1587 #1 (BLUE SINK) and 25 #107 (red) on vulnD|ahsp. Merged during determinization: 1942 #1 and 2452 #1 on serD|rfb (merge 834, page 697)
+---------
+Merge 835
+Merged 2452 #2 (BLUE SINK) and 129 #55 (red) on serD|rfb. Merged during determinization: - (merge 835, page 698)
+---------
+Merge 836
+Merged 1592 #1 (BLUE SINK) and 2540 #7 (red) on serD|spt-automation. Merged during determinization: - (merge 836, page 699)
+---------
+Merge 837
+Merged 1594 #1 (BLUE SINK) and 349 #52 (red) on vulnD|http. Merged during determinization: - (merge 837, page 700)
+---------
+Merge 838
+Merged 1600 #1 (BLUE SINK) and 1246 #8 (red) on serD|ipsma. Merged during determinization: - (merge 838, page 701)
+---------
+Merge 839
+Merged 1605 #1 (BLUE SINK) and 12 #213 (red) on vulnD|postgresql. Merged during determinization: 1952 #1 and 12 #214 on vulnD|postgresql, 2162 #1 and 18 #32 on serD|ff-ice (merge 839, page 702)
+---------
+Merge 840
+Merged 1607 #1 (BLUE SINK) and 366 #7 (red) on vulnD|unknown. Merged during determinization: - (merge 840, page 703)
+---------
+Merge 841
+Merged 1611 #1 (BLUE SINK) and 43 #81 (red) on infoD|xdmcp. Merged during determinization: - (merge 841, page 704)
+---------
+Merge 842
+Merged 1613 #1 (BLUE SINK) and 43 #82 (red) on infoD|xdmcp. Merged during determinization: - (merge 842, page 705)
+---------
+Merge 843
+Merged 1618 #1 (BLUE SINK) and 43 #83 (red) on infoD|xdmcp. Merged during determinization: 1954 #1 and 12 #215 on vulnD|postgresql, 2163 #1 and 43 #84 on infoD|xdmcp (merge 843, page 706)
+---------
+Merge 844
+Merged 1620 #1 (BLUE SINK) and 139 #54 (red) on hostD|ms-wbt-server. Merged during determinization: 1955 #1 and 16 #357 on vulnD|mysql, 2164 #1 and 5 #752 on serD|unknown (merge 844, page 707)
+---------
+Merge 845
+Merged 1624 #1 (BLUE SINK) and 43 #85 (red) on infoD|xdmcp. Merged during determinization: - (merge 845, page 708)
+---------
+Merge 846
+Merged 1630 #1 (BLUE SINK) and 424 #1 (RED SINK) on vulnD|wsman. Merged during determinization: - (merge 846, page 709)
+---------
+Merge 847
+Merged 1631 #1 (BLUE SINK) and 48 #15 (red) on hostD|wsman. Merged during determinization: - (merge 847, page 710)
+---------
+Merge 848
+Merged 1635 #1 (BLUE SINK) and 12 #216 (red) on vulnD|postgresql. Merged during determinization: - (merge 848, page 711)
+---------
+Merge 849
+Merged 1636 #1 (BLUE SINK) and 1130 #1 (RED SINK) on vulnD|esmagent. Merged during determinization: - (merge 849, page 712)
+---------
+Merge 850
+Merged 1638 #1 (BLUE SINK) and 17 #20 (red) on hostD|wap-wsp. Merged during determinization: 1964 #1 and 5 #753 on serD|unknown, 2170 #1 and 140 #218 on vulnD|ncube-lm, 2314 #1 and 3 #239 on vulnD|ms-sql-s (merge 850, page 713)
+---------
+Merge 851
+Merged 1644 #1 (BLUE SINK) and 57 #3 (RED SINK) on CnC|http. Merged during determinization: - (merge 851, page 714)
+---------
+Merge 852
+Merged 1646 #1 (BLUE SINK) and 308 #72 (red) on infoD|http. Merged during determinization: - (merge 852, page 715)
+---------
+Merge 853
+Merged 1647 #1 (BLUE SINK) and 978 #1 (RED SINK) on hostD|remoteware-cl. Merged during determinization: - (merge 853, page 716)
+---------
+Merge 854
+Merged 1648 #1 (BLUE SINK) and 23 #20 (red) on serD|epmap. Merged during determinization: - (merge 854, page 717)
+---------
+Merge 855
+Merged 1650 #1 (BLUE SINK) and 101 #37 (red) on serD|cpdlc. Merged during determinization: 1972 #1 and 16 #358 on vulnD|mysql (merge 855, page 718)
+---------
+Merge 856
+No merges have occurred -- skipping
+---------
+Merge 857
+Merged 1679 #1 (BLUE SINK) and 126 #34 (red) on serD|ag-swim. Merged during determinization: - (merge 857, page 719)
+---------
+Merge 858
+Merged 1687 #1 (BLUE SINK) and 2 #173 (red) on serD|ssh. Merged during determinization: - (merge 858, page 720)
+---------
+Merge 859
+Merged 1705 #1 (BLUE SINK) and 2458 #5 (red) on serD|ads-c. Merged during determinization: 2009 #1 and 2067 #1 on vulnD|mysql (merge 859, page 721)
+---------
+Merge 860
+Merged 2067 #2 (BLUE SINK) and 16 #359 (red) on vulnD|mysql. Merged during determinization: 2246 #1 and 5 #756 on serD|unknown, 2376 #1 and 5 #756 on serD|unknown, 2470 #1 and 584 #11 on serD|agma, 2543 #1 and 5 #756 on serD|unknown (merge 860, page 722)
+---------
+Merge 861
+Merged 1714 #1 (BLUE SINK) and 4 #35 (red) on serD|rpas-c2. Merged during determinization: 2016 #1 and 5 #757 on serD|unknown, 2203 #1 and 140 #219 on vulnD|ncube-lm, 2339 #1 and 25 #108 on vulnD|ahsp (merge 861, page 723)
+---------
+Merge 862
+Merged 1716 #1 (BLUE SINK) and 140 #220 (red) on vulnD|ncube-lm. Merged during determinization: 2018 #1 and 5 #759 on serD|unknown, 2205 #1 and 140 #221 on vulnD|ncube-lm, 2340 #1 and 25 #109 on vulnD|ahsp, 2442 #1 and 5 #759 on serD|unknown (merge 862, page 724)
+---------
+Merge 863
+Merged 1743 #1 (BLUE SINK) and 152 #25 (red) on serD|fis. Merged during determinization: 2038 #1 and 5 #764 on serD|unknown, 2223 #1 and 5 #764 on serD|unknown, 2355 #1 and 140 #222 on vulnD|ncube-lm, 2455 #1 and 25 #110 on vulnD|ahsp, 2531 #1 and 5 #764 on serD|unknown, 2583 #1 and 5 #764 on serD|unknown, 2621 #1 and 5 #764 on serD|unknown, 2643 #1 and 16 #362 on vulnD|mysql, 2660 #1 and 16 #362 on vulnD|mysql, 2670 #1 and 304 #92 on surf|http (merge 863, page 725)
+---------
+Merge 864
+Merged 1745 #1 (BLUE SINK) and 149 #16 (red) on serD|netbios-ssn. Merged during determinization: - (merge 864, page 726)
+---------
+Merge 865
+Merged 1772 #1 (BLUE SINK) and 3 #240 (red) on vulnD|ms-sql-s. Merged during determinization: - (merge 865, page 727)
+---------
+Merge 866
+Merged 1818 #1 (BLUE SINK) and 16 #363 (red) on vulnD|mysql. Merged during determinization: 2085 #1 and 5 #765 on serD|unknown (merge 866, page 728)
+---------
+Merge 867
+Merged 1819 #1 (BLUE SINK) and 18 #33 (red) on serD|ff-ice. Merged during determinization: - (merge 867, page 729)
+---------
+Merge 868
+Merged 1823 #1 (BLUE SINK) and 1 #221 (red) on hostD|http. Merged during determinization: - (merge 868, page 730)
+---------
+Merge 869
+Merged 1828 #1 (BLUE SINK) and 304 #93 (red) on surf|http. Merged during determinization: - (merge 869, page 731)
+---------
+Merge 870
+Merged 1839 #1 (BLUE SINK) and 25 #111 (red) on vulnD|ahsp. Merged during determinization: 2092 #1 and 5 #769 on serD|unknown, 2267 #1 and 5 #769 on serD|unknown, 2393 #1 and 3 #241 on vulnD|ms-sql-s, 2484 #1 and 5 #769 on serD|unknown, 2551 #1 and 5 #769 on serD|unknown (merge 870, page 732)
+---------
+Merge 871
+Merged 1869 #1 (BLUE SINK) and 36 #13 (red) on serD|icmpd. Merged during determinization: - (merge 871, page 733)
+---------
+Merge 872
+Merged 1874 #1 (BLUE SINK) and 349 #53 (red) on vulnD|http. Merged during determinization: - (merge 872, page 734)
+---------
+Merge 873
+Merged 1876 #1 (BLUE SINK) and 25 #112 (red) on vulnD|ahsp. Merged during determinization: - (merge 873, page 735)
+---------
+Merge 874
+No merges have occurred -- skipping
+---------
+Merge 875
+Merged 1887 #1 (BLUE SINK) and 481 #33 (red) on serD|cm. Merged during determinization: 2121 #1 and 2177 #1 on hostD|http (merge 875, page 736)
+---------
+Merge 876
+Merged 2177 #2 (BLUE SINK) and 1 #222 (red) on hostD|http. Merged during determinization: 2285 #1 and 28 #32 on serD|microsoft-ds, 2319 #1 and 5 #772 on serD|unknown, 2427 #1 and 12 #217 on vulnD|postgresql, 2510 #1 and 1 #224 on hostD|http, 2570 #1 and 5 #772 on serD|unknown, 2612 #1 and 5 #772 on serD|unknown, 2637 #1 and 16 #364 on vulnD|mysql (merge 876, page 737)
+---------
+Merge 877
+Merged 1918 #1 (BLUE SINK) and 585 #11 (red) on serD|asmgcs. Merged during determinization: 2142 #1 and 1246 #9 on serD|ipsma, 2300 #1 and 4 #36 on serD|rpas-c2, 2416 #1 and 5 #774 on serD|unknown, 2501 #1 and 140 #223 on vulnD|ncube-lm, 2565 #1 and 25 #113 on vulnD|ahsp, 2608 #1 and 5 #774 on serD|unknown (merge 877, page 738)
+---------
+Merge 878
+Merged 1935 #1 (BLUE SINK) and 129 #57 (red) on serD|rfb. Merged during determinization: 2153 #1 and 16 #365 on vulnD|mysql (merge 878, page 739)
+---------
+Merge 879
+Merged 1957 #1 (BLUE SINK) and 16 #366 (red) on vulnD|mysql. Merged during determinization: 2166 #1 and 12 #218 on vulnD|postgresql, 2312 #1 and 126 #35 on serD|ag-swim (merge 879, page 740)
+---------
+Merge 880
+Merged 1962 #1 (BLUE SINK) and 100 #34 (red) on serD|dsd. Merged during determinization: 2169 #1 and 140 #224 on vulnD|ncube-lm (merge 880, page 741)
+---------
+Merge 881
+Merged 1969 #1 (BLUE SINK) and 43 #86 (red) on infoD|xdmcp. Merged during determinization: 2173 #1 and 1 #226 on hostD|http, 2316 #1 and 12 #219 on vulnD|postgresql, 2426 #1 and 1 #226 on hostD|http, 2509 #1 and 16 #367 on vulnD|mysql (merge 881, page 742)
+---------
+Merge 882
+Merged 1970 #1 (BLUE SINK) and 18 #34 (red) on serD|ff-ice. Merged during determinization: 2174 #1 and 140 #225 on vulnD|ncube-lm (merge 882, page 743)
+---------
+Merge 883
+Merged 1981 #1 (BLUE SINK) and 19 #4 (RED SINK) on serD|ms-sql-m. Merged during determinization: 2181 #1 and 16 #368 on vulnD|mysql (merge 883, page 744)
+---------
+Merge 884
+Merged 1992 #1 (BLUE SINK) and 18 #35 (red) on serD|ff-ice. Merged during determinization: - (merge 884, page 745)
+---------
+Merge 885
+Merged 1994 #1 (BLUE SINK) and 126 #36 (red) on serD|ag-swim. Merged during determinization: 2188 #1 and 16 #369 on vulnD|mysql (merge 885, page 746)
+---------
+Merge 886
+Merged 2026 #1 (BLUE SINK) and 18 #36 (red) on serD|ff-ice. Merged during determinization: 2213 #1 and 12 #220 on vulnD|postgresql, 2348 #1 and 129 #58 on serD|rfb, 2449 #1 and 16 #370 on vulnD|mysql (merge 886, page 747)
+---------
+Merge 887
+Merged 2030 #1 (BLUE SINK) and 584 #12 (red) on serD|agma. Merged during determinization: 2217 #1 and 1246 #10 on serD|ipsma (merge 887, page 748)
+---------
+Merge 888
+Merged 2040 #1 (BLUE SINK) and 139 #55 (red) on hostD|ms-wbt-server. Merged during determinization: 2224 #1 and 16 #371 on vulnD|mysql, 2356 #1 and 23 #21 on serD|epmap (merge 888, page 749)
+---------
+Merge 889
+Merged 2074 #1 (BLUE SINK) and 139 #56 (red) on hostD|ms-wbt-server. Merged during determinization: 2252 #1 and 16 #372 on vulnD|mysql, 2380 #1 and 5 #775 on serD|unknown (merge 889, page 750)
+---------
+Merge 890
+No merges have occurred -- skipping
+---------
+Merge 891
+Merged 2106 #1 (BLUE SINK) and 3 #242 (red) on vulnD|ms-sql-s. Merged during determinization: 2274 #1 and 129 #59 on serD|rfb, 2399 #1 and 1 #227 on hostD|http, 2490 #1 and 5 #776 on serD|unknown, 2556 #1 and 3 #243 on vulnD|ms-sql-s (merge 891, page 751)
+---------
+Merge 892
+Merged 2111 #1 (BLUE SINK) and 3 #244 (red) on vulnD|ms-sql-s. Merged during determinization: 2278 #1 and 304 #94 on surf|http (merge 892, page 752)
+---------
+Merge 893
+Merged 2115 #1 (BLUE SINK) and 33 #17 (red) on bfCred|pop3. Merged during determinization: 2280 #1 and 3 #245 on vulnD|ms-sql-s, 2401 #1 and 12 #221 on vulnD|postgresql (merge 893, page 753)
+---------
+Merge 894
+Merged 2122 #1 (BLUE SINK) and 584 #13 (red) on serD|agma. Merged during determinization: - (merge 894, page 754)
+---------
+Merge 895
+Merged 2135 #1 (BLUE SINK) and 1130 #2 (RED SINK) on vulnD|esmagent. Merged during determinization: - (merge 895, page 755)
+---------
+Merge 896
+No merges have occurred -- skipping
+---------
+Merge 897
+Merged 2199 #1 (BLUE SINK) and 18 #37 (red) on serD|ff-ice. Merged during determinization: 2334 #1 and 12 #222 on vulnD|postgresql, 2438 #1 and 5 #777 on serD|unknown, 2521 #1 and 25 #114 on vulnD|ahsp (merge 897, page 756)
+---------
+Merge 898
+Merged 2235 #1 (BLUE SINK) and 12 #223 (red) on vulnD|postgresql. Merged during determinization: 2366 #1 and 25 #116 on vulnD|ahsp, 2462 #1 and 5 #781 on serD|unknown, 2537 #1 and 5 #781 on serD|unknown, 2588 #1 and 5 #781 on serD|unknown, 2624 #1 and 12 #224 on vulnD|postgresql, 2646 #1 and 25 #116 on vulnD|ahsp, 2661 #1 and 5 #781 on serD|unknown, 2671 #1 and 16 #373 on vulnD|mysql, 2676 #1 and 129 #60 on serD|rfb (merge 898, page 757)
+---------
+Merge 899
+Merged 2271 #1 (BLUE SINK) and 28 #33 (red) on serD|microsoft-ds. Merged during determinization: - (merge 899, page 758)
+---------
+Merge 900
+Merged 2286 #1 (BLUE SINK) and 4 #37 (red) on serD|rpas-c2. Merged during determinization: 2404 #1 and 140 #226 on vulnD|ncube-lm, 2492 #1 and 25 #117 on vulnD|ahsp, 2557 #1 and 36 #14 on serD|icmpd, 2601 #1 and 5 #782 on serD|unknown (merge 900, page 759)
+---------
+Merge 901
+Merged 2287 #1 (BLUE SINK) and 2540 #8 (red) on serD|spt-automation. Merged during determinization: - (merge 901, page 760)
+---------
+Merge 902
+Merged 2288 #1 (BLUE SINK) and 12 #225 (red) on vulnD|postgresql. Merged during determinization: 2405 #1 and 5 #784 on serD|unknown, 2493 #1 and 1 #228 on hostD|http, 2558 #1 and 5 #784 on serD|unknown, 2602 #1 and 140 #227 on vulnD|ncube-lm (merge 902, page 761)
+---------
+Merge 903
+Merged 2351 #1 (BLUE SINK) and 152 #26 (red) on serD|fis. Merged during determinization: 2451 #1 and 5 #786 on serD|unknown, 2528 #1 and 140 #228 on vulnD|ncube-lm, 2581 #1 and 25 #118 on vulnD|ahsp, 2620 #1 and 5 #786 on serD|unknown (merge 903, page 762)
+---------
+Merge 904
+Merged 2368 #1 (BLUE SINK) and 481 #34 (red) on serD|cm. Merged during determinization: 2464 #1 and 5 #788 on serD|unknown, 2539 #1 and 5 #788 on serD|unknown (merge 904, page 763)
+---------
+Merge 905
+Merged 2369 #1 (BLUE SINK) and 126 #37 (red) on serD|ag-swim. Merged during determinization: 2465 #1 and 3 #246 on vulnD|ms-sql-s (merge 905, page 764)
+---------
+Merge 906
+Merged 2397 #1 (BLUE SINK) and 30 #55 (red) on hostD|http-alt. Merged during determinization: 2488 #1 and 16 #374 on vulnD|mysql, 2555 #1 and 129 #61 on serD|rfb (merge 906, page 765)
+---------
+Merge 907
+Merged 2398 #1 (BLUE SINK) and 139 #57 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 907, page 766)
+---------
+Merge 908
+Merged 2411 #1 (BLUE SINK) and 139 #58 (red) on hostD|ms-wbt-server. Merged during determinization: 2497 #1 and 5 #789 on serD|unknown, 2561 #1 and 16 #375 on vulnD|mysql (merge 908, page 767)
+---------
+Merge 909
+Merged 2418 #1 (BLUE SINK) and 2540 #9 (red) on serD|spt-automation. Merged during determinization: - (merge 909, page 768)
+---------
+Merge 910
+Merged 2437 #1 (BLUE SINK) and 2458 #6 (red) on serD|ads-c. Merged during determinization: - (merge 910, page 769)
+---------
+Merge 911
+Merged 2440 #1 (BLUE SINK) and 36 #15 (red) on serD|icmpd. Merged during determinization: 2523 #1 and 12 #227 on vulnD|postgresql, 2579 #1 and 5 #790 on serD|unknown, 2618 #1 and 12 #227 on vulnD|postgresql (merge 911, page 770)
+---------
+Merge 912
+Merged 2471 #1 (BLUE SINK) and 206 #11 (red) on rPrivEsc|ms-wbt-server. Merged during determinization: - (merge 912, page 771)
+---------
+Merge 913
+Merged 2489 #1 (BLUE SINK) and 139 #59 (red) on hostD|ms-wbt-server. Merged during determinization: - (merge 913, page 772)
+---------
+Merge 914
+Merged 2503 #1 (BLUE SINK) and 365 #42 (red) on hostD|unknown. Merged during determinization: 2566 #1 and 5 #791 on serD|unknown, 2609 #1 and 12 #228 on vulnD|postgresql (merge 914, page 773)
+---------
+Merge 915
+Merged 2520 #1 (BLUE SINK) and 12 #229 (red) on vulnD|postgresql. Merged during determinization: 2577 #1 and 12 #230 on vulnD|postgresql, 2616 #1 and 5 #794 on serD|unknown, 2640 #1 and 25 #119 on vulnD|ahsp, 2657 #1 and 5 #794 on serD|unknown, 2667 #1 and 5 #794 on serD|unknown (merge 915, page 774)
+---------
+Merge 916
+Merged 2544 #1 (BLUE SINK) and 48 #16 (red) on hostD|wsman. Merged during determinization: - (merge 916, page 775)
+---------
+Merge 917
+Merged 2550 #1 (BLUE SINK) and 584 #14 (red) on serD|agma. Merged during determinization: 2597 #1 and 129 #62 on serD|rfb (merge 917, page 776)
+---------
+Merge 918
+Merged 2562 #1 (BLUE SINK) and 140 #229 (red) on vulnD|ncube-lm. Merged during determinization: 2605 #1 and 2 #174 on serD|ssh (merge 918, page 777)
+---------
+Merge 919
+Merged 2585 #1 (BLUE SINK) and 2540 #10 (red) on serD|spt-automation. Merged during determinization: 2623 #1 and 5 #796 on serD|unknown, 2645 #1 and 5 #796 on serD|unknown (merge 919, page 778)
+---------
+Merge 920
+Merged 2613 #1 (BLUE SINK) and 1 #229 (red) on hostD|http. Merged during determinization: - (merge 920, page 779)
+---------
+Merge 921
+Merged 2629 #1 (BLUE SINK) and 139 #60 (red) on hostD|ms-wbt-server. Merged during determinization: 2650 #1 and 5 #797 on serD|unknown (merge 921, page 780)
+---------
+Merge 922
+Merged 2632 #1 (BLUE SINK) and 481 #35 (red) on serD|cm. Merged during determinization: - (merge 922, page 781)
+---------
+Merge 923
+Merged 2635 #1 (BLUE SINK) and 18 #38 (red) on serD|ff-ice. Merged during determinization: - (merge 923, page 782)
+---------
+Merge 924
+Merged 2654 #1 (BLUE SINK) and 30 #56 (red) on hostD|http-alt. Merged during determinization: - (merge 924, page 783)
+---------
+Combining all merges into one PDF file...
