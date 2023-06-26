@@ -1,3 +1,4 @@
+ag_name,nodes1,edges1,simplicity1,is_complex1,obj_vars1,nodes2,edges2,simplicity2,is_complex2,obj_vars2,diff_nodes,diff_edges,diff_simplicity,diff_complexity,diff_obj_vars
 10.0.0.100|DATA_EXFILTRATION|microsoft-ds     48        97  0.494845  Yes  4  33        94  0.351064  Yes  1  15  3  0.143781  SAME  3
 10.0.0.100|NETWORK_DoS|ms-wbt-server          34        56  0.607143  Yes  3  22        54  0.407407  Yes  1  12  2  0.199736  SAME  2
 10.0.0.100|DATA_DELIVERY|wsman                37        69  0.536232  Yes  1  27        69  0.391304  Yes  1  10  0  0.144928  SAME  0

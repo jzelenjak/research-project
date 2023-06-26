@@ -1,3 +1,4 @@
+ag_name,nodes1,edges1,simplicity1,is_complex1,obj_vars1,nodes2,edges2,simplicity2,is_complex2,obj_vars2,diff_nodes,diff_edges,diff_simplicity,diff_complexity,diff_obj_vars
 10.0.0.176|DATA_MANIPULATION|http            31       59   0.525424  Yes  3  24        57   0.421053  Yes  1  7  2  0.104371  SAME  2
 10.0.0.176|DATA_DELIVERY|http                32       64   0.5       Yes  2  27        63   0.428571  Yes  1  5  1  0.071429  SAME  1
 10.0.1.46|RESOURCE_HIJACKING|us-cli          34       53   0.641509  Yes  2  29        52   0.557692  No   1  5  1  0.083817  DIFF  1
