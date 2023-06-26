@@ -40,6 +40,7 @@
 #         (e.g. might be useful when analysing the log file using `grep` or `awk`)
 # You can process the log file with other commands like `grep` to pinpoint interesting merges and further analyse them in the PDF file.
 # The logs can be found in the file "merges.log" (by default). Feel free to give a different name to the `log_file` variable below.
+# Note: type "red" does not necessarily mean that it is not a sink. Extended (red) sinks might have a larger count, but will still be considered as sinks by FlexFringe.
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -79,10 +80,17 @@ white="ghostwhite"
 thickness_init_merge="10"
 thickness_det_merge="5"
 
+# Include the final S-PDFA file in the tests (for the last merge)
+compgen -G "./*final.dot" > /dev/null || { echo "$0: file ./*final.dot does not exist" >&2 ; exit 1 ; }
+final_file=$(compgen -G "./*final.dot" | head -1)
+
 # Iterate over each consecutive pair of testXXXX.dot files to get a "smart" diff
 num_tests=$(find . -type f -name '*test*.dot' | wc -l)
+final_test_file="test$(printf "%04d" $((num_tests + 1))).dot"
+cp "$final_file" "$final_test_file"
+
 curr_page=1
-for t in $(seq 1 $((num_tests - 1))); do
+for t in $(seq 1 "$num_tests"); do
     # Create variables tor test files and test numbers
     t1=$(printf "%04d" $t)
     t2=$(printf "%04d" $((t + 1)))
@@ -334,8 +342,8 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 blue_after.fillcolor = "'"$dark_blue"'"; blue_after.fontcolor = "'"$white"'"; blue_after.color = "'"$colour_init_merge"'"; blue_after.penwidth = '"$thickness_init_merge"'; blue_after.style = "filled,dashed";
                                 red_after.fillcolor = "'"$dark_red"'"; red_after.fontcolor = "'"$white"'"; red_after.color = "'"$colour_init_merge"'"; red_after.penwidth = '"$thickness_init_merge"';
 
-                                // Apply the same colouring and thickness to the original nodes (before the merge)
-                                blue_before.fillcolor = "'"$dark_blue"'"; blue_before.fontcolor = "'"$white"'"; blue_before.color = "'"$colour_init_merge"'"; blue_before.penwidth = '"$thickness_init_merge"';
+                                // Apply the same colouring and thickness to the original nodes (before the merge), and make the merged blue node dashed
+                                blue_before.fillcolor = "'"$dark_blue"'"; blue_before.fontcolor = "'"$white"'"; blue_before.color = "'"$colour_init_merge"'"; blue_before.penwidth = '"$thickness_init_merge"'; blue_before.style = "filled,dashed";
                                 red_before.fillcolor = "'"$dark_red"'"; red_before.fontcolor = "'"$white"'"; red_before.color = "'"$colour_init_merge"'"; red_before.penwidth = '"$thickness_init_merge"';
 
                                 // Colour the incoming edges on which the red and blue nodes have been merged into `colour_init_merge` and make them much thicker (`thickness_init_merge`)
@@ -344,7 +352,8 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 parent_edge_red.color = "'"$colour_init_merge"'"; parent_edge_red.penwidth = '"$thickness_init_merge"';
 
                                 // Apply the same colouring and thickness to the edge on which the red and blue nodes have been merged in the graph "before"
-                                edge_t parent_edge_blue_before = get_red_parent(before, blue_before); parent_edge_blue_before.color = "'"$colour_init_merge"'"; parent_edge_blue_before.penwidth = '"$thickness_init_merge"';
+                                // Also, make the incoming edge of the blue node dashed
+                                edge_t parent_edge_blue_before = get_red_parent(before, blue_before); parent_edge_blue_before.color = "'"$colour_init_merge"'"; parent_edge_blue_before.penwidth = '"$thickness_init_merge"'; parent_edge_blue_before.style = "dashed";
                                 edge_t parent_edge_red_before = get_red_parent(before, red_before); parent_edge_red_before.color = "'"$colour_init_merge"'"; parent_edge_red_before.penwidth = '"$thickness_init_merge"';
 
                                 // Get the label of this incoming edge
@@ -353,13 +362,13 @@ for t in $(seq 1 $((num_tests - 1))); do
                                 // Log the information about this merge
                                 string red_node_type = "";
                                 if (get_count(red_before) < '"$sink_count"') red_node_type = "RED SINK";
-                                else red_node_type = "red";
+                                else red_node_type = "red";  // Note: this does not necessarily mean that it is not a sink. Extended (red) sinks might have a larger count, but will still be considered as sinks by FF
 
                                 string blue_node_type = "";
                                 if (get_count(blue_before) < '"$sink_count"') blue_node_type = "BLUE SINK";
                                 else blue_node_type = "blue";
 
-                                print("Merged " + get_num_and_count(red_before) + " (" + red_node_type + ") and " + get_num_and_count(blue_before) + " (" + blue_node_type + ") on " +
+                                print("Merged " + get_num_and_count(blue_before) + " (" + blue_node_type + ") and " + get_num_and_count(red_before) + " (" + red_node_type + ") on " +
                                     mcat_mserv + ". Merged during determinization: " + merged_during_det + " (merge '"$t"', page '"$curr_page"')");
 
                                 found = 1;
@@ -393,7 +402,7 @@ for t in $(seq 1 $((num_tests - 1))); do
         # (Horizontally) Combine the graphs to one PNG image
         convert -append "$merge_before_png" "$merge_after_png" "$merge_png"
 
-        # Remove the separate PNG and DOT files of the graphs (they are not needed anymore)
+        # Remove the separate PNG and DOT files of the graphs (they are not needed anymore, though you can still keep them by commenting out this line)
         rm "$merge_before_dot" "$merge_after_dot" "$merge_before_png" "$merge_after_png" 
 
         curr_page=$((curr_page + 1))
@@ -401,6 +410,9 @@ for t in $(seq 1 $((num_tests - 1))); do
 
     echo "---------" | tee -a "$log_file"
 done
+
+# Remove the final test file
+rm "$final_test_file"
 
 # Combine all merges into one PDF file (A1 format)
 echo "Combining all merges into one PDF file..." | tee -a "$log_file"
