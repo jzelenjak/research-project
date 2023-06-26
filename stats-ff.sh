@@ -8,6 +8,13 @@
 #   Full S-PDFA can be analysed by setting `printblue=1`, `printwhite=1` and `printred=1` (default)
 #     and querying the file `ExpName.txt.ff.final.json`.
 #
+# Note: as I have noticed, merging sinks after the main merging process might result in some sinks becoming red (core) states
+#     that will remain sinks even if their count is larger than or equal to the `sinkcount` parameter 
+#     (due to extending a blue sink, i.e. colouring red, if it is the best refinement).
+#   Hence the statistics should be interpreted as follows:
+#     - Before merging sinks: #sinks = #blue + #white
+#     - After merging sinks: #sinks = #red_sinks
+#
 # NB! This script is based on .json files, which are by default deleted during the execution of SAGE.
 #      To prevent the deletion, set the DOCKER variable to False (in SAGE).
 
@@ -35,13 +42,13 @@ sinks_json="${1}.txt.ff.finalsinks.json"
 red=$(jq '.nodes[] | select(.isred==1) | .id' "$core_json" "$sinks_json" | sort -u | wc -l)
 blue=$(jq '.nodes[] | select(.isblue==1) | .id' "$core_json" "$sinks_json" | sort -u | wc -l)
 white=$(jq '.nodes[] | select(.isred==0 and .isblue==0) | .id' "$core_json" "$sinks_json" | sort -u | wc -l)
+sinks=$(jq '.nodes[] | select(.issink==1) | .id' "$core_json" "$sinks_json" | sort -u | wc -l)
 total=$((red + blue + white))
-sinks=$(jq '.nodes[] | select(.issink==1) | .id' "$sinks_json" | sort -u | wc -l)
 
 # Print the resulting state counts as well as their percentage of the total (for red, blue and white nodes)
 echo "Total red states (core): $red ($(echo "scale=3; 100 * $red / $total" | bc)%)"
 echo "Total blue states: $blue ($(echo "scale=3; 100 * $blue / $total" | bc)%)"
 echo "Total white states: $white ($(echo "scale=3; 100 * $white / $total" | bc)%)"
+echo "Total sink states: $sinks ($(echo "scale=3; 100 * $sinks / $total" | bc)%)"
 echo "Total states (red + blue + white): $total"
-echo "Total sink states: $sinks"
 
