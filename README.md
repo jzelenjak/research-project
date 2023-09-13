@@ -65,7 +65,7 @@ Below you can find the description, usage and an example use case for each scrip
 
 **Description**: this script compares the attack graphs in terms of the present edges. Note: it is based on the names and labels of edges and not on their position in the graph. This script is primarily used as part of `diff-ags.sh` script, however it can still be used on its own.
 
-**Usage**: `./diff-edges.sh [-q] originalAG.dot modifiedAG.dot` (`-q` - report only when attack graphs differ (do not print differences))
+**Usage**: `./diff-edges.sh [-i] [-q] originalAG.dot modifiedAG.dot` (`-i` - remove node IDs when comparing the attack graphs; `-q` - report only when attack graphs differ (do not print differences))
 
 **Example use case**: after running `stats-ags-comp.sh` script, you want to see what are the differences in edges for a pair of attack graphs (what are the common edges and which edges are present in only one of the graphs). Here you can use `agf` function from `ag-utils` file to quickly get the .dot files for this script.
 
@@ -73,7 +73,7 @@ Below you can find the description, usage and an example use case for each scrip
 
 **Description**: this script compares the attack graphs in terms of the present nodes. Note: it is based on the names of nodes and not on their position in the graph.
 
-**Usage**: `./diff-nodes.sh [-q] originalAG.dot modifiedAG.dot` (`-q` - report only when attack graphs differ (do not print differences))
+**Usage**: `./diff-nodes.sh [-i] [-q] originalAG.dot modifiedAG.dot` (`-i` - remove node IDs when comparing the attack graphs; `-q` - report only when attack graphs differ (do not print differences))
 
 **Example use case**: after running `stats-ags-comp.sh` script, you want to see what are the differences in nodes for a pair of attack graphs (what are the common nodes and which nodes are present in only one of the graphs). Here you can use `agf` function from `ag-utils` file to quickly get the .dot files for this script.
 

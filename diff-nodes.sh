@@ -81,8 +81,8 @@ fi
 
 # When running in normal mode, show the common nodes and nodes that are present in only one of the graphs (and their counts)
 # Common nodes (i.e. present in both graphs)
-echo "Nodes found by both algorithms: $(echo -e "$common" | wc -l)"
-echo -e "$common"
+echo "Nodes found by both algorithms: $(echo -e "$common" | sed '/^\s*$/d' | wc -l)"
+! [[ -z "$common" ]] && echo -e "$common"
 echo -ne "\n"
 
 # Nodes only present in the original graph
