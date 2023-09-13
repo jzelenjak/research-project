@@ -26,31 +26,38 @@ IFS=$'\n\t'
 umask 077
 
 usage() {
-    echo -e "Usage: $0 [-q] originalAG.dot modifiedAG.dot\n       $0 originalAGs/ modifiedAGs/\n
-        -q\treport only when attack graphs differ (do not print differences; can only be used with the .dot files)"
+    echo -e "Usage: $0 [-i] [-q] originalAG.dot modifiedAG.dot\n       $0 [-i] originalAGs/ modifiedAGs/\n
+        -i\tremove node IDs when comparing the attack graphs
+        -q\treport only when attack graphs differ (do not print differences; no effect when comparing directories with the attack graphs)"
 }
 
-# If two arguments are provided, assume "normal" mode
-if [[ $# -eq 2 ]]; then 
-    original="$1"
-    modified="$2"
-    mode="normal"
-# If three arguments are provided, assume "quiet" mode (the first argument has to be the option -q)
-elif [[ $# -eq 3 ]]; then
-    while getopts "q" option; do
+mode="normal"
+keep_ids="true"
+if [[ $# -ge 2 ]] && [[ $# -le 4 ]]; then
+    num_options=0
+    while getopts "qi" option; do
         case ${option} in
-            q ) mode="quiet" ;;
+            q ) mode="quiet" ; num_options=$((num_options + 1)) ;;
+            i ) keep_ids="false" ; num_options=$((num_options + 1)) ;;  # Sort of "insensitive [to IDs]"
             \? ) { usage >&2; exit 1; } ;;
         esac
     done
 
-    original="$2"
-    modified="$3"
-# The number of arguments can only be two or three
+    pos_original=$((1 + num_options))
+    pos_modified=$((2 + num_options))
+    original="${@:pos_original:1}"
+    modified="${@:pos_modified:1}"
+# The number of arguments can only be two, three or four
 else
     usage >&2
     exit 1
 fi
+
+# Options for the ./diff-nodes.sh and ./diff-edges.sh scripts
+opt_mode=""
+opt_keep_ids=""
+[[ "$mode" == "quiet" ]] && opt_mode="-q"
+[[ "$keep_ids" == "false" ]] && opt_keep_ids="-i"
 
 # Comparing two .dot files with AGs
 if [[ "${original##*.}" == "dot" ]] && [[ "${modified##*.}" == "dot" ]]; then
@@ -60,15 +67,16 @@ if [[ "${original##*.}" == "dot" ]] && [[ "${modified##*.}" == "dot" ]]; then
 
     # When running in quiet mode, report if the graphs are different or exit quietly if they are the same
     if [[ "$mode" == "quiet" ]]; then
-        ./diff-nodes.sh -q "$original" "$modified" 1> /dev/null && ./diff-edges.sh -q "$original" "$modified" 1> /dev/null || { echo "Attack graphs $original and $modified are different" ; exit 1 ; }
+        ./diff-nodes.sh $opt_mode $opt_keep_ids "$original" "$modified" 1> /dev/null && ./diff-edges.sh $opt_mode $opt_keep_ids "$original" "$modified" 1> /dev/null || { echo "Attack graphs $original and $modified are different" ; exit 1 ; }
     # When running in normal mode, show the common nodes and edges, and nodes and edges that are present in only one of the graphs (and their counts)
     else
-        ./diff-nodes.sh "$original" "$modified"
+        ./diff-nodes.sh $opt_mode $opt_keep_ids "$original" "$modified"
         echo "--------------------------------"
-        ./diff-edges.sh "$original" "$modified"
+        ./diff-edges.sh $opt_mode $opt_keep_ids "$original" "$modified"
     fi
 # Comparing two directories with .dot files with AGs
-elif [[ -d "$original" ]] && [[ -d "$modified" ]] && [[ "$mode" == "normal" ]]; then
+elif [[ -d "$original" ]] && [[ -d "$modified" ]]; then
+    opt_mode="-q"
     # Check if the input directories exist
     original=$(echo "$original/" | tr -s '/')
     modified=$(echo "$modified/" | tr -s '/')
@@ -86,8 +94,8 @@ elif [[ -d "$original" ]] && [[ -d "$modified" ]] && [[ "$mode" == "normal" ]]; 
     # First, find the AGs that are present in both directories (compare the file names without the experiment name and the prefix)
     comm -12 <(find "$original" -type f -name '*.dot' -printf '%f\n' | sed 's@'"${exp_original}\.txt${prefix}"'@@' | sort)\
              <(find "$modified" -type f -name '*.dot' -printf '%f\n' | sed 's@'"${exp_modified}\.txt${prefix}"'@@' | sort) |
-             sed 's@^\(.*\)$@./diff-ags.sh -q '"${original}${exp_original}\.txt${prefix}"'\1 '"${modified}${exp_modified}\.txt${prefix}"'\1@' |     # Create the commands for the shell
-         sh |                                                                                                                                       # Execute these commands 
+             sed 's@^\(.*\)$@./diff-ags.sh '"$opt_mode $opt_keep_ids ${original}${exp_original}\.txt${prefix}"'\1 '"${modified}${exp_modified}\.txt${prefix}"'\1@' |     # Create the commands for the shell
+         sh |                                                                                                                                                            # Execute these commands 
          sed 's/^.*'"$prefix"'\(.*\)\.dot.*$/\1/' | sed 's/^\([0-9.]\+\)-/\1|/' | sed 's/\([A-Z]\+\)/\1|/'  # This line just creares consistent name (victim|mcat|mserv), instead of the default message
 else
    usage >&2

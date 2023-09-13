@@ -57,7 +57,7 @@ Below you can find the description, usage and an example use case for each scrip
 
 **Description**: this script compares the attack graphs in terms of the present nodes and edges. Note: it is based on the names and labels of nodes and edges and not on their position in the graph.
 
-**Usage**: `./diff-ags.sh [-q] originalAG.dot modifiedAG.dot` or `./diff-ags.sh originalAGs/ modifiedAGs/` (`-q` - report only when attack graphs differ (do not print differences; can only be used with the .dot files))
+**Usage**: `./diff-ags.sh [-i] [-q] originalAG.dot modifiedAG.dot` or `./diff-ags.sh [-i] originalAGs/ modifiedAGs/` (`-i` - remove node IDs when comparing the attack graphs; `-q` - report only when attack graphs differ (do not print differences; no effect when comparing directories with the attack graphs)))
 
 **Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see which attack graphs (or how many of them) are different. You can compare two attack graphs (less frequent use case; usually `diff-nodes.sh` is used more often in this case), as well as two directories with attack graphs (more common use case).
 
