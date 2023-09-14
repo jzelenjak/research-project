@@ -205,9 +205,9 @@ The computed statistics (among all graphs) are:
 
 **Description**: this script compares two directories with attack graphs in terms of sink and non-sink nodes. It performs a left outer join on nodes from two directories. If a node is absent in the second directory, "-" will be written, which indicates that this node has been merged. If a node is present in both directories, its status ("sink" or "non-sink") will be printed for both directories.
 
-**Usage**: `./stats-sinks-ags.sh path/to/AGs path/to/AGs`
+**Usage**: `./stats-sinks-ags.sh [-t] path/to/AGs path/to/AGs` (`-t` - perform a diff (i.e. test) and print only the states that differ, e.g. sink -> non-sink)
 
-**Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see which sink nodes have been merged, which sinks became non-sinks and which nodes were non-sinks and remained non-sinks.
+**Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see which sink nodes have been merged, which sinks became non-sinks and which nodes were non-sinks and remained non-sinks. Use case for the option `-t`: after changing the SAGE code, you want to make sure that the sinks in the attack graphs have not been affected (assuming that the changes in the code do not affect the attack graphs).
 
 ### train-lin-reg.sh
 
