@@ -211,6 +211,14 @@ The computed statistics (among all graphs) are:
 
 ### test-sinks.sh
 
+**Description**: this script combines multiple scripts from this repository and is essentially used as a test file to compare two directories with attack graphs (and the corresponding FlexFringe traces).
+
+**Usage**: `./test-ags.sh ExpName1 ExpName2`
+
+**Example use case**: you want to run regression tests to make sure that the changes in the code do not unintentionally affect the attack graphs (this is pretty much the only use case, as the script will exit after the first failing test, thus you will not really get the full overview of the changes).
+
+### test-sinks.sh
+
 **Description**: this script is used to compare the sinks and non-sinks with IDs in the attack graphs with the sinks and non-sinks defined in the S-PDFA model (namely, the common part, i.e. S-PDFA states that are not present in the attack graphs are ignored). When comparing non-sinks, the red sinks from the S-PDFA are also included in the comparison (see the comment in the script).
 
 **Usage**: `./test-sinks.sh ExpName`
