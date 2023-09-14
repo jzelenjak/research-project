@@ -209,6 +209,19 @@ The computed statistics (among all graphs) are:
 
 **Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see which sink nodes have been merged, which sinks became non-sinks and which nodes were non-sinks and remained non-sinks. Use case for the option `-t`: after changing the SAGE code, you want to make sure that the sinks in the attack graphs have not been affected (assuming that the changes in the code do not affect the attack graphs).
 
+### test-sinks.sh
+
+**Description**: this script is used to compare the sinks and non-sinks with IDs in the attack graphs with the sinks and non-sinks defined in the S-PDFA model (namely, the common part, i.e. S-PDFA states that are not present in the attack graphs are ignored). When comparing non-sinks, the red sinks from the S-PDFA are also included in the comparison (see the comment in the script).
+
+**Usage**: `./test-sinks.sh ExpName`
+
+**Example use case**: you want to test that sink and non-sink states in the attack graphs are consistent with the sink and non-sink states in the S-PDFA model.
+
+### stats-nodes-ags.sh
+
+**Description**: this script computes statistics on the nodes of the attack graphs in the specified directory. This script has only been used when formulating the hypothesis and checking how the node count of attack graphs has been affected by merging sinks.
+
+
 ### train-lin-reg.sh
 
 **Description**: this script is primarily used inside the `./stats-ags.sh` script to compute the regression line for classification of the attack graphs into complex and non-complex. It is not very useful as a stand-alone script.
