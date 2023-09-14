@@ -217,11 +217,6 @@ The computed statistics (among all graphs) are:
 
 **Example use case**: you want to test that sink and non-sink states in the attack graphs are consistent with the sink and non-sink states in the S-PDFA model.
 
-### stats-nodes-ags.sh
-
-**Description**: this script computes statistics on the nodes of the attack graphs in the specified directory. This script has only been used when formulating the hypothesis and checking how the node count of attack graphs has been affected by merging sinks.
-
-
 ### train-lin-reg.sh
 
 **Description**: this script is primarily used inside the `./stats-ags.sh` script to compute the regression line for classification of the attack graphs into complex and non-complex. It is not very useful as a stand-alone script.
