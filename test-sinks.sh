@@ -40,7 +40,9 @@ dir_ags="${1}AGs/"
 ! [[ -d "$dir_ags" ]] && { echo "$0: directory $dir_ags does not exist" >&2 ; exit 1 ; }
 
 
-echo "Checking sinks (all sinks in the AGs must also be sinks in the S-PDFA)..."
+passed_tests=0
+total_tests=0
+echo "Test 1: Checking sinks (all sinks in the AGs must also be sinks in the S-PDFA)..."
 # All found sinks in 2017 are indeed sinks
 sinks_ags=$(find "$dir_ags" -type f -name '*.dot' | xargs gvpr 'N [ index($.style, "dotted") != -1 ] { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort -u)
 sinks_ff=$(jq '.nodes[] | select(.issink==1) | .id' "$sinks_json" | sort)
@@ -49,10 +51,12 @@ num_common_sinks_ff=$(comm -12 <(echo -e "$sinks_ags" | sed '/^$/d' | sed 's/^.*
 # If `num_sinks_ags` > `num_common_sinks_ff`, then some sinks in AGs are non sinks in FlexFringe (should not happen)
 echo "Sinks in the attack graphs: $num_sinks_ags"
 echo "Sinks in the S-PDFA (intersection): $num_common_sinks_ff"
-[[ "$num_sinks_ags" -ne "$num_common_sinks_ff" ]] && exit 1
+[[ "$num_sinks_ags" -eq "$num_common_sinks_ff" ]] && { echo "Passed" ; passed_tests=$((passed_tests + 1)) ; } || echo "Failed"
+total_tests=$((total_tests + 1))
+echo "------------"
 
 
-echo "Checking non-sinks (all non-sinks with IDs in the AGs must also be sinks in the S-PDFA)..."
+echo "Test 2: Checking non-sinks (all non-sinks with IDs in the AGs must also be sinks in the S-PDFA)..."
 # All non-sinks with IDs in 2017 are indeed non-sinks
 non_sinks_with_ids_ags=$(find "$dir_ags" -type f -name '*.dot' | xargs gvpr 'N [ index($.style, "dotted") == -1 ] { print(gsub(gsub($.name, "\r"), "\n", " | ")); }' | sort -u | grep 'ID: ')
 non_sinks_ff=$(jq '.nodes[] | select(.issink==0 or .isred == 1) | .id' "$core_json" | sort)
@@ -61,6 +65,11 @@ num_common_non_sinks_ff=$(comm -12 <(echo -e "$non_sinks_with_ids_ags" | sed '/^
 # If `num_non_sinks_ags` > `num_common_non_sinks_ff`, then some non-sinks in AGs are sinks in FlexFringe
 echo "Non-sinks in the attack graphs: $num_non_sinks_ags"
 echo "Non-sinks in the S-PDFA (intersection): $num_common_non_sinks_ff"
+[[ "$num_non_sinks_ags" -eq "$num_common_non_sinks_ff" ]]  && { echo "Passed" ; passed_tests=$((passed_tests + 1)) ; } || echo "Failed"
+total_tests=$((total_tests + 1))
+echo "------------"
 
-[[ "$num_non_sinks_ags" -ne "$num_common_non_sinks_ff" ]] && exit 1
-exit 0
+echo "Tests passed: ${passed_tests}/${total_tests}"
+
+[[ "$passed_tests" -eq "$total_tests" ]] && exit 0 || exit 1
+

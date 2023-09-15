@@ -209,13 +209,13 @@ The computed statistics (among all graphs) are:
 
 **Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see which sink nodes have been merged, which sinks became non-sinks and which nodes were non-sinks and remained non-sinks. Use case for the option `-t`: after changing the SAGE code, you want to make sure that the sinks in the attack graphs have not been affected (assuming that the changes in the code do not affect the attack graphs).
 
-### test-sinks.sh
+### test-ags.sh
 
 **Description**: this script combines multiple scripts from this repository and is essentially used as a test file to compare two directories with attack graphs (and the corresponding FlexFringe traces).
 
 **Usage**: `./test-ags.sh ExpName1 ExpName2`
 
-**Example use case**: you want to run regression tests to make sure that the changes in the code do not unintentionally affect the attack graphs (this is pretty much the only use case, as the script will exit after the first failing test, thus you will not really get the full overview of the changes).
+**Example use case**: you want to run regression tests to make sure that the changes in the code do not unintentionally affect the attack graphs. 
 
 ### test-sinks.sh
 
