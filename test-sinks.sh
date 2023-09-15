@@ -11,6 +11,9 @@
 #
 # Note: when comparing non-sinks, we select non-sinks or red sinks. The reason is that when merging sinks, some of them might be coloured red but still remain sinks (i.e. during extension; `issink` will be 1).
 #   Since they are still in the core model (as sinks model, essentially, does not exist anymore), SAGE considers them as non-sinks, which makes sense, as they are part of the red core.
+#
+# NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
+#      To prevent the deletion, use the --keep-files option when running SAGE.
 
 
 set -euo pipefail

@@ -20,7 +20,7 @@
 # NB! Average statistics include all graphs in the directory, while the side-by-side ones are only produced for AGs that are present in both directories.
 #
 # NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
-#      To prevent the deletion, set the DOCKER variable to False (in SAGE).
+#      To prevent the deletion, use the --keep-files option when running SAGE.
 
 set -euo pipefail
 IFS=$'\n\t'

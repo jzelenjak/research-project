@@ -18,7 +18,7 @@
 #     To avoid potential errors, please only use alphanumeric characters in the name of the experiments (i.e. no whitespaces, enters etc.).
 #
 # NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
-#      To prevent the deletion, set the DOCKER variable to False (in SAGE).
+#      To prevent the deletion, use the --keep-files option when running SAGE.
 
 set -euo pipefail
 IFS=$'\n\t'

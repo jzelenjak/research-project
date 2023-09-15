@@ -7,6 +7,9 @@
 #     - diff-edges.sh
 #   - stats-nodes-ags.sh
 #   - stats-sinks.sh
+#
+# NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
+#      To prevent the deletion, use the --keep-files option when running SAGE.
 
 set -euo pipefail
 IFS=$'\n\t'

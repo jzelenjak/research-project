@@ -8,7 +8,7 @@
 #     where `A + Bx` is the computed regression line, vmin and vmax are the min and max node counts, as defined in the paper.
 #
 # NB! This script is based on .dot files, which are by default deleted during the execution of SAGE.
-#      To prevent the deletion, set the DOCKER variable to False (in SAGE).
+#      To prevent the deletion, use the --keep-files option when running SAGE.
 
 set -euo pipefail
 IFS=$'\n\t'

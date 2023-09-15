@@ -6,7 +6,7 @@
 #     You can also source this file in your ~/.bashrc, so that you don't forget to do it.
 #
 # NB! Some functions are based on .dot files, which are by default deleted during the execution of SAGE.
-#      To prevent the deletion, set the DOCKER variable to False (in SAGE).
+#      To prevent the deletion, use the --keep-files option when running SAGE.
 
 # This is the prefix used in every AG file name (ExpName-prefix-victim-mcatmserv)
 prefix="-attack-graph-for-victim-"
