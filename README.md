@@ -33,7 +33,7 @@ Below you can find the description, usage and an example use case for each scrip
 
 **Description**: this is not really a script, but rather a file that contains some helpful functions, primarily for resolving attack graph names to .dot files or .png files.
 
-**Usage**: `agf 'victim|mcat|mServ'`, `agfc 'victim|mcat|mServ' 'filter_str'`, `ag 'victim|mcat|mServ'`, `ag-comb 'victim|mcat|mServ'`, `ag-diff 'victim|mcat|mServ'` 
+**Usage**: `agf 'victim|mcat|mServ'`, `agfc 'victim|mcat|mServ' 'filter_str'`, `ag 'victim|mcat|mServ'`, `ag-comb 'victim|mcat|mServ'`, `ag-diff 'victim|mcat|mServ'`
 
 **Example use case**: after running `stats-ags-comp.sh` script, you want to quickly see how exactly the attack graphs are different. You copy the name of the attack graph and the script will resolve it to .dot file(s) (which you can later use) or open a png image(s) of the attack graphs.
 
@@ -87,7 +87,7 @@ Below you can find the description, usage and an example use case for each scrip
 
 ### get-merges.sh
 
-**Description**: this script is used to analyse the merges performed by FlexFringe during the S-PDFA learning process. It takes a "smart" diff between two consecutive states of the S-PDFA to show the affected states before and after a merge (placed vertically next to each other). The result is a (large) PDF file with all non-trivial merges. In addition, this script creates a log file with the main information about the merges to facilitate the analysis (e.g. which red and blue states have been merged and on which edge, which nodes have been merged during the determinization process and on which edge, and which merges have been skipped). Finally, some visual enhancements are added to further facilitate the analysis (see the script for further documentation). 
+**Description**: this script is used to analyse the merges performed by FlexFringe during the S-PDFA learning process. It takes a "smart" diff between two consecutive states of the S-PDFA to show the affected states before and after a merge (placed vertically next to each other). The result is a (large) PDF file with all non-trivial merges. In addition, this script creates a log file with the main information about the merges to facilitate the analysis (e.g. which red and blue states have been merged and on which edge, which nodes have been merged during the determinization process and on which edge, and which merges have been skipped). Finally, some visual enhancements are added to further facilitate the analysis (see the script for further documentation).
 
 **Usage**: `./get-merges.sh [output.pdf]`
 
@@ -189,7 +189,7 @@ Average computed statistics are:
 ### stats-nodes-ags.sh
 
 **Description**: this script computes statistics on the nodes of the attack graphs in the specified directory. This script has only been used when formulating the hypothesis and checking how the node count of attack graphs has been affected by merging sinks.
- 
+
 The computed statistics (among all graphs) are:
 
 - *Total number of nodes*
@@ -201,7 +201,7 @@ The computed statistics (among all graphs) are:
 
 **Example use case**: after running SAGE on CPTC-2017 (or CPTC-2018) before and after merging sinks states, you want to see how the node count of the attack graphs has been affected.
 
-### stats-sinks-ags.sh 
+### stats-sinks-ags.sh
 
 **Description**: this script compares two directories with attack graphs in terms of sink and non-sink nodes. It performs a left outer join on nodes from two directories. If a node is absent in the second directory, "-" will be written, which indicates that this node has been merged. If a node is present in both directories, its status ("sink" or "non-sink") will be printed for both directories.
 
@@ -213,9 +213,9 @@ The computed statistics (among all graphs) are:
 
 **Description**: this script combines multiple scripts from this repository and is essentially used as a test file to compare two directories with attack graphs (and the corresponding FlexFringe traces).
 
-**Usage**: `./test-ags.sh ExpName1 ExpName2`
+**Usage**: `./test-ags.sh [-i] ExpName1 ExpName2` (`-i` - remove node IDs when comparing the attack graphs)
 
-**Example use case**: you want to run regression tests to make sure that the changes in the code do not unintentionally affect the attack graphs. 
+**Example use case**: you want to run regression tests to make sure that the changes in the code do not unintentionally affect the attack graphs.
 
 ### test-sinks.sh
 
