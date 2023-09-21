@@ -91,11 +91,13 @@ echo "------------"
 
 
 echo "Test 6: Checking sinks stats"
-./stats-sinks-ags.sh -t "$orig_ags" "$updated_ags" && { echo "Passed" ; passed_tests=$((passed_tests + 1)) ; } || echo "Failed"
-total_tests=$((total_tests + 1))
+if [[ -n "$option_i" ]]; then
+    echo "Skipping because running with -i and cannot match IDs here"
+else
+    ./stats-sinks-ags.sh -t "$orig_ags" "$updated_ags" && { echo "Passed" ; passed_tests=$((passed_tests + 1)) ; } || echo "Failed"
+    total_tests=$((total_tests + 1))
+fi
 echo "------------"
-
-echo "Tests passed: ${passed_tests}/${total_tests}"
 
 [[ "$passed_tests" -eq "$total_tests" ]] && exit 0 || exit 1
 
